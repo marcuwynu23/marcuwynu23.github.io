@@ -53,10 +53,11 @@
 
     <main class="h-100">
       <div class="d-flex">
-        <div class="container card shadow-sm bg-light border-0 p-3 mr-4 w-75">
+        {% include left.html %}
+        <div class="container card shadow-sm bg-light border-0 p-3 mx-3 w-50">
           {{ content }}
         </div>
-        {% include aside.html %}
+        {% include right.html %}
       </div>
     </main>
   </body>

@@ -9,7 +9,7 @@ $(document).ready(function () {
 		.then(response => response.json())
 		.then(repos => {
 			// Filter out the forked repos
-			const myRepos = repos.filter(repo => !repo.fork);
+			const myRepos = repos.filter(repo => !repo.fork && !repo.is_template);
 
 			// Sort the repos by the latest update date
 			myRepos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));

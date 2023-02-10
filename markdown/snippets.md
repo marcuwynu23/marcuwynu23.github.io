@@ -6,12 +6,10 @@ permalink: /snippets/
 
 # My Snippets
 
- <script src="{{- 'assets/js/snippets.js' | relative_url -}}"></script>
+ <script src="{{- 'assets/js/snippets.js' | relative_url -}}" defer></script>
 <div class="container">
  <div class="row">
-     <div class="col-6" id="column-1">
-  </div>
-  <div class="col-6" id="column-2">
+     <div class="col text-right" id="column-1">
   </div>
   </div>
 </div>
