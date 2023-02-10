@@ -1,0 +1,56 @@
+/*
+ *   Copyright (c) 2023 
+ *   All rights reserved.
+ */
+
+header,
+footer {
+	background-color: #080d10 !important;
+}
+
+a {
+	color: #ffffff;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+
+a:hover {
+	color: #ffffff;
+}
+
+div {
+	margin: 20px 0;
+	text-align: center;
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.5;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+
+.card {
+	background-color: #080d10 !important;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+	border: none;
+	overflow: hidden;
+}
+
+.card:hover {
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.16);
+}
+
+
+.blog-post {
+	border-radius: 3px;
+}
+
+.blog-post .blog-title {
+	color: #496d59;
+
+}
+
+li {
+	list-style: none !important;
+}

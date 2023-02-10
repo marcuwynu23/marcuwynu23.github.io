@@ -1,0 +1,41 @@
+/*
+ *   Copyright (c) 2023 
+ *   All rights reserved.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+* {
+	color: #ffffff;
+	margin: 0;
+}
+
+
+
+#profile-container {
+	background-image: url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+	background-position: 50%;
+	border-radius: 4px;
+}
+
+
+
+body {
+	font-family: 'Fira Sans', sans-serif !important;
+	background-color: rgb(255, 255, 255) !important;
+}
+
+.main-layout {
+	background-color: #121c1d !important;
+}
+
+.nav-link {
+	color: #ffffff;
+}
+
+.nav-link:hover {
+	color: #e9e9e9;
+}
+
+.project-item .card-title {
+	color: #496d59;
+}
