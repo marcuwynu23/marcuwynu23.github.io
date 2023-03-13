@@ -51,13 +51,11 @@
   <body class="main-layout">
     {% include header.html %}
 
-    <main class="h-100">
-      <div class="d-flex">
-        {% include left.html %}
-        <div class="container card shadow-sm bg-light border-0 p-3 mx-3 w-50">
+    <main class="container-fluid">
+      <div class="d-flex justify-content-center">
+        <div class="card shadow-sm bg-light border-0 p-3 mx-3">
           {{ content }}
         </div>
-        {% include right.html %}
       </div>
     </main>
   </body>
