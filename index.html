@@ -1,0 +1,227 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- logo -->
+
+	<title>Marcuwynu Portfolio</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<link href="style/style.css" rel="stylesheet">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Karla&family=Roboto:wght@700&display=swap');
+		:root{
+			--primary-color: #21382c;
+			--secondary-color: #ffffff;
+			--tertiary-color: #ffffff;
+		}
+		.my-text-color{
+			color: var(--secondary-color);
+		}
+		.my-text-secondary-color{
+			color: var(--primary-color);
+		}
+		.my-bg-color {
+			background-color: var(--primary-color);
+		}
+		* {
+			font-size: 10pt;
+			font-family: 'Karla', sans-serif;
+		}
+		h2{
+			font-weight: 900;
+			font-family: "Roboto", sans-serif;
+			font-size: 2.5em;
+			margin: 0 auto;
+		}
+
+		#quote-welcome-message{
+			font-weight: 900;
+			font-family: "Roboto", sans-serif;
+			font-size: 2.5em;
+			margin: 0 auto;
+		}
+
+		@media (max-width: 767px) {
+			/* Hide the desktop header */
+			#header {
+				display: none;
+			}
+			
+			/* Show the mobile menu when the button is clicked */
+			#menu.show {
+				display: block;
+			}
+		}
+		
+	</style>
+
+</head>
+<body>
+	
+	<header class="flex justify-end items-center my-bg-color py-4 px-8 md:block" id="header">
+	
+		<div>
+			<ul class="mx-auto">
+				<li class="inline-block ml-4 my-4 uppercase text-white"><a href="#home">Home</a></li>
+				<li class="inline-block mx-4 my-4 uppercase text-white"><a href="#about">About</a></li>
+				<li class="inline-block mx-4 my-4 uppercase text-white"><a href="#skills">Skills</a></li>
+				<li class="inline-block mx-4 my-4 uppercase text-white"><a href="#projects">Projects</a></li>
+			
+			</ul>
+		</div>
+	</header>
+	
+	
+	<div class="md:hidden my-bg-color">
+		<div class="flex justify-end mx-2">
+			<button id="toggleBtn" class="block py-2 uppercase text-white"> <i class="bi bi-list"></i></button>
+			
+		</div>
+		<ul class=" hidden text-center" id="menu">
+			<li class="block py-2 uppercase text-white"><a href="#home">Home</a></li>
+			<li class="block py-2 uppercase text-white"><a href="#about">About</a></li>
+			<li class="block py-2 uppercase  text-white"><a href="#skills">Skills</a></li>
+			<li class="block py-2 uppercase text-white"><a href="#projects">Projects</a></li>
+		</ul>
+	</div>
+	<main>
+		<!-- landing section -->
+		<section id="home" class="h-auto my-bg-color text-white">
+			<div class="flex flex-col justify-center items-center h-full">
+			
+				<p id="quote-welcome-message" class="text-4xl mt-2 max-w-md text-center ">"Maestros of creation evoke marvels from the unimagined."
+				</p>
+			
+				<a href="#projects" class="bg-white my-text-secondary-color font-bold py-2 px-4 rounded-full mt-8 hover:bg-gray-200">View Projects</a>
+		<ul>
+			<li class="inline-block mx-4 my-4 uppercase text-white">
+				<a href="https://www.linkedin.com/in/marcuwynu23/" class=" text-white"><i class="bi bi-linkedin fs-3" title="LinkedIn"></i>
+				Linkedin</a>
+			</li>
+			<li class="inline-block mx-4 my-4 uppercase text-white">
+				<a href="https://github.com/marcuwynu23" class=" text-white"><i class="bi bi-github fs-3" title="GitHub"></i>
+				Github</a>
+			</li>
+			<li class="inline-block mx-4 my-4 uppercase text-white">
+				<a href="https://www.facebook.com/marcuwynu23/" class=" text-white"><i class="bi bi-facebook fs-3" title="Facebook"></i>
+				Facebook
+				</a>
+			</li>
+			<li class="inline-block mx-4 my-4 uppercase text-white">
+				<a href="https://twitter.com/marcuwynu23" class=" text-white"><i class="bi bi-twitter fs-3" title="Twitter"></i>
+				Twitter</a>
+			</li>
+		</ul>
+			</div>
+		</section>
+		
+		
+		<!-- about section -->
+		<section id="about"  class="h-auto mb-8 flex flex-col md:flex-row">
+		
+			<div class="container mx-auto px-4">
+				<h2 class="text-3xl my-text-secondary-color font-bold py-8">About Me</h2>
+				
+				<div class="container mx-auto my-8 px-4">
+					<p class="text-lg text-gray-800 py-2">
+						Mark Wayne Menorca is an Information Technology graduate with a strong foundation in computer science principles, programming concepts, and project development methodologies. 
+					</p>
+					<p class="text-lg text-gray-800 py-2">
+						In his free time, Mark enjoys building side projects that fall under the following categories:
+					</p>
+					<ul class="text-lg text-gray-800 py-2 list-disc pl-8">
+						<li><strong class="font-semibold my-text-secondary-color">System Projects:</strong> Mark has developed several system projects that showcase his proficiency in software development. These projects demonstrate his ability to develop and maintain robust software systems that meet industry standards and best practices.</li>
+						<li><strong class="font-semibold my-text-secondary-color">Simple and Common Programs:</strong> Mark has developed simple and common programs that show his proficiency in programming concepts and logic. These projects are great examples of his ability to write clean and efficient code.</li>
+						<li><strong class="font-semibold my-text-secondary-color">Console &amp; Tools:</strong> Mark has created a range of useful tools to streamline development workflows, automate repetitive tasks, and improve overall productivity. These projects showcase his proficiency in using various programming tools and technologies and his ability to develop effective solutions to real-world problems.</li>
+					</ul>
+					<p class="text-lg text-gray-800 py-2">
+						Overall, Mark's portfolio showcases his passion for software development and his commitment to continuous learning and improvement. His projects demonstrate his ability to develop efficient and effective solutions to real-world problems, making him a valuable asset to any team.
+					</p>
+					<h4 class="text-3xl my-text-secondary-color font-bold py-8">Hobbies</h4>
+					<ul>
+						<li>
+							<div>
+								<h4 class="text-lg font-bold my-text-secondary-color">Programming and Scripting</h4>
+								<p class="text-gray-600" >I am passionate about programming and scripting and enjoy the challenge of writing code to solve complex problems.</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<h4 class="text-lg font-bold my-text-secondary-color">Reading Novels and Manga</h4>
+								<p class="text-gray-600">I love escaping into the worlds of novels and manga and finding joy in losing myself in a good book.</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<h4 class="text-lg font-bold my-text-secondary-color">Exploring New Knowledge</h4>
+								<p class="text-gray-600">I am a lifelong learner, always seeking new information to expand my knowledge and understanding of the world.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- skill section -->
+		<section id="skills"  class="h-auto my-8">
+			<div class="container mx-auto px-4">
+				<h2 class="text-3xl my-text-secondary-color font-bold py-8">My Skills</h2>
+				<div class="container mx-auto">
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+						<div class="rounded-none shadow-none border-1 border-gray-200 bg-white px-6 py-8">
+							<h5 class="text-2xl font-bold mb-4 my-text-secondary-color">IT Professional</h5>
+							<p class="text-lg text-justify text-gray-600">I am a trained IT professional with formal education in software development. This background has provided me with a strong foundation in computer science principles, programming concepts, and project development methodologies.</p>
+						</div>
+						<div class="rounded-none shadow-none border-1 border-gray-200 bg-white px-6 py-8">
+							<h5 class="text-2xl font-bold mb-4 my-text-secondary-color">Support of the Open-Source Community</h5>
+							<p class="text-lg text-justify text-gray-600">I am a strong supporter of the open-source community and believe in sharing my knowledge and skills to help others grow as developers. I regularly contribute to open-source projects and believe in the importance of collaboration and community-driven development.</p>
+						</div>
+						<div class="rounded-none shadow-none border-1 border-gray-200 bg-white px-6 py-8">
+							<h5 class="text-2xl font-bold mb-4 my-text-secondary-color">Strong Understanding of MVC Architecture</h5>
+							<p class="text-lg text-justify text-gray-600">I have a solid understanding of the Model-View-Controller (MVC) architecture and its role in creating efficient and maintainable web applications. I have used this architecture in multiple projects and have the skills to design and implement projects that adhere to its principles.</p>
+						</div>
+						<div class="rounded-none shadow-none border-1 border-gray-200 bg-white px-6 py-8">
+							<h5 class="text-2xl font-bold mb-4 my-text-secondary-color">Command-Line Tools and Reusable Templates</h5>
+							<p class="text-lg text-justify text-gray-600">I have created a collection of reusable templates, code snippets, and command-line tools that streamline project building and ensure the consistency of project deliverables. I have a strong eye for detail and always strive to create well-structured, maintainable code that is easy to understand and debug.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects" class="h-auto my-8">
+			<div class="container mx-auto px-4">
+				<h2 class="text-3xl my-text-secondary-color font-bold py-8">My Projects</h2>
+		
+				<div class="my-8">
+					<h3 class="text-2xl my-text-secondary-color font-bold py-4">System Projects</h3>
+					<p class="text-gray-600">Explore my collection of System Projects, which showcase my skills in designing and developing efficient software systems. From complex database management systems to user-friendly applications, each project demonstrates my dedication to delivering high-quality results that meet user needs.</p>
+					<div class="grid grid-cols-1 gap-4 sm:grid-cols-2" id="system-projects-container"></div>
+				</div>
+		
+				<div class="my-8">
+					<h3 class="text-2xl my-text-secondary-color font-bold py-4">Simple Programs</h3>
+					<p class="text-gray-600">This section showcases some of my projects that involve creating small, yet useful programs that solve everyday problems. From text editors to file organizers, these programs are designed to be user-friendly and efficient.</p>
+					<div class="grid grid-cols-1 gap-4 sm:grid-cols-2" id="simple-programs-container"></div>
+				</div>
+		
+				<div class="my-8">
+					<h3 class="text-2xl my-text-secondary-color font-bold py-4">Console & Tools</h3>
+					<p class="text-gray-600">Welcome to the projects section where you can browse through a selection of my command-line interface (CLI) applications and a variety of practical tools that I've developed to streamline development workflows, automate repetitive tasks, and boost overall productivity. These projects were created with the goal of not only improving my skills in using different programming tools and technologies, but also to gain a deeper understanding of project structure and development methodologies.</p>
+					<div class="grid grid-cols-1 gap-4 sm:grid-cols-2" id="console-tools-container"></div>
+				</div>
+		
+			</div>
+		</section>
+		
+	</main>
+
+	<footer class="my-bg-color text-white text-center py-4">
+		<div class="container mx-auto px-4">
+			<p class="text-sm">© 2021 Mark Wayne Menorca. All rights reserved.</p>
+		</div>
+	</footer>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js' integrity='sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==' crossorigin='anonymous'></script>
+	<script src="javascript/script.js"></script>
+</body>
+</html>
