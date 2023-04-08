@@ -3,70 +3,34 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- logo -->
-
 	<title>Marcuwynu Portfolio</title>
+	<meta name="description" content="This is a description of the page.">
+	<meta property="og:title" content="Mark Wayne Portfolio">
+	<link rel="icon" href="assets/logo.jpg" type="image/jpg">
+	<meta property="og:description" content="This is a description of the page.">
+	<meta property="og:image" content="https://marcuwynu23.github.io/image.jpg">
+	<meta property="og:url" content="https://marcuwynu23.github.io">
+	<meta property="og:type" content="website">
+
+
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<link href="style/tailwind.css" rel="stylesheet">
 	<link href="style/style.css" rel="stylesheet">
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Karla&family=Roboto:wght@700&display=swap');
-		:root{
-			--primary-color: #21382c;
-			--secondary-color: #ffffff;
-			--tertiary-color: #ffffff;
-		}
-		.my-text-color{
-			color: var(--secondary-color);
-		}
-		.my-text-secondary-color{
-			color: var(--primary-color);
-		}
-		.my-bg-color {
-			background-color: var(--primary-color);
-		}
-		* {
-			font-size: 10pt;
-			font-family: 'Karla', sans-serif;
-		}
-		h2{
-			font-weight: 900;
-			font-family: "Roboto", sans-serif;
-			font-size: 2.5em;
-			margin: 0 auto;
-		}
-
-		#quote-welcome-message{
-			font-weight: 900;
-			font-family: "Roboto", sans-serif;
-			font-size: 2.5em;
-			margin: 0 auto;
-		}
-
-		@media (max-width: 767px) {
-			/* Hide the desktop header */
-			#header {
-				display: none;
-			}
-			
-			/* Show the mobile menu when the button is clicked */
-			#menu.show {
-				display: block;
-			}
-		}
-		
-	</style>
-
 </head>
 <body>
-	
 	<header class="flex justify-end items-center my-bg-color py-4 px-8 md:block" id="header">
 	
 		<div>
 			<ul class="mx-auto">
-				<li class="inline-block ml-4 my-4 uppercase text-white"><a href="#home">Home</a></li>
-				<li class="inline-block mx-4 my-4 uppercase text-white"><a href="#about">About</a></li>
-				<li class="inline-block mx-4 my-4 uppercase text-white"><a href="#skills">Skills</a></li>
-				<li class="inline-block mx-4 my-4 uppercase text-white"><a href="#projects">Projects</a></li>
+				<li class="inline-block ml-4 my-4 uppercase text-white">
+					<span >
+						<span class="app-title-1">MW</span>
+						<span class="app-title-2">Portfolio</span> </span>
+				</li>
+				<li class="inline-block ml-4 my-4 uppercase text-white "><a href="#home">Home</a></li>
+				<li class="inline-block mx-2 my-4 uppercase text-white "><a href="#about">About</a></li>
+				<li class="inline-block mx-2 my-4 uppercase text-white "><a href="#skills">Skills</a></li>
+				<li class="inline-block mx-2 my-4 uppercase text-white "><a href="#projects">Projects</a></li>
 			
 			</ul>
 		</div>
@@ -74,45 +38,54 @@
 	
 	
 	<div class="md:hidden my-bg-color">
-		<div class="flex justify-end mx-2">
-			<button id="toggleBtn" class="block py-2 uppercase text-white"> <i class="bi bi-list"></i></button>
-			
-		</div>
-		<ul class=" hidden text-center" id="menu">
-			<li class="block py-2 uppercase text-white"><a href="#home">Home</a></li>
-			<li class="block py-2 uppercase text-white"><a href="#about">About</a></li>
-			<li class="block py-2 uppercase  text-white"><a href="#skills">Skills</a></li>
-			<li class="block py-2 uppercase text-white"><a href="#projects">Projects</a></li>
-		</ul>
-	</div>
+    <div class="flex justify-end mx-2">
+        <button id="toggleBtn" class="block py-2 uppercase text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd" d="M3.75 3.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1 0-1.5zm0 6h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1 0-1.5zm0 6h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1 0-1.5z"/>
+            </svg>
+        </button>
+    </div>
+    <ul class="hidden text-center uppercase text-white" id="menu">
+			<span >
+				<span class="app-title-1">MW</span>
+				<span class="app-title-2">Portfolio</span> </span>
+        <li class="block py-2 uppercase text-white "><a href="#home">Home</a></li>
+        <li class="block py-2 uppercase text-white "><a href="#about">About</a></li>
+        <li class="block py-2 uppercase text-white "><a href="#skills">Skills</a></li>
+        <li class="block py-2 uppercase text-white "><a href="#projects">Projects</a></li>
+    </ul>
+</div>
+
 	<main>
 		<!-- landing section -->
 		<section id="home" class="h-auto my-bg-color text-white">
 			<div class="flex flex-col justify-center items-center h-full">
-			
 				<p id="quote-welcome-message" class="text-4xl mt-2 max-w-md text-center ">"Maestros of creation evoke marvels from the unimagined."
 				</p>
-			
 				<a href="#projects" class="bg-white my-text-secondary-color font-bold py-2 px-4 rounded-full mt-8 hover:bg-gray-200">View Projects</a>
-		<ul>
-			<li class="inline-block mx-4 my-4 uppercase text-white">
-				<a href="https://www.linkedin.com/in/marcuwynu23/" class=" text-white"><i class="bi bi-linkedin fs-3" title="LinkedIn"></i>
-				Linkedin</a>
-			</li>
-			<li class="inline-block mx-4 my-4 uppercase text-white">
-				<a href="https://github.com/marcuwynu23" class=" text-white"><i class="bi bi-github fs-3" title="GitHub"></i>
-				Github</a>
-			</li>
-			<li class="inline-block mx-4 my-4 uppercase text-white">
-				<a href="https://www.facebook.com/marcuwynu23/" class=" text-white"><i class="bi bi-facebook fs-3" title="Facebook"></i>
-				Facebook
-				</a>
-			</li>
-			<li class="inline-block mx-4 my-4 uppercase text-white">
-				<a href="https://twitter.com/marcuwynu23" class=" text-white"><i class="bi bi-twitter fs-3" title="Twitter"></i>
-				Twitter</a>
-			</li>
-		</ul>
+				<ul>
+					<li class="inline-block mx-4 my-4 uppercase text-white">
+							<a href="https://www.linkedin.com/in/marcuwynu23/" class=" text-white">
+									<i class="bi bi-linkedin fs-3" title="LinkedIn"></i>
+							</a>
+					</li>
+					<li class="inline-block mx-4 my-4 uppercase text-white">
+							<a href="https://github.com/marcuwynu23" class=" text-white">
+									<i class="bi bi-github fs-3" title="GitHub"></i>
+							</a>
+					</li>
+					<li class="inline-block mx-4 my-4 uppercase text-white">
+							<a href="https://www.facebook.com/marcuwynu23/" class=" text-white">
+									<i class="bi bi-facebook fs-3" title="Facebook"></i>
+							</a>
+					</li>
+					<li class="inline-block mx-4 my-4 uppercase text-white">
+							<a href="https://twitter.com/marcuwynu23" class=" text-white">
+									<i class="bi bi-twitter fs-3" title="Twitter"></i>
+							</a>
+					</li>
+			</ul>
+			
 			</div>
 		</section>
 		
@@ -124,10 +97,10 @@
 				<h2 class="text-3xl my-text-secondary-color font-bold py-8">About Me</h2>
 				
 				<div class="container mx-auto my-8 px-4">
-					<p class="text-lg text-gray-800 py-2">
+					<p class=" text-gray-800 py-2">
 						Mark Wayne Menorca is an Information Technology graduate with a strong foundation in computer science principles, programming concepts, and project development methodologies. 
 					</p>
-					<p class="text-lg text-gray-800 py-2">
+					<p class=" text-gray-800 py-2">
 						In his free time, Mark enjoys building side projects that fall under the following categories:
 					</p>
 					<ul class="text-lg text-gray-800 py-2 list-disc pl-8">
@@ -135,7 +108,7 @@
 						<li><strong class="font-semibold my-text-secondary-color">Simple and Common Programs:</strong> Mark has developed simple and common programs that show his proficiency in programming concepts and logic. These projects are great examples of his ability to write clean and efficient code.</li>
 						<li><strong class="font-semibold my-text-secondary-color">Console &amp; Tools:</strong> Mark has created a range of useful tools to streamline development workflows, automate repetitive tasks, and improve overall productivity. These projects showcase his proficiency in using various programming tools and technologies and his ability to develop effective solutions to real-world problems.</li>
 					</ul>
-					<p class="text-lg text-gray-800 py-2">
+					<p class=" text-gray-800 py-2">
 						Overall, Mark's portfolio showcases his passion for software development and his commitment to continuous learning and improvement. His projects demonstrate his ability to develop efficient and effective solutions to real-world problems, making him a valuable asset to any team.
 					</p>
 					<h4 class="text-3xl my-text-secondary-color font-bold py-8">Hobbies</h4>
