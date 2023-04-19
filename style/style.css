@@ -1,9 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Karla&family=Roboto:wght@900&display=swap');
-
 :root {
-	--primary-color: #183726;
+	--primary-color: #214933;
 	--secondary-color: #ffffff;
 	--tertiary-color: #ffffff;
+}
+
+@font-face {
+	font-family: "Papyrus";
+	src: url('../assets/font/PAPYRUS.TTF');
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url('../assets/font/Roboto-Medium.ttf');
 }
 
 .my-text-color {
@@ -36,7 +44,7 @@ strong {
 
 .app-title-1 {
 	font-weight: 900;
-	font-family: 'Delicious Handrawn', cursive;
+	font-family: 'Papyrus', cursive;
 	font-size: 1.80em;
 	margin: 0 auto;
 }
@@ -50,7 +58,7 @@ strong {
 
 #quote-welcome-message {
 	font-weight: 900;
-	font-family: "Roboto", sans-serif;
+	font-family: "Papyrus", sans-serif;
 	font-size: 2.5em;
 	margin: 0 auto;
 }
