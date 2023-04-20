@@ -18,26 +18,23 @@
 	<link href="style/style.css" rel="stylesheet">
 </head>
 <body class="my-bg-secondary-color">
-	<header class="flex justify-end items-center my-bg-color py-4 px-8 md:block" id="header">
-	
-		<div>
-			<ul class="mx-auto">
-				<li class="inline-block ml-4 my-4 uppercase my-text-color">
-					<span >
-						<span class="app-title-1">MW</span>
-						<span class="app-title-2">Portfolio</span> </span>
-				</li>
-				<li class="inline-block ml-4 my-4 uppercase my-text-color font-bold"><a href="#home">Home</a></li>
-				<li class="inline-block mx-2 my-4 uppercase my-text-color font-bold"><a href="#about">About</a></li>
-				<li class="inline-block mx-2 my-4 uppercase my-text-color font-bold"><a href="#skills">Skills</a></li>
-				<li class="inline-block mx-2 my-4 uppercase my-text-color font-bold"><a href="#projects">Projects</a></li>
-			
-			</ul>
-		</div>
-	</header>
-	
-	
-	<div class="md:hidden my-bg-color">
+	<div class="landing-container gradient">
+		<header class="flex justify-end items-center py-4 px-8 md:block" id="header">
+			<div>
+				<ul class="mx-auto">
+					<li class="inline-block ml-4 my-5 uppercase my-text-color font-bold app-title">
+						MWPortfolio
+					</li>
+					<li class="inline-block ml-4 my-5 uppercase my-text-color font-bold"><a href="#home">Home</a></li>
+					<li class="inline-block mx-2 my-5 uppercase my-text-color font-bold"><a href="#about">About</a></li>
+					<li class="inline-block mx-2 my-5 uppercase my-text-color font-bold"><a href="#skills">Skills</a></li>
+					<li class="inline-block mx-2 my-5 uppercase my-text-color font-bold"><a href="#projects">Projects</a></li>
+				
+				</ul>
+			</div>
+		</header>
+		
+	<div class="md:hidden ">
     <div class="flex justify-end mx-2">
         <button id="toggleBtn" class="block py-2 uppercase my-text-color">
 					<svg xmlns="http://www.w3.org/2000/svg" style="color: #121212;" viewBox="0 0 24 24"  class="w-6 h-6">
@@ -46,50 +43,48 @@
         </button>
     </div>
     <ul class="hidden text-center uppercase my-text-color" id="menu">
-			<span >
-				<span class="app-title-1 my-text-color">MW</span>
-				<span class="app-title-2 my-text-color">Portfolio</span>
-			</span>
+				<span class="app-title my-text-color">MWPortfolio</span>
         <li class="block py-2 uppercase my-text-color font-bold"><a href="#home">Home</a></li>
         <li class="block py-2 uppercase my-text-color font-bold"><a href="#about">About</a></li>
         <li class="block py-2 uppercase my-text-color font-bold"><a href="#skills">Skills</a></li>
         <li class="block py-2 uppercase my-text-color font-bold"><a href="#projects">Projects</a></li>
     </ul>
 </div>
-
+<!-- landing section -->
+<section id="home" class="h-auto  my-text-color">
+	<div class="flex flex-col justify-center items-center w-full h-full">
+		<p id="quote-welcome-message" class="mt-2 max-w-lg text-center my-text-color">"Maestros of creation evoke marvels from the unimagined."
+		</p>
+		<a href="#projects" class="my-bg-secondary-color my-text-secondary-color font-bold py-2 px-4 rounded-full mt-8 hover:bg-gray-200">View Projects</a>
+		<ul>
+			<li class="inline-block mx-4 my-4 uppercase ">
+					<a href="https://www.linkedin.com/in/marcuwynu23/" class=" my-text-color">
+							<i class="bi bi-linkedin fs-3 my-text-color" title="LinkedIn"></i>
+					</a>
+			</li>
+			<li class="inline-block mx-4 my-4 uppercase ">
+					<a href="https://github.com/marcuwynu23" class=" my-text-color">
+							<i class="bi bi-github fs-3 my-text-color" title="GitHub"></i>
+					</a>
+			</li>
+			<li class="inline-block mx-4 my-4 uppercase ">
+					<a href="https://www.facebook.com/marcuwynu23/" class=" my-text-color">
+							<i class="bi bi-facebook fs-3 my-text-color" title="Facebook"></i>
+					</a>
+			</li>
+			<li class="inline-block mx-4 my-4 uppercase ">
+					<a href="https://twitter.com/marcuwynu23" class=" my-text-color">
+							<i class="bi bi-twitter fs-3 my-text-color" title="Twitter"></i>
+					</a>
+			</li>
+	</ul>
+	
+	</div>
+</section>
+	</div>
+		
 	<main>
-		<!-- landing section -->
-		<section id="home" class="h-auto my-bg-color my-text-color">
-			<div class="flex flex-col justify-center items-center h-full">
-				<p id="quote-welcome-message" class="mt-2 max-w-lg text-center my-text-color">"Maestros of creation evoke marvels from the unimagined."
-				</p>
-				<a href="#projects" class="my-bg-secondary-color my-text-secondary-color font-bold py-2 px-4 rounded-full mt-8 hover:bg-gray-200">View Projects</a>
-				<ul>
-					<li class="inline-block mx-4 my-4 uppercase my-text-color">
-							<a href="https://www.linkedin.com/in/marcuwynu23/" class=" my-text-color">
-									<i class="bi bi-linkedin fs-3" title="LinkedIn"></i>
-							</a>
-					</li>
-					<li class="inline-block mx-4 my-4 uppercase my-text-color">
-							<a href="https://github.com/marcuwynu23" class=" my-text-color">
-									<i class="bi bi-github fs-3" title="GitHub"></i>
-							</a>
-					</li>
-					<li class="inline-block mx-4 my-4 uppercase my-text-color">
-							<a href="https://www.facebook.com/marcuwynu23/" class=" my-text-color">
-									<i class="bi bi-facebook fs-3" title="Facebook"></i>
-							</a>
-					</li>
-					<li class="inline-block mx-4 my-4 uppercase my-text-color">
-							<a href="https://twitter.com/marcuwynu23" class=" my-text-color">
-									<i class="bi bi-twitter fs-3" title="Twitter"></i>
-							</a>
-					</li>
-			</ul>
-			
-			</div>
-		</section>
-
+	
 		<div class="container-fluid ">
 		<!-- about section -->
 		<section id="about"  class="h-auto mb-8 flex flex-col md:flex-row">
@@ -169,27 +164,27 @@
 				<div class="my-8">
 					<h3 class="text-2xl my-text-secondary-color font-bold py-4">Console & Tools</h3>
 					<p class=" my-4">This section showcases my command-line interface (CLI) applications and other practical tools that I've developed to boost productivity and streamline workflows. These projects were created to enhance my programming skills and deepen my understanding of project development methodologies.</p>
-					<div class="grid grid-cols-4 gap-3 sm:grid-cols-3" id="console-tools-container"></div>
+					<div class="grid grid-cols-1 gap-3 sm:grid-cols-3" id="console-tools-container"></div>
 				</div>
 		
 				<div class="my-8">
 					<h3 class="text-2xl my-text-secondary-color font-bold py-4">Simple Programs</h3>
 					<p class=" my-4">This section showcases some of my projects that involve creating small, yet useful programs that solve everyday problems. From text editors to file organizers, these programs are designed to be user-friendly and efficient.</p>
-					<div class="grid grid-cols-1 gap-4 sm:grid-cols-2" id="simple-programs-container"></div>
+					<div class="grid grid-cols-1 gap-3 sm:grid-cols-3" id="simple-programs-container"></div>
 				</div>
 
 				<div class="my-8">
 					<h3 class="text-2xl my-text-secondary-color font-bold py-4">System Projects</h3>
 					<p class=" my-4">This collection showcases my skills in designing and developing efficient software systems. From complex database management systems to user-friendly applications, each project highlights my commitment to delivering high-quality results that meet user needs.</p>
-					<div class="grid grid-cols-1 gap-4 sm:grid-cols-2" id="system-projects-container"></div>
+					<div class="grid grid-cols-1 gap-3 sm:grid-cols-3" id="system-projects-container"></div>
 				</div>
 			</div>
 		</section>
 		</div>
 	</main>
-	<footer class="my-bg-color my-text-color text-center py-4">
+	<footer class="gradient  text-center py-5">
 		<div class="container mx-auto px-4">
-			<p class="text-sm">© 2021 Mark Wayne Menorca. All rights reserved.</p>
+			<p class="text-sm my-text-color">© 2021 Mark Wayne Menorca. All rights reserved.</p>
 		</div>
 	</footer>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js' integrity='sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==' crossorigin='anonymous'></script>

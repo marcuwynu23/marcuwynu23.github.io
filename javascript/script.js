@@ -9,8 +9,8 @@ function insertProject(containerId, project) {
 	const projectContainer = $(containerId);
 	const projectCard = $("<div>", { "class": "rounded-lg  max-w-lg overflow-hidden p-3 flex flex-col" });
 
-	const imageContainer = $("<div>", { "class": "w-full" });
-	const image = $("<img>", { "class": "object-cover w-full rounded-md", "src": project.imageUrl, "alt": project.title });
+	const imageContainer = $("<div>", { "class": "w-full flex justify-center" });
+	const image = $("<img>", { "class": "object-cover max-w-md  rounded-md", "src": project.imageUrl, "alt": project.title });
 	imageContainer.append(image);
 
 	const contentContainer = $("<div>", { "class": "p-6" });
