@@ -7,17 +7,17 @@ $('#toggleBtn').on('click', function () {
 
 function insertProject(containerId, project) {
 	const projectContainer = $(containerId);
-	const projectCard = $("<div>", { "class": "rounded-lg bg-gray-100 overflow-hidden p-3 flex flex-col" });
+	const projectCard = $("<div>", { "class": "rounded-lg  max-w-lg overflow-hidden p-3 flex flex-col" });
 
-	const imageContainer = $("<div>", { "class": "h-90 w-full" });
+	const imageContainer = $("<div>", { "class": "w-full" });
 	const image = $("<img>", { "class": "object-cover w-full rounded-md", "src": project.imageUrl, "alt": project.title });
 	imageContainer.append(image);
 
 	const contentContainer = $("<div>", { "class": "p-6" });
 	const titleElement = $("<h3>", { "class": "text-lg font-semibold mb-2 my-text-secondary-color", "text": project.title });
-	const descriptionElement = $("<p>", { "class": "text-gray-700 text-base text-gray-600 ", "text": project.description });
+	const descriptionElement = $("<p>", { "class": " text-base text-gray-200 ", "text": project.description });
 
-	const languageElement = $("<span>", { "class": "text-xl text-gray-600", "text": project.language });
+	const languageElement = $("<span>", { "class": "text-xl text-gray-400", "text": project.language });
 
 	contentContainer.append(titleElement);
 	contentContainer.append(languageElement);
@@ -85,14 +85,14 @@ setProjects(repoNames, 'tool')
 
 
 const simpleProjects = [
-	{
-		title: "Just Utility",
-		description: "A simple utility library for nodejs",
-		imageUrl: "assets/logo.jpg",
-		link: "",
-		language: "C++",
-		topics: ["utility", "nodejs"]
-	},
+	// {
+	// 	title: "Just Utility",
+	// 	description: "A simple utility library for nodejs",
+	// 	imageUrl: "assets/logo.jpg",
+	// 	link: "",
+	// 	language: "C++",
+	// 	topics: ["utility", "nodejs"]
+	// },
 ]
 let simpleProjectContainerId = "#simple-programs-container";
 simpleProjects.forEach(project => insertProject(simpleProjectContainerId, project))

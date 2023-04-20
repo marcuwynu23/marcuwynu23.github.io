@@ -17,20 +17,20 @@
 	<link href="style/tailwind.css" rel="stylesheet">
 	<link href="style/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="my-bg-secondary-color">
 	<header class="flex justify-end items-center my-bg-color py-4 px-8 md:block" id="header">
 	
 		<div>
 			<ul class="mx-auto">
-				<li class="inline-block ml-4 my-4 uppercase text-white">
+				<li class="inline-block ml-4 my-4 uppercase my-text-color">
 					<span >
 						<span class="app-title-1">MW</span>
 						<span class="app-title-2">Portfolio</span> </span>
 				</li>
-				<li class="inline-block ml-4 my-4 uppercase text-white "><a href="#home">Home</a></li>
-				<li class="inline-block mx-2 my-4 uppercase text-white "><a href="#about">About</a></li>
-				<li class="inline-block mx-2 my-4 uppercase text-white "><a href="#skills">Skills</a></li>
-				<li class="inline-block mx-2 my-4 uppercase text-white "><a href="#projects">Projects</a></li>
+				<li class="inline-block ml-4 my-4 uppercase my-text-color font-bold"><a href="#home">Home</a></li>
+				<li class="inline-block mx-2 my-4 uppercase my-text-color font-bold"><a href="#about">About</a></li>
+				<li class="inline-block mx-2 my-4 uppercase my-text-color font-bold"><a href="#skills">Skills</a></li>
+				<li class="inline-block mx-2 my-4 uppercase my-text-color font-bold"><a href="#projects">Projects</a></li>
 			
 			</ul>
 		</div>
@@ -39,48 +39,49 @@
 	
 	<div class="md:hidden my-bg-color">
     <div class="flex justify-end mx-2">
-        <button id="toggleBtn" class="block py-2 uppercase text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                <path fill-rule="evenodd" d="M3.75 3.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1 0-1.5zm0 6h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1 0-1.5zm0 6h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1 0-1.5z"/>
-            </svg>
+        <button id="toggleBtn" class="block py-2 uppercase my-text-color">
+					<svg xmlns="http://www.w3.org/2000/svg" style="color: #121212;" viewBox="0 0 24 24"  class="w-6 h-6">
+						<path fill-rule="evenodd" d="M -0.3 6.8 h 16.5 C 16.7 6.8 17 7.1 17 7.5 C 17 7.9 16.7 8.3 16.3 8.3 H -0.3 C -0.7 8.3 -1 7.9 -1 7.5 C -1 7.1 -0.7 6.8 -0.3 6.8 z m 0 6 h 16.5 C 16.7 12.8 17 13.1 17 13.5 C 17 13.9 16.7 14.3 16.3 14.3 H -0.3 C -0.7 14.3 -1 13.9 -1 13.5 C -1 13.1 -0.7 12.8 -0.3 12.8 z m 0 6 h 16.5 C 16.7 18.8 17 19.1 17 19.5 C 17 19.9 16.7 20.3 16.3 20.3 H -0.3 C -0.7 20.3 -1 19.9 -1 19.5 C -1 19.1 -0.7 18.8 -0.3 18.8 z"/>
+				</svg>
         </button>
     </div>
-    <ul class="hidden text-center uppercase text-white" id="menu">
+    <ul class="hidden text-center uppercase my-text-color" id="menu">
 			<span >
-				<span class="app-title-1">MW</span>
-				<span class="app-title-2">Portfolio</span> </span>
-        <li class="block py-2 uppercase text-white "><a href="#home">Home</a></li>
-        <li class="block py-2 uppercase text-white "><a href="#about">About</a></li>
-        <li class="block py-2 uppercase text-white "><a href="#skills">Skills</a></li>
-        <li class="block py-2 uppercase text-white "><a href="#projects">Projects</a></li>
+				<span class="app-title-1 my-text-color">MW</span>
+				<span class="app-title-2 my-text-color">Portfolio</span>
+			</span>
+        <li class="block py-2 uppercase my-text-color font-bold"><a href="#home">Home</a></li>
+        <li class="block py-2 uppercase my-text-color font-bold"><a href="#about">About</a></li>
+        <li class="block py-2 uppercase my-text-color font-bold"><a href="#skills">Skills</a></li>
+        <li class="block py-2 uppercase my-text-color font-bold"><a href="#projects">Projects</a></li>
     </ul>
 </div>
 
 	<main>
 		<!-- landing section -->
-		<section id="home" class="h-auto my-bg-color text-white">
+		<section id="home" class="h-auto my-bg-color my-text-color">
 			<div class="flex flex-col justify-center items-center h-full">
-				<p id="quote-welcome-message" class="text-4xl mt-2 max-w-md text-center ">"Maestros of creation evoke marvels from the unimagined."
+				<p id="quote-welcome-message" class="mt-2 max-w-lg text-center my-text-color">"Maestros of creation evoke marvels from the unimagined."
 				</p>
-				<a href="#projects" class="bg-white my-text-secondary-color font-bold py-2 px-4 rounded-full mt-8 hover:bg-gray-200">View Projects</a>
+				<a href="#projects" class="my-bg-secondary-color my-text-secondary-color font-bold py-2 px-4 rounded-full mt-8 hover:bg-gray-200">View Projects</a>
 				<ul>
-					<li class="inline-block mx-4 my-4 uppercase text-white">
-							<a href="https://www.linkedin.com/in/marcuwynu23/" class=" text-white">
+					<li class="inline-block mx-4 my-4 uppercase my-text-color">
+							<a href="https://www.linkedin.com/in/marcuwynu23/" class=" my-text-color">
 									<i class="bi bi-linkedin fs-3" title="LinkedIn"></i>
 							</a>
 					</li>
-					<li class="inline-block mx-4 my-4 uppercase text-white">
-							<a href="https://github.com/marcuwynu23" class=" text-white">
+					<li class="inline-block mx-4 my-4 uppercase my-text-color">
+							<a href="https://github.com/marcuwynu23" class=" my-text-color">
 									<i class="bi bi-github fs-3" title="GitHub"></i>
 							</a>
 					</li>
-					<li class="inline-block mx-4 my-4 uppercase text-white">
-							<a href="https://www.facebook.com/marcuwynu23/" class=" text-white">
+					<li class="inline-block mx-4 my-4 uppercase my-text-color">
+							<a href="https://www.facebook.com/marcuwynu23/" class=" my-text-color">
 									<i class="bi bi-facebook fs-3" title="Facebook"></i>
 							</a>
 					</li>
-					<li class="inline-block mx-4 my-4 uppercase text-white">
-							<a href="https://twitter.com/marcuwynu23" class=" text-white">
+					<li class="inline-block mx-4 my-4 uppercase my-text-color">
+							<a href="https://twitter.com/marcuwynu23" class=" my-text-color">
 									<i class="bi bi-twitter fs-3" title="Twitter"></i>
 							</a>
 					</li>
@@ -88,8 +89,8 @@
 			
 			</div>
 		</section>
-		
-		
+
+		<div class="container-fluid ">
 		<!-- about section -->
 		<section id="about"  class="h-auto mb-8 flex flex-col md:flex-row">
 		
@@ -97,38 +98,38 @@
 				<h2 class="text-3xl my-text-secondary-color font-bold py-8">About Me</h2>
 				
 				<div class="container mx-auto my-8 px-4">
-					<p class=" text-gray-800 py-2">
+					<p class="  py-2">
 						Mark Wayne Menorca is an Information Technology graduate with a strong foundation in computer science principles, programming concepts, and project development methodologies. 
 					</p>
-					<p class=" text-gray-800 py-2">
+					<p class="  py-2">
 						In his free time, Mark enjoys building side projects that fall under the following categories:
 					</p>
-					<ul class="text-lg text-gray-800 py-2 list-disc pl-8">
+					<ul class="text-lg  py-2 list-disc pl-8">
 						<li><strong class="font-semibold my-text-secondary-color">System Projects:</strong> Mark has developed several system projects that showcase his proficiency in software development. These projects demonstrate his ability to develop and maintain robust software systems that meet industry standards and best practices.</li>
 						<li><strong class="font-semibold my-text-secondary-color">Simple and Common Programs:</strong> Mark has developed simple and common programs that show his proficiency in programming concepts and logic. These projects are great examples of his ability to write clean and efficient code.</li>
 						<li><strong class="font-semibold my-text-secondary-color">Console &amp; Tools:</strong> Mark has created a range of useful tools to streamline development workflows, automate repetitive tasks, and improve overall productivity. These projects showcase his proficiency in using various programming tools and technologies and his ability to develop effective solutions to real-world problems.</li>
 					</ul>
-					<p class=" text-gray-800 py-2">
+					<p class="  py-2">
 						Overall, Mark's portfolio showcases his passion for software development and his commitment to continuous learning and improvement. His projects demonstrate his ability to develop efficient and effective solutions to real-world problems, making him a valuable asset to any team.
 					</p>
 					<h4 class="text-3xl my-text-secondary-color font-bold py-8">Hobbies</h4>
 					<ul>
 						<li>
-							<div class="rounded-lg shadow-none border-1 border-gray-200 bg-gray-100  px-6 py-8 my-2">
+							<div class="rounded-lg shadow-none border-1 border-gray-200   px-6 py-8 my-2">
 								<h4 class="text-lg font-bold my-text-secondary-color">Programming and Scripting</h4>
-								<p class="text-gray-600" >I am passionate about programming and scripting and enjoy the challenge of writing code to solve complex problems.</p>
+								<p class="" >I am passionate about programming and scripting and enjoy the challenge of writing code to solve complex problems.</p>
 							</div>
 						</li>
 						<li>
-							<div class="rounded-lg shadow-none border-1 border-gray-200 bg-gray-100  px-6 py-8 my-2">
+							<div class="rounded-lg shadow-none border-1 border-gray-200   px-6 py-8 my-2">
 								<h4 class="text-lg font-bold my-text-secondary-color">Reading Novels and Manga</h4>
-								<p class="text-gray-600">I love escaping into the worlds of novels and manga and finding joy in losing myself in a good book.</p>
+								<p class="">I love escaping into the worlds of novels and manga and finding joy in losing myself in a good book.</p>
 							</div>
 						</li>
 						<li>
-							<div class="rounded-lg shadow-none border-1 border-gray-200 bg-gray-100  px-6 py-8 my-2">
+							<div class="rounded-lg shadow-none border-1 border-gray-200   px-6 py-8 my-2">
 								<h4 class="text-lg font-bold my-text-secondary-color">Exploring New Knowledge</h4>
-								<p class="text-gray-600">I am a lifelong learner, always seeking new information to expand my knowledge and understanding of the world.</p>
+								<p class="">I am a lifelong learner, always seeking new information to expand my knowledge and understanding of the world.</p>
 							</div>
 						</li>
 					</ul>
@@ -141,21 +142,21 @@
 				<h2 class="text-3xl my-text-secondary-color font-bold py-8">My Skills</h2>
 				<div class="container mx-auto">
 					<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-						<div class="rounded-lg shadow-none border-1 border-gray-200 bg-gray-100  px-6 py-8">
+						<div class="rounded-lg shadow-none border-1 border-gray-200   px-6 py-8">
 							<h5 class="text-2xl font-bold mb-4 my-text-secondary-color">IT Professional</h5>
-							<p class="text-lg text-justify text-gray-600">I am a trained IT professional with formal education in software development. This background has provided me with a strong foundation in computer science principles, programming concepts, and project development methodologies.</p>
+							<p class="text-lg text-justify ">I am a trained IT professional with formal education in software development. This background has provided me with a strong foundation in computer science principles, programming concepts, and project development methodologies.</p>
 						</div>
-						<div class="rounded-lg shadow-none border-1 border-gray-200 bg-gray-100 px-6 py-8">
+						<div class="rounded-lg shadow-none border-1 border-gray-200  px-6 py-8">
 							<h5 class="text-2xl font-bold mb-4 my-text-secondary-color">Support of the Open-Source Community</h5>
-							<p class="text-lg text-justify text-gray-600">I am a strong supporter of the open-source community and believe in sharing my knowledge and skills to help others grow as developers. I regularly contribute to open-source projects and believe in the importance of collaboration and community-driven development.</p>
+							<p class="text-lg text-justify ">I am a strong supporter of the open-source community and believe in sharing my knowledge and skills to help others grow as developers. I regularly contribute to open-source projects and believe in the importance of collaboration and community-driven development.</p>
 						</div>
-						<div class="rounded-lg shadow-none border-1 border-gray-200 bg-gray-100 px-6 py-8">
+						<div class="rounded-lg shadow-none border-1 border-gray-200  px-6 py-8">
 							<h5 class="text-2xl font-bold mb-4 my-text-secondary-color">Strong Understanding of MVC Architecture</h5>
-							<p class="text-lg text-justify text-gray-600">I have a solid understanding of the Model-View-Controller (MVC) architecture and its role in creating efficient and maintainable web applications. I have used this architecture in multiple projects and have the skills to design and implement projects that adhere to its principles.</p>
+							<p class="text-lg text-justify ">I have a solid understanding of the Model-View-Controller (MVC) architecture and its role in creating efficient and maintainable web applications. I have used this architecture in multiple projects and have the skills to design and implement projects that adhere to its principles.</p>
 						</div>
-						<div class="rounded-lg shadow-none border-1 border-gray-200 bg-gray-100 px-6 py-8">
+						<div class="rounded-lg shadow-none border-1 border-gray-200  px-6 py-8">
 							<h5 class="text-2xl font-bold mb-4 my-text-secondary-color">Command-Line Tools and Reusable Templates</h5>
-							<p class="text-lg text-justify text-gray-600">I have created a collection of reusable templates, code snippets, and command-line tools that streamline project building and ensure the consistency of project deliverables. I have a strong eye for detail and always strive to create well-structured, maintainable code that is easy to understand and debug.</p>
+							<p class="text-lg text-justify ">I have created a collection of reusable templates, code snippets, and command-line tools that streamline project building and ensure the consistency of project deliverables. I have a strong eye for detail and always strive to create well-structured, maintainable code that is easy to understand and debug.</p>
 						</div>
 					</div>
 				</div>
@@ -167,27 +168,26 @@
 				<h2 class="text-3xl my-text-secondary-color font-bold py-8">My Projects</h2>
 				<div class="my-8">
 					<h3 class="text-2xl my-text-secondary-color font-bold py-4">Console & Tools</h3>
-					<p class="text-gray-600">Welcome to the projects section where you can browse through a selection of my command-line interface (CLI) applications and a variety of practical tools that I've developed to streamline development workflows, automate repetitive tasks, and boost overall productivity. These projects were created with the goal of not only improving my skills in using different programming tools and technologies, but also to gain a deeper understanding of project structure and development methodologies.</p>
-					<div class="grid grid-cols-1 gap-4 sm:grid-cols-2" id="console-tools-container"></div>
+					<p class=" my-4">This section showcases my command-line interface (CLI) applications and other practical tools that I've developed to boost productivity and streamline workflows. These projects were created to enhance my programming skills and deepen my understanding of project development methodologies.</p>
+					<div class="grid grid-cols-4 gap-3 sm:grid-cols-3" id="console-tools-container"></div>
 				</div>
 		
 				<div class="my-8">
 					<h3 class="text-2xl my-text-secondary-color font-bold py-4">Simple Programs</h3>
-					<p class="text-gray-600">This section showcases some of my projects that involve creating small, yet useful programs that solve everyday problems. From text editors to file organizers, these programs are designed to be user-friendly and efficient.</p>
+					<p class=" my-4">This section showcases some of my projects that involve creating small, yet useful programs that solve everyday problems. From text editors to file organizers, these programs are designed to be user-friendly and efficient.</p>
 					<div class="grid grid-cols-1 gap-4 sm:grid-cols-2" id="simple-programs-container"></div>
 				</div>
 
 				<div class="my-8">
 					<h3 class="text-2xl my-text-secondary-color font-bold py-4">System Projects</h3>
-					<p class="text-gray-600">Explore my collection of System Projects, which showcase my skills in designing and developing efficient software systems. From complex database management systems to user-friendly applications, each project demonstrates my dedication to delivering high-quality results that meet user needs.</p>
+					<p class=" my-4">This collection showcases my skills in designing and developing efficient software systems. From complex database management systems to user-friendly applications, each project highlights my commitment to delivering high-quality results that meet user needs.</p>
 					<div class="grid grid-cols-1 gap-4 sm:grid-cols-2" id="system-projects-container"></div>
 				</div>
 			</div>
 		</section>
-		
+		</div>
 	</main>
-
-	<footer class="my-bg-color text-white text-center py-4">
+	<footer class="my-bg-color my-text-color text-center py-4">
 		<div class="container mx-auto px-4">
 			<p class="text-sm">© 2021 Mark Wayne Menorca. All rights reserved.</p>
 		</div>

@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Nunito:wght@400;800&display=swap');
+
 :root {
-	--primary-color: #214933;
-	--secondary-color: #ffffff;
+	--primary-color: #38c65c;
+	--secondary-color: #121212;
 	--tertiary-color: #ffffff;
 }
 
@@ -26,9 +28,14 @@
 	background-color: var(--primary-color);
 }
 
+.my-bg-secondary-color {
+	background-color: var(--secondary-color);
+}
+
 * {
+	color: white;
 	font-size: 10pt;
-	font-family: 'Karla', sans-serif;
+	font-family: 'Nunito', sans-serif;
 }
 
 h2,
@@ -36,29 +43,29 @@ h3,
 h4,
 h5,
 strong {
-	font-weight: 900;
-	font-family: "Roboto", sans-serif;
+	font-weight: 800;
+	font-family: "Nunito", sans-serif;
 	margin: 0 auto;
 }
 
 
 .app-title-1 {
-	font-weight: 900;
-	font-family: 'Papyrus', cursive;
+	font-weight: 800;
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.80em;
 	margin: 0 auto;
 }
 
 .app-title-2 {
-	font-weight: 900;
-	font-family: "Roboto", sans-serif;
+	font-weight: 800;
+	font-family: "Nunito", sans-serif;
 	font-size: 1.5em;
 	margin: 0 auto;
 }
 
 #quote-welcome-message {
-	font-weight: 900;
-	font-family: "Papyrus", sans-serif;
+	font-weight: 800;
+	font-family: "Josefin Sans", sans-serif;
 	font-size: 2.5em;
 	margin: 0 auto;
 }
