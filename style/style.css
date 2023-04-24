@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;800&display=swap');
 
 :root {
-	--primary-color: #38c65c;
-	--secondary-color: #212121;
+	--primary-color: #32c858;
+	--secondary-color: #1b1a1a;
 	--tertiary-color: #ffffff;
+	--special-color: #1b1a1a;
+	--font: 'Roboto', sans-serif;
 }
 
 .gradient {
-	background: #38c65c;
-	background: radial-gradient(circle, #38c65c 0%, #38c65be8 63%, #38c65bc5 100%);
+	background: #32c858;
 }
+
 
 .my-text-color {
 	color: var(--secondary-color);
@@ -27,10 +29,18 @@
 	background-color: var(--secondary-color);
 }
 
+.my-bg-special-color {
+	background-color: var(--special-color);
+}
+
 * {
 	color: white;
-	font-size: 10pt;
-	font-family: 'Nunito', sans-serif;
+	font-size: 13pt;
+	font-family: var(--font);
+}
+
+.card {
+	background-color: var(--special-color);
 }
 
 h2,
@@ -39,23 +49,20 @@ h4,
 h5,
 strong {
 	font-weight: 800;
-	font-family: "Nunito", sans-serif;
 	margin: 0 auto;
 }
 
 
 .app-title {
 	font-weight: 800;
-	font-family: 'Nunito', sans-serif;
 	font-size: 1.80em;
 	margin: 0 auto;
 }
 
 #quote-welcome-message {
 	font-weight: 800;
-	font-family: "Nunito", sans-serif;
 	font-size: 2.5em;
-	margin: 0 auto;
+
 }
 
 @media (max-width: 767px) {
