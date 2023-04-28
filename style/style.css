@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
 	--primary-color: #c0c0c0;
-	--secondary-color: #171719;
+	--secondary-color: #1c1e21;
 	--tertiary-color: #ffffff;
 	--special-color: #202429;
-	--font: 'Noto Sans', sans-serif;
+	--font: 'Roboto', sans-serif;
 }
 
 .gradient {
@@ -66,6 +66,9 @@ strong {
 }
 
 @media (max-width: 767px) {
+	* {
+		font-size: 10pt;
+	}
 
 	/* Hide the desktop header */
 	#header {
