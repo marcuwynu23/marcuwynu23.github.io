@@ -6,13 +6,12 @@ $('#toggleBtn').on('click', function () {
 
 function insertProject(containerId, project) {
 	const projectContainer = $(containerId);
-	const projectCard = $("<div>", { "class": "card rounded-lg shadow-sm border-none overflow-hidden p-5 flex flex-col" });
+	const projectCard = $("<div>", { "class": "card rounded-lg shadow-sm border-none overflow-hidden p-5 flex flex-col animate__animated animate__fadeIn" });
 
 	let titleUppercase = project.title.toUpperCase();
-
 	const contentContainer = $("<div>", { "class": "p-6" });
 	const titleElement = $("<h3>", { "class": "text-lg font-semibold mb-2 my-text-secondary-color", "text": titleUppercase });
-	const descriptionElement = $("<p>", { "class": " text-base text-gray-200 text-justify ", "text": project.description });
+	const descriptionElement = $("<p>", { "class": " text-gray-200 text-justify ", "text": project.description });
 
 	const languageElement = $("<span>", { "class": "text-sm text-gray-400 py-5", "text": project.language });
 
@@ -24,116 +23,67 @@ function insertProject(containerId, project) {
 	// topics here 
 	const topicsContainer = $("<div>", { "class": "flex flex-wrap mt-2" });
 	project.topics.forEach(topic => {
-		const topicElement = $("<span>", { "class": "my-bg-secondary-color my-text-secondary-color shadow-lg font-bold text-xs  rounded-full mr-2 px-2 py-1 m-2", "text": topic });
+		const topicElement = $("<span>", { "class": "my-bg-secondary-color my-text-secondary-color shadow-sm text-xs  rounded-full mr-2 px-2 py-1 m-2", "text": topic });
 		topicsContainer.append(topicElement);
 	});
-	const otherContainer = $("<div>", { "class": "flex flex-wrap m-2" });
+
+	const otherContainer = $("<div>", { "class": "flex flex-wrap m-2 text-center" });
+
 
 	const repoElement = $("<a>", { "class": "m-2  inline  rounded ", "href": project.link, "text": "Repository" });
-	const repoIcon = $("<span>", { "class": "bi bi-github me-1" });
+	const repoIcon = $("<span>", { "class": "fas fa-file-code me-1" });
 	repoElement.prepend(repoIcon);
 
 	const docElement = $("<a>", { "class": "m-2  inline rounded", "href": project.link, "text": "Documentation" });
-	const docIcon = $("<span>", { "class": "bi bi-book me-1" });
+	const docIcon = $("<span>", { "class": "fas fa-file-pdf me-1" });
 	docElement.prepend(docIcon);
 
-	const imageContainer = $("<div>", { "class": "w-full flex justify-center " });
-	const image = $("<img>", { "class": "object-cover max-w-md  rounded-md m-5 p-5", "src": project.imageUrl, "alt": project.title });
-	imageContainer.append(image);
+	function createImageGrid(images) {
+		const container = document.createElement('div');
+		container.classList.add('grid', 'grid-cols-2', 'md:grid-cols-3', 'gap-4', 'my-2');
+
+		images.forEach(imageUrl => {
+			const div = document.createElement('div');
+			const img = document.createElement('img');
+			const link = document.createElement('a');
+			link.setAttribute('href', imageUrl);
+			link.setAttribute('target', '_blank');
+			img.classList.add('h-auto', 'max-w-full', 'rounded-lg', 'border-4', 'border-slate-700');
+			img.setAttribute('src', imageUrl);
+			img.setAttribute('alt', '');
+			link.appendChild(img);
+
+
+			div.appendChild(link);
+			container.appendChild(div);
+		});
+		return container;
+	}
+
+	const imageGrid = createImageGrid(project.screenshots);
+
+
+	const videoContainer = $("<div>", { "class": "flex justify-center w-full m-2" });
+	const videoElement = $("<iframe>", { "class": "m-2 inline rounded", "src": "https://www.youtube.com/embed/vCzhn-pHvGg", "text": "Repository", "allowfullscreen": true });
+
+	videoContainer.append(videoElement);
+
+
 
 	otherContainer.append(repoElement);
 	otherContainer.append(docElement);
 
-
-	projectCard.append(contentContainer);
 	projectCard.append(otherContainer);
+	projectCard.append(contentContainer);
+
+	projectCard.append(imageGrid);
+	let topicsTitle = document.createElement('h5');
+	topicsTitle.textContent = 'Topics and keywords';
+	topicsTitle.classList.add('my-3', 'my-text-secondary-color');
+	projectCard.append(topicsTitle);
 	projectCard.append(topicsContainer);
 	projectContainer.append(projectCard);
-	// projectCard.append(imageContainer);
+
 }
 
 
-
-const repoNames = ['sdir', 'what-port-is', 'stgen-cli', 'bahagi', 'just-utility', 'AutoCLI']; // list of repository names to filter by
-function setProjects(repoNames, filter) {
-	fetch('https://api.github.com/users/marcuwynu23/repos?sort=updated&direction=desc')
-		.then(response => response.json())
-		.then(data => {
-			const filteredRepos = data.filter(repo => repoNames.includes(repo.name));
-			console.log(data)
-			data.forEach(repo => {
-				// check if topics contains 'tool' and 'console'
-				if (!repo.topics.includes(filter)) return
-				let imageUrl = repo.html_url + "/blob/main/docs/images/1.jpg?raw=true"
-				const project = {
-					title: repo.name,
-					description: repo.description,
-					imageUrl: imageUrl,
-					link: repo.html_url,
-					language: repo.language,
-					topics: repo.topics
-				};
-				insertProject("#console-tools-container", project);
-			}
-			);
-		})
-		.catch(error => console.error(error));
-}
-
-setProjects(repoNames, 'tool')
-
-
-
-
-
-const simpleProjects = [
-	// {
-	// 	title: "Just Utility",
-	// 	description: "A simple utility library for nodejs",
-	// 	imageUrl: "assets/logo.jpg",
-	// 	link: "",
-	// 	language: "C++",
-	// 	topics: ["utility", "nodejs"]
-	// },
-]
-let simpleProjectContainerId = "#simple-programs-container";
-simpleProjects.forEach(project => insertProject(simpleProjectContainerId, project))
-
-
-//temporary data insertion in system Project
-const systemProjects = [
-	{
-		title: "Kalapatid: Pigeon Raising and Sport Management System",
-		description: "The Kalapatid Pigeon Raising and Sport Management System is a web-based application built using JavaScript that manages the pigeon raising and sport activities of the Kalapatid Pigeon Club. It enables members to manage their pigeon inventory, track breeding activities, register for racing events, and communicate with other members.",
-		imageUrl: "assets/systems/kpsms.jpg",
-		link: "",
-		language: "ExpressJS, Mongodb,NodeJS and Nunjucks Template Engine",
-		topics: ["pigeon-raising", "sport", "agriculture", "nodejs"]
-	},
-	{
-		title: "Mini Store Management System",
-		description: "A Mini Store Management System is a software application that allows store owners to manage their inventory effectively. It helps track the quantity of products available, sales made, and other details such as supplier information, purchase orders, and customer records. The system is built using JavaScript and Vue.js, making it a responsive and dynamic web application that can be accessed from any device with an internet connection. The interface is intuitive and user-friendly, allowing users to navigate through different features easily. With this system, store owners can make informed decisions, manage stock levels efficiently, and provide better customer service.",
-		imageUrl: "assets/logo.jpg",
-		link: "",
-		language: "MEVN stack",
-		topics: ["store", "management", "system", "mini-store"]
-	},
-	{
-		title: "Online Examination System",
-		description: "This system is designed to manage online examinations for students. It allows teachers to create and administer tests, and students to take them remotely through a secure online platform. The system can automatically grade the tests and provide detailed reports on student performance, making it easier for teachers to evaluate and improve their teaching.",
-		imageUrl: "assets/logo.jpg",
-		link: "",
-		language: "MEAN stack",
-		topics: ["online-examination", "examination", "system"]
-	},
-	{
-		title: "Blog Content Management System",
-		description: "This system manages the content of a blog and handles the API data to the client-side. It enables bloggers to create, edit and publish their posts through an easy-to-use interface. Additionally, it fetches data from external APIs and displays it on the client-side, allowing bloggers to supplement their content with additional information.",
-		imageUrl: "assets/logo.jpg",
-		link: "",
-		language: "MEVN stack",
-		topics: ["blog", "content-management", "system", "headless"]
-	}
-]
-let systemProjectContainerId = "#system-projects-container";
-systemProjects.forEach(project => insertProject(systemProjectContainerId, project))

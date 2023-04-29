@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
 :root {
 	--primary-color: #e2e2e2;
-	--secondary-color: #1c1e21;
+	--secondary-color: #0c1816;
 	--tertiary-color: #ffffff;
-	--special-color: #202429;
+	--special-color: #112723;
 	--font: 'Roboto', sans-serif;
 }
 
-.gradient {
-	background: #202429;
+.landing-bg {
+	background: #112723;
 }
 
 
@@ -68,6 +68,15 @@ strong {
 @media (max-width: 767px) {
 	* {
 		font-size: 10pt;
+	}
+
+	h2,
+	h3,
+	h4,
+	h5,
+	strong {
+		font-weight: 800;
+		margin: 0 auto;
 	}
 
 	/* Hide the desktop header */
