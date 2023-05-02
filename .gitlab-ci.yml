@@ -4,7 +4,6 @@ image: linux
 before_script:
   - npm i
 pages:
-  script: []
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
