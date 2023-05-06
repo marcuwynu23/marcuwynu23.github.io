@@ -1,17 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Signika:wght@600&display=swap');
 
 :root {
 	--primary-color: #e2e2e2;
-	--secondary-color: #0c1816;
+	--secondary-color: #32a16b;
 	--tertiary-color: #ffffff;
-	--special-color: #112723;
+	--special-color: #141414;
 	--font: 'Roboto', sans-serif;
 }
 
 .landing-bg {
-	background: #112723;
+	background: #141414;
 }
 
+.q-title {
+	font-family: "Signika";
+}
 
 .my-text-color {
 	color: var(--tertiary-color);

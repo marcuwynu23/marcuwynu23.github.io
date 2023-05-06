@@ -6,7 +6,7 @@ function insertProject(containerId, project) {
 	const projectContainer = $(containerId);
 	const projectCard = $("<div>", {
 		class:
-			"card rounded-lg shadow-sm border-none overflow-hidden p-5 flex flex-col animate__animated animate__fadeIn",
+			"card rounded-lg shadow-sm border-none overflow-hidden p-5 m-4 flex flex-col animate__animated animate__fadeIn",
 	});
 
 	let titleUppercase = project.title.toUpperCase();
