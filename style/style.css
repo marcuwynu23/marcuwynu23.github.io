@@ -2,7 +2,7 @@
 
 :root {
 	--primary-color: #e2e2e2;
-	--secondary-color: #32a16b;
+	--secondary-color: #38654f;
 	--tertiary-color: #ffffff;
 	--special-color: #141414;
 	--font: 'Roboto', sans-serif;
@@ -44,6 +44,7 @@
 
 .card {
 	background-color: var(--special-color);
+	box-shadow: #141414  #38654f #e2e2e2 1px 2px 3px;
 }
 
 h2,

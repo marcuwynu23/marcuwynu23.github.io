@@ -15,21 +15,21 @@ const systemProjects = [
 			"assets/screenshots/systems/kpsms/4.jpg",
 		],
 	},
-	{
-		title: "Mini Store Management System",
-		description:
-			"A Mini Store Management System is a software application that allows store owners to manage their inventory effectively. It helps track the quantity of products available, sales made, and other details such as supplier information, purchase orders, and customer records. The system is built using JavaScript and Vue.js, making it a responsive and dynamic web application that can be accessed from any device with an internet connection. The interface is intuitive and user-friendly, allowing users to navigate through different features easily. With this system, store owners can make informed decisions, manage stock levels efficiently, and provide better customer service.",
-		link: "",
-		language: "MEVN stack",
-		topics: ["store", "management", "system", "mini-store"],
-		screenshots: [
-			// "assets/screenshots/systems/msms/0.jpg",
-			// "assets/screenshots/systems/msms/1.jpg",
-			// "assets/screenshots/systems/msms/2.jpg",
-			// "assets/screenshots/systems/msms/3.jpg",
-			// "assets/screenshots/systems/msms/4.jpg",
-		],
-	},
+	// {
+	// 	title: "Mini Store Management System",
+	// 	description:
+	// 		"A Mini Store Management System is a software application that allows store owners to manage their inventory effectively. It helps track the quantity of products available, sales made, and other details such as supplier information, purchase orders, and customer records. The system is built using JavaScript and Vue.js, making it a responsive and dynamic web application that can be accessed from any device with an internet connection. The interface is intuitive and user-friendly, allowing users to navigate through different features easily. With this system, store owners can make informed decisions, manage stock levels efficiently, and provide better customer service.",
+	// 	link: "",
+	// 	language: "MEVN stack",
+	// 	topics: ["store", "management", "system", "mini-store"],
+	// 	screenshots: [
+	// 		// "assets/screenshots/systems/msms/0.jpg",
+	// 		// "assets/screenshots/systems/msms/1.jpg",
+	// 		// "assets/screenshots/systems/msms/2.jpg",
+	// 		// "assets/screenshots/systems/msms/3.jpg",
+	// 		// "assets/screenshots/systems/msms/4.jpg",
+	// 	],
+	// },
 	// {
 	// 	title: "Online Examination System",
 	// 	description: "This system is designed to manage online examinations for students. It allows teachers to create and administer tests, and students to take them remotely through a secure online platform. The system can automatically grade the tests and provide detailed reports on student performance, making it easier for teachers to evaluate and improve their teaching.",

@@ -87,6 +87,15 @@ const toolProjects = [
 			"assets/screenshots/tools/bahagi/1.jpg",
 		],
 	},
+	{
+		title: "Object File Encrypter",
+		description:
+			"Node Library use to convert/retrieve encrypted object to/from file",
+		link: "https://github.com/marcuwynu23/object-file-encrypter.git",
+		language: "javascript,node.js",
+		topics: ["encrypt", "console", "library"],
+		screenshots: [],
+	},
 ];
 let toolProjectContainerId = "#console-tools-container";
 toolProjects.forEach((project) =>
