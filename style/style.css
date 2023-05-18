@@ -50,7 +50,13 @@
 
 .card {
 	background-color: var(--special-color);
-	box-shadow: #141414 #38654f #e2e2e2 1px 2px 3px;
+	/* box-shadow: #141414 #38654f #e2e2e2 1px 2px 3px; */
+
+	backdrop-filter: blur(16px) saturate(180%);
+	-webkit-backdrop-filter: blur(16px) saturate(180%);
+	/* background-color: rgba(17, 25, 40, 0.75); */
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 h2,
@@ -64,6 +70,12 @@ strong {
 	color: var(--primary-color) !important;
 }
 
+.btn {
+	backdrop-filter: blur(16px) saturate(180%);
+	-webkit-backdrop-filter: blur(16px) saturate(180%);
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.125);
+}
 
 .app-title {
 	font-weight: 800;
