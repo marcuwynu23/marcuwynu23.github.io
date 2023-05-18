@@ -2,10 +2,11 @@
 
 :root {
 	--primary-color: #e2e2e2;
-	--secondary-color: #2a8e5c;
-	--tertiary-color: #ffffff;
-	--special-color: #141414;
-	--font: 'Product Sans Light', sans-serif;
+	--secondary-color: rgb(51, 147, 109);
+	--tertiary-color: #cfcfcf;
+	--quaternary-color: #191919;
+	--special-color: #1f1f1f;
+	--font: 'Product Sans', sans-serif;
 }
 
 .landing-bg {
@@ -15,6 +16,7 @@
 .q-title {
 	font-family: "Product Sans Black", sans-serif;
 }
+
 
 .my-text-color {
 	color: var(--tertiary-color);
@@ -30,6 +32,10 @@
 
 .my-bg-secondary-color {
 	background-color: var(--secondary-color);
+}
+
+.my-bg-quaternary-color {
+	background-color: var(--quaternary-color);
 }
 
 .my-bg-special-color {
@@ -52,8 +58,10 @@ h3,
 h4,
 h5,
 strong {
+	font-size: "Product Sans Black", sans-serif !important;
 	font-weight: 800;
 	margin: 0 auto;
+	color: var(--primary-color) !important;
 }
 
 
