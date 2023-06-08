@@ -4,13 +4,13 @@
 	--primary-color: #e2e2e2;
 	--secondary-color: rgb(51, 147, 109);
 	--tertiary-color: #cfcfcf;
-	--quaternary-color: #191919;
-	--special-color: #1f1f1f;
+	--quaternary-color: #1d1d1d;
+	--special-color: #292929;
 	--font: 'Product Sans', sans-serif;
 }
 
 .landing-bg {
-	background: #141414;
+	background: #181818;
 }
 
 .q-title {
