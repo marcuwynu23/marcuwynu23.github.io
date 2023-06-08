@@ -1,20 +1,27 @@
-@import url('https://fonts.cdnfonts.com/css/google-sans');
+/* @import url('https://fonts.cdnfonts.com/css/google-sans'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
 
 :root {
 	--primary-color: #e2e2e2;
-	--secondary-color: rgb(51, 147, 109);
+	--secondary-color: #169482;
 	--tertiary-color: #cfcfcf;
-	--quaternary-color: #1d1d1d;
-	--special-color: #292929;
-	--font: 'Product Sans', sans-serif;
+	--quaternary-color: #272e30;
+	--special-color: #1e2223;
+	--font: "Roboto", sans-serif;
 }
 
 .landing-bg {
-	background: #181818;
+	/* background: #171717; */
+	background-image: url("https://img.freepik.com/free-photo/dark-green-marble-wave-background_53876-104420.jpg?w=1060&t=st=1686243027~exp=1686243627~hmac=ffd0ea4ad1835a55483ec8a9e543d637d9ca734a88aca36ddc40f1961447f4ec");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .q-title {
-	font-family: "Product Sans Black", sans-serif;
+	font-weight: 700;
+	font-family: "Roboto", sans-serif;
 }
 
 
@@ -23,7 +30,11 @@
 }
 
 .my-text-secondary-color {
-	color: var(--secondary-color);
+	color: var(--secondary-color) !important;
+}
+
+.my-text-quaternary-color {
+	color: var(--quaternary-color) !important;
 }
 
 .my-bg-color {
@@ -51,12 +62,11 @@
 .card {
 	background-color: var(--special-color);
 	/* box-shadow: #141414 #38654f #e2e2e2 1px 2px 3px; */
-
 	backdrop-filter: blur(16px) saturate(180%);
 	-webkit-backdrop-filter: blur(16px) saturate(180%);
 	/* background-color: rgba(17, 25, 40, 0.75); */
 	border-radius: 12px;
-	border: 1px solid rgba(255, 255, 255, 0.125);
+	border: none;
 }
 
 h2,
@@ -64,8 +74,8 @@ h3,
 h4,
 h5,
 strong {
-	font-size: "Product Sans Medium", sans-serif !important;
-	font-weight: 800;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
 	margin: 0 auto;
 	color: var(--primary-color) !important;
 }
