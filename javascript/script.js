@@ -12,7 +12,7 @@ function insertProject(containerId, project) {
 	let titleUppercase = project.title.toUpperCase();
 	const contentContainer = $("<div>", { class: "p-6" });
 	const titleElement = $("<h3>", {
-		class: "text-lg font-semibold mb-2 my-text-secondary-color",
+		class: "text-lg font-semibold mb-2  my-text-secondary-color",
 		text: titleUppercase,
 	});
 	const descriptionElement = $("<p>", {
@@ -34,7 +34,7 @@ function insertProject(containerId, project) {
 	project.topics.forEach((topic) => {
 		const topicElement = $("<span>", {
 			class:
-				"my-bg-secondary-color my-text-secondary-color shadow-sm text-xs  rounded-full mr-2 px-2 py-1 m-2",
+				"my-bg-secondary-color my-text-color shadow-sm text-xs bold rounded-full mr-2 px-2 py-1 m-2",
 			text: topic,
 		});
 		topicsContainer.append(topicElement);
@@ -76,13 +76,7 @@ function insertProject(containerId, project) {
 			const link = document.createElement("a");
 			link.setAttribute("href", imageUrl);
 			link.setAttribute("target", "_blank");
-			img.classList.add(
-				"h-auto",
-				"max-w-full",
-				"rounded-lg",
-				"border-2",
-				"border-gray-800"
-			);
+			img.classList.add("h-auto", "max-w-full", "rounded-lg");
 			img.setAttribute("src", imageUrl);
 			img.setAttribute("alt", "");
 			link.appendChild(img);
