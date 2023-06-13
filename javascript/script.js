@@ -9,11 +9,10 @@ function insertProject(containerId, project) {
 			"card rounded-lg shadow-sm border-none overflow-hidden p-5 m-4 flex flex-col animate__animated animate__fadeIn",
 	});
 
-	let titleUppercase = project.title.toUpperCase();
 	const contentContainer = $("<div>", { class: "px-5 py-2" });
 	const titleElement = $("<h3>", {
 		class: "text-xl font-bold mb-2  my-text-secondary-color",
-		text: titleUppercase,
+		text: project.title,
 	});
 	const descriptionElement = $("<p>", {
 		class: " text-gray-200 text-justify ",
