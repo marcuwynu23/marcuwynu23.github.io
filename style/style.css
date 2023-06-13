@@ -5,9 +5,9 @@
 :root {
 	--primary-color: #e2e2e2;
 	--secondary-color: #169482;
-	--tertiary-color: #cfcfcf;
-	--quaternary-color: #272e30;
-	--special-color: #1e2223;
+	--tertiary-color: #e6e6e6;
+	--quaternary-color: #2d3537;
+	--special-color: #242829a3;
 	--font: "Roboto", sans-serif;
 }
 
@@ -17,6 +17,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
 
 .q-title {
 	font-size: 1.5rem;
