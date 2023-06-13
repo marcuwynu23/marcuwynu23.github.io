@@ -10,9 +10,9 @@ function insertProject(containerId, project) {
 	});
 
 	let titleUppercase = project.title.toUpperCase();
-	const contentContainer = $("<div>", { class: "p-6" });
+	const contentContainer = $("<div>", { class: "px-5 py-2" });
 	const titleElement = $("<h3>", {
-		class: "text-lg font-bold mb-2  my-text-secondary-color",
+		class: "text-xl font-bold mb-2  my-text-secondary-color",
 		text: titleUppercase,
 	});
 	const descriptionElement = $("<p>", {
@@ -34,18 +34,18 @@ function insertProject(containerId, project) {
 	project.topics.forEach((topic) => {
 		const topicElement = $("<span>", {
 			class:
-				"my-bg-secondary-color my-text-quaternary-color shadow-sm text-xs bold rounded-full mr-2 px-2 py-1 m-2",
+				"my-bg-secondary-color my-text-color shadow-sm text-xs bold rounded-full mr-2 px-2 py-1 m-2",
 			text: topic,
 		});
 		topicsContainer.append(topicElement);
 	});
 
 	const otherContainer = $("<div>", {
-		class: "flex flex-wrap m-2 text-center",
+		class: "flex flex-wrap m-2 text-center text-sm",
 	});
 
 	const repoElement = $("<a>", {
-		class: "m-2  inline  rounded ",
+		class: "m-2  inline  rounded text-xs",
 		href: project.link,
 		text: "Repository",
 	});
@@ -53,7 +53,7 @@ function insertProject(containerId, project) {
 	repoElement.prepend(repoIcon);
 
 	const docElement = $("<a>", {
-		class: "m-2  inline rounded",
+		class: "m-2  inline rounded text-xs",
 		href: project.link,
 		text: "Documentation",
 	});
@@ -67,7 +67,8 @@ function insertProject(containerId, project) {
 			"grid-cols-2",
 			"md:grid-cols-3",
 			"gap-4",
-			"my-2"
+			"my-2",
+			"p-4"
 		);
 
 		images.forEach((imageUrl) => {
@@ -104,8 +105,8 @@ function insertProject(containerId, project) {
 	otherContainer.append(repoElement);
 	otherContainer.append(docElement);
 
-	projectCard.append(otherContainer);
 	projectCard.append(contentContainer);
+	projectCard.append(otherContainer);
 
 	projectCard.append(imageGrid);
 	let topicsTitle = document.createElement("h5");
