@@ -99,7 +99,7 @@ function insertProject(containerId, project) {
 	projectCard.append(imageGrid);
 	let topicsTitle = document.createElement("h5");
 	topicsTitle.textContent = "Topics and keywords";
-	topicsTitle.classList.add("my-text-secondary-color");
+	topicsTitle.classList.add("my-text-quaternary-color");
 	projectCard.append(topicsTitle);
 	projectCard.append(topicsContainer);
 	projectContainer.append(projectCard);
