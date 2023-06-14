@@ -4,24 +4,28 @@
 
 :root {
 	--primary-color: #e2e2e2;
-	--secondary-color: #169482;
+	--secondary-color: #578a69;
 	--tertiary-color: #e6e6e6;
-	--quaternary-color: #2d3537;
-	--special-color: #242829a3;
+	--quaternary-color: #2e3131;
+	--special-color: #2e3131;
 	--font: "Roboto", sans-serif;
 }
 
 .landing-bg {
-	/* background: #171717; */
-	background-image: url("../assets/dark-green-marble-wave-background_53876-104420.jpg");
+	/* background: var(--secondary-color); */
+	background-image: url("../assets/background.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 }
-
+/* 
+#header {
+	background-color: var(--special-color);
+} */
 
 .q-title {
 	font-size: 1.5rem;
-	font-weight: 700;
+	font-weight: 900;
 	font-family: "Product Sans", sans-serif;
 }
 
@@ -60,22 +64,13 @@
 	font-family: var(--font);
 }
 
-.card {
-	background-color: var(--special-color);
-	/* box-shadow: #141414 #38654f #e2e2e2 1px 2px 3px; */
-	backdrop-filter: blur(16px) saturate(180%);
-	-webkit-backdrop-filter: blur(16px) saturate(180%);
-	/* background-color: rgba(17, 25, 40, 0.75); */
-	border-radius: 12px;
-	border: none;
-}
 
 h2,
 h3,
 h4,
 h5,
 strong {
-	font-family: "Product Sans", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-weight: 700;
 	margin: 0 auto;
 	color: var(--primary-color) !important;
