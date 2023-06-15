@@ -6,7 +6,7 @@ function insertProject(containerId, project) {
 	const projectContainer = $(containerId);
 	const projectCard = $("<div>", {
 		class:
-			"card my-bg-special-color rounded-4 border-none shadow overflow-hidden p-5 m-4 flex flex-col animate__animated animate__fadeIn",
+			"card my-bg-special-color border-none  overflow-hidden p-5 m-4 flex flex-col animate__animated animate__fadeIn",
 	});
 
 	const contentContainer = $("<div>", { class: "px-5 py-2" });
