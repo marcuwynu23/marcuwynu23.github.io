@@ -6,27 +6,28 @@ function insertProject(containerId, project) {
 	const projectContainer = $(containerId);
 	const projectCard = $("<div>", {
 		class:
-			"card my-bg-special-color border-none  overflow-hidden p-5 m-4 flex flex-col animate__animated animate__fadeIn",
+			"card border  bg-gray-50 overflow-hidden p-5 m-4 flex flex-col animate__animated animate__fadeIn",
 	});
 
 	const contentContainer = $("<div>", { class: "px-5 py-2" });
 	const titleElement = $("<h3>", {
-		class: "text-2xl font-bold mb-2  my-text-secondary-color",
+		class: "text-2xl font-bold mb-2 my-text-special-color",
 		text: project.title,
 	});
 	const descriptionElement = $("<p>", {
-		class: " text-gray-200 text-justify ",
+		class: " text-gray-800 text-justify ",
 		text: project.description,
 	});
 
 	const languageElement = $("<span>", {
-		class: "text-sm text-gray-400 py-5",
+		class: "text-sm text-gray-600 py-5",
 		text: project.language,
 	});
 
 	contentContainer.append(titleElement);
 	contentContainer.append(document.createElement("hr"));
 	contentContainer.append(languageElement);
+	contentContainer.append(document.createElement("hr"));
 	contentContainer.append(descriptionElement);
 
 	// topics here
@@ -34,7 +35,7 @@ function insertProject(containerId, project) {
 	project.topics.forEach((topic) => {
 		const topicElement = $("<span>", {
 			class:
-				"my-bg-secondary-color my-text-color shadow text-xs bold rounded-full mr-2 px-2 py-1 m-2",
+				"my-bg-special-color my-text-color text-xs bold  mr-2 px-2 py-1 m-2",
 			text: topic,
 		});
 		topicsContainer.append(topicElement);
@@ -77,7 +78,7 @@ function insertProject(containerId, project) {
 			const link = document.createElement("a");
 			link.setAttribute("href", imageUrl);
 			link.setAttribute("target", "_blank");
-			img.classList.add("h-auto", "max-w-full", "rounded-lg", "shadow");
+			img.classList.add("h-auto", "max-w-full", "shadow");
 			img.setAttribute("src", imageUrl);
 			img.setAttribute("alt", "");
 			link.appendChild(img);
