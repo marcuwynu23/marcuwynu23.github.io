@@ -6,7 +6,7 @@ function insertProject(containerId, project) {
 	const projectContainer = $(containerId);
 	const projectCard = $("<div>", {
 		class:
-			"card border  bg-gray-50 overflow-hidden p-5 m-4 flex flex-col animate__animated animate__fadeIn",
+			"card rounded-lg   my-bg-secondary-color shadow-xl shadow-gray-100 overflow-hidden p-5 m-4 flex flex-col animate__animated animate__fadeIn",
 	});
 
 	const contentContainer = $("<div>", { class: "px-5 py-2" });
@@ -25,9 +25,7 @@ function insertProject(containerId, project) {
 	});
 
 	contentContainer.append(titleElement);
-	contentContainer.append(document.createElement("hr"));
 	contentContainer.append(languageElement);
-	contentContainer.append(document.createElement("hr"));
 	contentContainer.append(descriptionElement);
 
 	// topics here
@@ -35,7 +33,7 @@ function insertProject(containerId, project) {
 	project.topics.forEach((topic) => {
 		const topicElement = $("<span>", {
 			class:
-				"my-bg-special-color my-text-color text-xs bold  mr-2 px-2 py-1 m-2",
+				"rounded-lg  shadow-lg my-bg-special-color my-text-color text-xs bold  mr-2 px-2 py-1 m-2",
 			text: topic,
 		});
 		topicsContainer.append(topicElement);
@@ -46,19 +44,19 @@ function insertProject(containerId, project) {
 	});
 
 	const repoElement = $("<a>", {
-		class: "m-2  inline  rounded text-xs",
+		class: "m-2  inline  rounded text-xs text-gray-800",
 		href: project.link,
 		text: "Repository",
 	});
-	const repoIcon = $("<span>", { class: "fas fa-file-code me-1" });
+	const repoIcon = $("<span>", { class: "fas fa-file-code me-1 text-gray-800" });
 	repoElement.prepend(repoIcon);
 
 	const docElement = $("<a>", {
-		class: "m-2  inline rounded text-xs",
+		class: "m-2  inline rounded text-xs text-gray-800",
 		href: project.link,
 		text: "Documentation",
 	});
-	const docIcon = $("<span>", { class: "fas fa-file-pdf me-1" });
+	const docIcon = $("<span>", { class: "fas fa-file-pdf me-1 text-gray-800" });
 	docElement.prepend(docIcon);
 
 	function createImageGrid(images) {
@@ -78,7 +76,7 @@ function insertProject(containerId, project) {
 			const link = document.createElement("a");
 			link.setAttribute("href", imageUrl);
 			link.setAttribute("target", "_blank");
-			img.classList.add("h-auto", "max-w-full", "shadow");
+			img.classList.add("h-auto", "max-w-full", "shadow-lg");
 			img.setAttribute("src", imageUrl);
 			img.setAttribute("alt", "");
 			link.appendChild(img);

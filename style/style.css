@@ -1,26 +1,41 @@
 /* @import url('https://fonts.cdnfonts.com/css/ibm-plex-sans');
 @import url('https://fonts.cdnfonts.com/css/noto-sans-tamil'); */
 @import url('https://fonts.cdnfonts.com/css/google-sans');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
 
 :root {
 	--primary-color: #ffffff;
-	--secondary-color: #f9fafb;
+	--secondary-color: #f9f9f9;
 	--tertiary-color: #eeecec;
 	--quaternary-color: #ffffff;
-	--special-color: #0da483;
-	/* --font: 'Poppins', sans-serif; */
-	--font: 'Roboto', sans-serif;
+	--special-color: #1c3134;
+	--font: 'Poppins', sans-serif;
+	/* --font: 'Roboto', sans-serif; */
 }
 
-.landing-bg {
+* {
+	color: white;
+	font-size: 1.0rem;
+	font-weight: 300;
+	font-family: var(--font);
+}
+
+.drop-shadow {
+	filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.landing-bg {	
 	background: var(--secondary-color);
-	background-image: url("../assets/background.jpg");
+	background-image: url("../assets/background-1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
+#app-title {
+	font-family: 'Product Sans', sans-serif;
+	font-weight: 900;
+	font-size: 1.8em;
+}
 #header {
 	background-color: var(--special-color);
 }
@@ -28,7 +43,12 @@
 .q-title {
 	font-size: 1.6rem;
 	font-weight: 700;
-	font-family: 'Product Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
+}
+.about-dist {
+	font-size: 1.1rem;
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
 }
 
 .my-text-color {
@@ -63,12 +83,6 @@
 	background-color: var(--special-color);
 }
 
-* {
-	color: white;
-	font-size: 13pt;
-	font-weight: 300;
-	font-family: var(--font);
-}
 
 
 h2,
@@ -88,7 +102,8 @@ strong {
 }
 
 a {
-	font-weight: lighter;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
 }
 
 a:hover {
