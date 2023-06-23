@@ -6,7 +6,7 @@ function insertProject(containerId, project) {
 	const projectContainer = $(containerId);
 	const projectCard = $("<div>", {
 		class:
-			"card rounded-lg   my-bg-secondary-color shadow-xl shadow-gray-100 overflow-hidden p-5 m-4 flex flex-col animate__animated animate__fadeIn",
+			"card overflow-hidden p-5 m-4 flex flex-col animate__animated animate__fadeIn",
 	});
 
 	const contentContainer = $("<div>", { class: "px-5 py-2" });
@@ -33,7 +33,7 @@ function insertProject(containerId, project) {
 	project.topics.forEach((topic) => {
 		const topicElement = $("<span>", {
 			class:
-				"rounded-lg  shadow-lg my-bg-special-color my-text-color text-xs bold  mr-2 px-2 py-1 m-2",
+				"rounded-lg  shadow-none my-bg-special-color my-text-color text-xs bold  mr-2 px-2 py-1 m-2",
 			text: topic,
 		});
 		topicsContainer.append(topicElement);
@@ -48,7 +48,9 @@ function insertProject(containerId, project) {
 		href: project.link,
 		text: "Repository",
 	});
-	const repoIcon = $("<span>", { class: "fas fa-file-code me-1 text-gray-800" });
+	const repoIcon = $("<span>", {
+		class: "fas fa-file-code me-1 text-gray-800",
+	});
 	repoElement.prepend(repoIcon);
 
 	const docElement = $("<a>", {

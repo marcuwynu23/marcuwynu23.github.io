@@ -43,7 +43,7 @@
 
 <body class="my-bg-quaternary-color">
 	<div class="landing-bg">
-		<header class=" shadow flex justify-end items-center py-1 px-5 md:block "
+		<header class=" shadow flex justify-end items-center px-5 md:block "
 			id="header">
 			<div class="flex items-center">
 				<img src="./assets/profile.jpg"
@@ -102,13 +102,14 @@
 
 
 
-		<div class="md:hidden">
+		<div class="md:hidden"
+			id="header-mobile">
 			<div class="flex justify-start mx-2">
 				<button id="toggleBtn"
-					class="block py-2  my-text-secondary-color">
+					class="inline-block py-2  my-text-secondary-color">
 					<!-- make svg white -->
 					<svg xmlns="http://www.w3.org/2000/svg"
-						class="h-6 w-6 my-text-secondary-color"
+						class="h-10 w-10 my-text-secondary-color"
 						fill="none"
 						viewBox="0 0 24 24"
 						stroke="currentColor">
@@ -118,9 +119,13 @@
 							d="M4 6h16M4 12h16M4 18h16" />
 					</svg>
 				</button>
+				<p class="py-4  mx-2 text-xl"
+					id="app-title-mobile">MW Portfolio</p>
 			</div>
+
 			<ul class="hidden text-center  my-text-color"
 				id="menu">
+
 				<li class="block py-2 text-xl  my-text-color">
 					<a href="#home">
 						Home
@@ -158,7 +163,7 @@
 					evoke marvels from the
 					unimagined.
 				</p>
-				<p class="mt-2 mx-4 max-w-lg max-h-lg text-gray-100 text-center text-lg animate__animated animate__fadeIn">
+				<p class="mt-2 mx-4 max-w-lg max-h-lg text-gray-50 text-center text-lg animate__animated animate__fadeIn">
 					Developers can unlock their potential for innovation in software development by becoming skilled creators,
 					using their creativity, imagination, and technical expertise to come up with extraordinary ideas and explore
 					new technologies. This emphasizes the importance of creativity and innovation in the field, inspiring
@@ -216,7 +221,7 @@
 			<section>
 				<ul class="text-lg p-5 m-5 grid md:grid-cols-3 gap-4">
 					<li class="text-justify list-none py-5">
-						<div class="card rounded-lg   my-bg-secondary-color shadow-xl shadow-gray-100  p-5 ">
+						<div class="card  p-5 ">
 							<strong class="font-semibold text-gray-800">
 								<i class="fas fa-hammer text-gray-800"></i> Console &amp; Tools
 							</strong>
@@ -233,7 +238,7 @@
 						</div>
 					</li>
 					<li class="py-5 text-justify list-none">
-						<div class="card rounded-lg     my-bg-secondary-color shadow-xl shadow-gray-100 p-5 ">
+						<div class="card p-5 ">
 							<strong class="font-semibold text-gray-800">
 								<i class="fas fa-briefcase text-gray-800"></i> Simple and Common Programs
 							</strong>
@@ -252,7 +257,7 @@
 						</div>
 					</li>
 					<li class="py-5 text-justify list-none">
-						<div class="card rounded-lg    my-bg-secondary-color shadow-xl shadow-gray-100  p-5 ">
+						<div class="card   p-5 ">
 							<strong class="font-semibold text-gray-800">
 								<i class="fas fa-cubes text-gray-800"></i> System Projects
 							</strong>
@@ -285,7 +290,7 @@
 							<p>
 							<ul>
 								<li class="text-justify mt-0 pb-2">
-									<div class="card rounded-lg my-bg-secondary-color shadow-xl shadow-gray-100 p-5">
+									<div class="card  p-5">
 										<p class="font-semibold text-gray-800">Programming,Query & Markup Languages</p>
 										<p class="text-justify my-2 text-gray-600">
 											I have experience in using the following programming, query, and markup languages some of which I
@@ -310,10 +315,10 @@
 									</div>
 								</li>
 								<li class="text-justify my-2 py-2">
-									<div class="card rounded-lg my-bg-secondary-color shadow-xl shadow-gray-100  p-5">
-										<p class="font-semibold text-gray-800">UI Libraries and Frameworks</p>
+									<div class="card   p-5">
+										<p class="font-semibold text-gray-800">Frontend Libraries and Frameworks</p>
 										<p class="text-justify my-2 text-gray-600">
-											I have experience in using the following UI libraries and frameworks. I have used these ui
+											I have experience in using the following Frontend libraries and frameworks. I have used these ui
 											libraries
 											in my school projects, internship and personal projects.
 										</p>
@@ -336,13 +341,41 @@
 												src="https://img.shields.io/badge/-Vue.js-white?logo=vue.js&logoColor=white?logoWidth=40" />
 											<img class="inline h-5 w-auto shadow"
 												src="https://img.shields.io/badge/-Angular.js-red?logo=angular&logoColor=red?logoWidth=40" />
-											<img class="inline h-5 w-auto shadow"
-												src="https://img.shields.io/badge/-Svelte-white?logo=svelte&logoColor=white?logoWidth=40" />
 										</p>
 									</div>
 								</li>
 								<li class="text-justify my-2 py-2">
-									<div class="card rounded-lg    my-bg-secondary-color shadow-xl shadow-gray-100 p-5">
+									<div class="card   p-5">
+										<p class="font-semibold text-gray-800">Backend Libraries and Frameworks</p>
+										<p class="text-justify my-2 text-gray-600">
+											I have experience in using the following BackendI libraries and frameworks. I have used these ui
+											libraries
+											in my school projects, internship and personal projects.
+										</p>
+										<p>
+											<img class=" inline
+										h-5
+										w-auto
+										shadow"
+												src="https://img.shields.io/badge/-Express.js-green?logo=express&logoColor=green?logoWidth=40"
+												alt="Bootstrap Logo" />
+											<img class=" inline
+												h-5
+												w-auto
+												shadow"
+												src="https://img.shields.io/badge/-Flask-blue?logo=flask&logoColor=white?logoWidth=40"
+												alt="Tailwind Logo" />
+											<img class="inline h-5 w-auto shadow"
+												src="https://img.shields.io/badge/-Nest.js-e42644?logo=nestJS&logoColor=white?logoWidth=40" />
+											<img class="inline h-5 w-auto shadow"
+												src="https://img.shields.io/badge/-Django-0f3c2d?logo=django&logoColor=white?logoWidth=40" />
+											<img class="inline h-5 w-auto shadow"
+												src="https://img.shields.io/badge/-Laravel-white?logo=laravel&logoColor=red?logoWidth=40" />
+										</p>
+									</div>
+								</li>
+								<li class="text-justify my-2 py-2">
+									<div class="card  p-5">
 										<p class="font-semibold  text-gray-800">Data Stores and Databases</p>
 										<p class="text-justify my-2 text-gray-600">
 											I have experience in using the following data stores and databases:
@@ -358,7 +391,7 @@
 									</div>
 								</li>
 								<li class="text-justify my-2 py-2">
-									<div class="card rounded-lg my-bg-secondary-color shadow-xl shadow-gray-100 p-5">
+									<div class="card  p-5">
 										<p class="font-semibold text-gray-800">
 											Development and Operation Tools
 										<p>
@@ -393,7 +426,59 @@
 									</div>
 								</li>
 								<li class="text-justify my-2 py-2">
-									<div class="card rounded-lg my-bg-secondary-color shadow-xl shadow-gray-100 p-5">
+									<div class="card  p-5">
+										<p class="font-semibold  text-gray-800">Data Stores and Databases</p>
+										<p class="text-justify my-2 text-gray-600">
+											I have experience in using the following data stores and databases:
+										</p>
+										<p>
+											<img class="inline h-5 w-auto shadow"
+												src="https://img.shields.io/badge/-MySQL-white?logo=mysql&logoColor=blue?logoWidth=40" />
+											<img class="inline h-5 w-auto shadow"
+												src="https://img.shields.io/badge/-Mongodb-3f2f1f?logo=mongodb&logoColor=519748?logoWidth=40" />
+											<img class="inline h-5 w-auto shadow"
+												src="https://img.shields.io/badge/-SQLite-blue?logo=sqlite&logoColor=white?logoWidth=40" />
+										</p>
+									</div>
+								</li>
+								<li class="text-justify my-2 py-2">
+									<div class="card  p-5">
+										<p class="font-semibold text-gray-800">
+											Development and Operation Tools
+										<p>
+										<p class="text-justify my-2 text-gray-600">
+											I have experience in using the following development and operation tools:
+										</p>
+										<img class="inline h-5 w-auto shadow"
+											src="https://img.shields.io/badge/-Github-black?logo=github&logoColor=white?logoWidth=40" />
+										<img class="inline h-5 w-auto shadow"
+											src="https://img.shields.io/badge/-Git-FCC624?logo=git&logoColor=orange?logoWidth=40" />
+										<img class="inline h-5 w-auto shadow"
+											src="https://img.shields.io/badge/-Docker-white?logo=docker&logoColor=blue?logoWidth=40" />
+										<img class="inline h-5 w-auto shadow"
+											src="https://img.shields.io/badge/-Docker%20Compose-blue?logo=docker%20compose&logoColor=blue?logoWidth=40"
+											alt="Docker Compose Logo" />
+										<img class="inline h-5 w-auto shadow"
+											src="https://img.shields.io/badge/-VSCode-blue?logo=visual%20studio%20code&logoColor=white?logoWidth=40"
+											alt="VSCode Logo" />
+										<img class="inline h-5 w-auto shadow"
+											src="https://img.shields.io/badge/-Sublime%20Text-4e4e4e?logo=sublime%20text&logoColor=fb9500?logoWidth=40"
+											alt="Sublime Text Logo" />
+										<img class="inline h-5 w-auto shadow"
+											src="https://img.shields.io/badge/-Insomnia-white?logo=insomnia&logoColor=indigo?logoWidth=40" />
+										<img class="inline h-5 w-auto shadow"
+											src="https://img.shields.io/badge/-npm-white?logo=npm&logoColor=bf0300?logoWidth=40" />
+										<img class="inline h-5 w-auto shadow"
+											src="https://img.shields.io/badge/-yarn-white?logo=yarn&logoColor=2a8db5?logoWidth=40" />
+										<img class="inline h-5 w-auto shadow"
+											src="https://img.shields.io/badge/-Busybox-black?logo=busybox&logoColor=white?logoWidth=40" />
+										</p>
+										</p>
+									</div>
+								</li>
+
+								<li class="text-justify my-2 py-2">
+									<div class="card  p-5">
 
 										<p class="font-semibold  text-gray-800">Network Analysis,Web Security and Troubleshooting
 											Tools</p>
@@ -440,7 +525,7 @@
 									</div>
 								</li>
 								<li class="text-justify my-2 py-2">
-									<div class="card rounded-lg my-bg-secondary-color shadow-xl shadow-gray-100 p-5">
+									<div class="card  p-5">
 										<p class="font-semibold text-gray-800">
 											Operating Systems
 										<p>
@@ -469,14 +554,14 @@
 					</div>
 					<h4 class="font-bold text-xl px-4 text-gray-800">Other Skills</h4>
 					<div class="grid 	grid-cols-1 md:grid-cols-2 gap-8">
-						<div class="card rounded-lg  my-bg-secondary-color shadow-xl shadow-gray-100	mt-5 mx-5  px-5 py-5 ">
+						<div class="card	mt-5 mx-5  px-5 py-5 ">
 							<h5 class="font-bold mb-4 text-gray-800">Support of the Open-Source Community</h5>
 							<p class="text-justify my-2 text-gray-600">I am a strong supporter of the open-source community. I believe
 								that open-source software is the future of software development and that it is the best way to
 								develop software. I have created my own open-source projects.
 							</p>
 						</div>
-						<div class="card rounded-lg my-bg-secondary-color shadow-xl shadow-gray-100  	mt-5 mx-5  px-5 py-5 ">
+						<div class="card   	mt-5 mx-5  px-5 py-5 ">
 							<h5 class="font-bold mb-4   text-gray-800">
 								Learning By Doing Approach
 							</h5>
@@ -486,7 +571,7 @@
 								and doing a habit of coding 3 to 4 hours a day.
 							</p>
 						</div>
-						<div class="card rounded-lg    my-bg-secondary-color shadow-xl shadow-gray-100 	mt-5 mx-5  px-5 py-5 ">
+						<div class="card  	mt-5 mx-5  px-5 py-5 ">
 							<h5 class="font-bold mb-4   text-gray-800">
 								Technology Enthusiast
 							</h5>
@@ -496,7 +581,7 @@
 								build tools used.
 							</p>
 						</div>
-						<div class="card rounded-lg    my-bg-secondary-color shadow-xl shadow-gray-100  	mt-5 mx-5  px-5 py-5 ">
+						<div class="card   	mt-5 mx-5  px-5 py-5 ">
 							<h5 class="font-bold mb-4   text-gray-800"> Strong Understanding of Object-Oriented
 								Programming
 							</h5>
@@ -507,7 +592,7 @@
 								have the skills to design and implement projects that adhere to its principles.
 							</p>
 						</div>
-						<div class="card rounded-lg my-bg-secondary-color shadow-xl shadow-gray-100	mt-5 mx-5  px-5 py-5 ">
+						<div class="card 	mt-5 mx-5  px-5 py-5 ">
 							<h5 class="font-bold mb-4  text-gray-800"> Security and Privacy Enthusiast
 							</h5>
 
@@ -578,45 +663,11 @@
 
 		</div>
 	</main>
-	<script src="https://platform.linkedin.com/badges/js/profile.js"
-		async
-		defer
-		type="text/javascript"></script>
-	<footer class="text-center py-0 my-bg-special-color   shadow-lg ">
-		<div class="container mx-auto px-4">
-			<ul>
-				<li class="inline-block mx-2 my-5  my-text-color ">
-					<a href="https://github.com/marcuwynu23"
-						target="_blank">
-						<i class="fab fa-github fs-3 my-text-color"
-							title="GitHub"></i>
-
-					</a>
-				</li>
-				<li class="inline-block mx-2 my-5  my-text-color ">
-					<a href="https://twitter.com/"
-						target="_blank">
-						<i class="fab fa-twitter fs-3 my-text-color"
-							title="Twitter"></i>
-					</a>
-				</li>
-				<li class="inline-block mx-2 my-5  my-text-color ">
-					<a href="https://www.linkedin.com/in/marcuwynu23/"
-						target="_blank">
-						<i class="fab fa-linkedin fs-3 my-text-color"
-							title="LinkedIn"></i>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="container-fluid bottom py-2">
-			<p class="fs-9">© Copyright © 2023 Mark Wayne Menorca. All Rights Reserved.</p>
+	<footer class="text-center py-4 my-bg-special-color   shadow-lg ">
+		<div class="container-fluid bottom py-1">
+			<p class="text-xs">© Copyright © 2023 Mark Wayne Menorca. All Rights Reserved.</p>
 		</div>
 	</footer>
-	<script src="https://platform.linkedin.com/badges/js/profile.js"
-		async
-		defer
-		type="text/javascript"></script>
 	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js'
 		integrity='sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=='
