@@ -95,12 +95,15 @@ function insertProject(containerId, project) {
 	otherContainer.append(docElement);
 
 	projectCard.append(contentContainer);
+
 	projectCard.append(otherContainer);
 
 	projectCard.append(imageGrid);
 	let topicsTitle = document.createElement("h5");
 	topicsTitle.textContent = "Topics and keywords";
 	topicsTitle.classList.add("my-text-secondary-color");
+	
+	projectCard.append(document.createElement("hr"));
 	projectCard.append(topicsTitle);
 	projectCard.append(topicsContainer);
 	projectContainer.append(projectCard);

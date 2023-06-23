@@ -6,9 +6,9 @@
 
 :root {
 	--primary-color: #ffffff;
-	--secondary-color: #f9f9f9;
+	--secondary-color: #313131;
 	--tertiary-color: #eeecec;
-	--quaternary-color: #ffffff;
+	--quaternary-color: #f9f5f5;
 	--special-color: #1c3134;
 	--font: 'Poppins', sans-serif;
 	/* --font: 'Roboto', sans-serif; */
@@ -51,10 +51,9 @@
 
 
 .card {
-	border-radius: 20px;
-	background: #fafafa;
-	box-shadow: 6px 6px 32px #e9e9e9,
-		-6px -6px 32px #ffffff;
+	border: 1px solid #f4f2f2;
+	border-radius: 25px;
+	background-color: #ffffff;
 }
 
 .q-title {

@@ -66,6 +66,49 @@ const simpleProjects = [
 		topics: ["quiz", "quiz-app", "quiz-app-web", "angular", "angular-quiz-app"],
 		screenshots: [],
 	},
+	{
+		title: "Subject Management Tool",
+		description: "A Simple Subject Management Tool for Teachers",
+		link: "https://github.com/marcuwynu23/quiz-app.git",
+		language: "Javascript, HTML, CSS,Node.js and Bootstrap",
+		topics: ["subject", "subject-management", "subject-management-tool"],
+		screenshots: [
+			"assets/screenshots/simples/subject-management-tool/9.jpg",
+			"assets/screenshots/simples/subject-management-tool/7.jpg",
+			"assets/screenshots/simples/subject-management-tool/8.jpg",
+			"assets/screenshots/simples/subject-management-tool/1.jpg",
+			"assets/screenshots/simples/subject-management-tool/2.jpg",
+			"assets/screenshots/simples/subject-management-tool/3.jpg",
+			"assets/screenshots/simples/subject-management-tool/4.jpg",
+			"assets/screenshots/simples/subject-management-tool/5.jpg",
+			"assets/screenshots/simples/subject-management-tool/6.jpg",
+		],
+	},
+	{
+		title: "Map Linker",
+		description:
+			"A simple map linker app that pass coordinate(x and y) to a map app and display the location on the map and link to your current location in a straight line. it can give you the short distance between two points.",
+		link: "https://github.com/marcuwynu23/map-linker",
+		language: "Javascript, HTML, CSS,Node.js and Bootstrap",
+		topics: [
+			"map",
+			"map-linker",
+			"map-linker-app",
+			"bing-map",
+			"google-map",
+			"mapbox",
+			"mapbox-map",
+			"mapbox-map-linker",
+			"mapbox-map-linker-app",
+		],
+		screenshots: [
+			"assets/screenshots/simples/map-linker/0.jpg",
+			"assets/screenshots/simples/map-linker/1.jpg",
+			"assets/screenshots/simples/map-linker/2.jpg",
+			"assets/screenshots/simples/map-linker/3.jpg",
+			"assets/screenshots/simples/map-linker/4.jpg",
+		],
+	},
 ];
 let simpleProjectContainerId = "#simple-programs-container";
 simpleProjects.forEach((project) =>

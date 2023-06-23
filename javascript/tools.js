@@ -96,6 +96,19 @@ const toolProjects = [
 		topics: ["encrypt", "console", "library"],
 		screenshots: [],
 	},
+	{
+		title: "Website Phisher",
+		description: "A simple website phisher",
+		link: "https://github.com/marcuwynu23/website-phisher.git",
+		language: "javascript,node.js",
+		topics: ["phisher", "tool", "website", "website phisher"],
+		screenshots: [
+			"assets/screenshots/tools/website-phisher/0.jpg",
+			"assets/screenshots/tools/website-phisher/1.jpg",
+			"assets/screenshots/tools/website-phisher/2.jpg",
+			"assets/screenshots/tools/website-phisher/3.jpg",
+		],
+	},
 ];
 let toolProjectContainerId = "#console-tools-container";
 toolProjects.forEach((project) =>
