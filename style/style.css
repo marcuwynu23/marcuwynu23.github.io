@@ -6,17 +6,17 @@
 
 :root {
 	--primary-color: #ffffff;
-	--secondary-color: #313131;
-	--tertiary-color: #eeecec;
-	--quaternary-color: #f9f5f5;
-	--special-color: #1c3134;
-	--font: 'Poppins', sans-serif;
+	--secondary-color: #eeeeee;
+	--tertiary-color: #131f20;
+	--quaternary-color: #17282a;
+	--special-color: #111917;
+	--font: 'Roboto', sans-serif;
 	/* --font: 'Roboto', sans-serif; */
 }
 
 * {
 	color: white;
-	font-size: 0.9rem;
+	font-size: 1.0rem;
 	font-weight: 300;
 	font-family: var(--font);
 }
@@ -27,7 +27,7 @@
 
 .landing-bg {
 	background: var(--secondary-color);
-	background-image: url("../assets/background-1.jpg");
+	background-image: url("https://wallpapercave.com/wp/wp7790067.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -35,25 +35,30 @@
 #app-title-mobile {
 	font-family: 'Product Sans', sans-serif;
 	font-weight: 900;
-	font-size: 1.5em;
+	font-size: 1.4em;
 }
 
 #app-title {
 	font-family: 'Product Sans', sans-serif;
 	font-weight: 900;
-	font-size: 1.8em;
+	font-size: 1.7em;
 }
 
-#header-mobile,
+/* #header-mobile,
 #header {
 	background-color: var(--special-color);
-}
+} */
 
 
 .card {
-	border: 1px solid #f4f2f2;
-	border-radius: 25px;
-	background-color: #ffffff;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--tertiary-color);
+}
+
+.card:hover {
+	background: rgb(121,231,144);
+	background: linear-gradient(127deg, rgba(121,231,144,1) 4%, rgba(70,167,158,0.7024317295277486) 56%, rgba(16,60,87,1) 95%);
 }
 
 .q-title {
@@ -63,9 +68,8 @@
 }
 
 .about-dist {
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	font-weight: 300;
-	font-family: 'Poppins', sans-serif;
 }
 
 .my-text-color {
@@ -96,8 +100,12 @@
 	background-color: var(--quaternary-color);
 }
 
+.my-bg-tertiary-color {
+	background-color: var(--tertiary-color);
+}
+
 .my-bg-special-color {
-	background-color: var(--special-color);
+	background-color: #5bc793;
 }
 
 
@@ -118,23 +126,19 @@ strong {
 	border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
-a {
-	font-family: "Poppins", sans-serif;
-	font-weight: 400;
-}
-
 a:hover {
-	color: var(--secondary-color) !important;
+	color: #1edcc3 !important;
 }
 
-a:active {
-
-	color: var(--secondary-color) !important;
+.btn-view:hover {
+	font-size: 1.0rem;
+	color: #16ad9a !important;
+	background-color: var(--special-color) !important;
 }
 
 .app-title {
 	font-weight: 900;
-	font-size: 1.5em;
+	font-size: 2.0em;
 	margin: 0 auto;
 }
 
