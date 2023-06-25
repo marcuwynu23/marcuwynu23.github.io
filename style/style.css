@@ -1,22 +1,14 @@
-/* @import url('https://fonts.cdnfonts.com/css/ibm-plex-sans');
-@import url('https://fonts.cdnfonts.com/css/noto-sans-tamil'); */
-@import url('https://fonts.cdnfonts.com/css/google-sans');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
-
 :root {
-	--primary-color: #ffffff;
-	--secondary-color: #eeeeee;
-	--tertiary-color: #131f20;
-	--quaternary-color: #17282a;
-	--special-color: #111917;
-	--font: 'Roboto', sans-serif;
-	/* --font: 'Roboto', sans-serif; */
+	--primary-color: #2a2f2e;
+	--secondary-color: #252928;
+	--tertiary-color: #202423;
+	--quaternary-color: #434248;
+	--font: 'Segoe UI', sans-serif;
 }
 
 * {
 	color: white;
-	font-size: 1.0rem;
+	font-size:  0.9rem;
 	font-weight: 300;
 	font-family: var(--font);
 }
@@ -26,86 +18,78 @@
 }
 
 .landing-bg {
-	background: var(--secondary-color);
-	background-image: url("https://wallpapercave.com/wp/wp7790067.jpg");
+	background-image: url("../assets/background4.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 #app-title-mobile {
-	font-family: 'Product Sans', sans-serif;
 	font-weight: 900;
 	font-size: 1.4em;
 }
 
 #app-title {
-	font-family: 'Product Sans', sans-serif;
-	font-weight: 900;
-	font-size: 1.7em;
+	font-size: 1.3em;
 }
 
-/* #header-mobile,
-#header {
-	background-color: var(--special-color);
-} */
 
+.border {
+	border: 1px solid var(--quaternary-color);
+}
 
 .card {
-	border: none;
-	border-radius: 10px;
-	background-color: var(--tertiary-color);
+	background-color: var(--primary-color);
+	padding: 2rem;
+	border: 1px solid var(--quaternary-color);
+	border-radius: 12px;
 }
 
 .card:hover {
-	background: rgb(121,231,144);
-	background: linear-gradient(127deg, rgba(121,231,144,1) 4%, rgba(70,167,158,0.7024317295277486) 56%, rgba(16,60,87,1) 95%);
+	background-color: #224037;
+	border: 1px solid #535353;
 }
 
-.q-title {
-	font-size: 1.6rem;
-	font-weight: 700;
-	font-family: 'Poppins', sans-serif;
+.card:hover a,
+.card:hover .topic-item {
+	border: 1px solid #ffffff;
+	background-color: transparent;
 }
 
-.about-dist {
-	font-size: 1.2rem;
-	font-weight: 300;
+
+
+#home {
+	border-bottom: 1px solid var(--quaternary-color);
 }
 
-.my-text-color {
-	color: var(--tertiary-color);
-}
-
-.my-text-secondary-color {
-	color: var(--secondary-color) !important;
-}
-
-.my-text-quaternary-color {
-	color: var(--quaternary-color) !important;
-}
-
-.my-text-special-color {
-	color: var(--special-color) !important;
-}
-
-.my-bg-color {
-	background-color: var(--primary-color);
-}
-
-.my-bg-secondary-color {
-	background-color: var(--secondary-color);
-}
-
-.my-bg-quaternary-color {
-	background-color: var(--quaternary-color);
-}
-
-.my-bg-tertiary-color {
+footer {
 	background-color: var(--tertiary-color);
 }
 
+
+footer {
+	border-top: 1px solid var(--quaternary-color);
+}
+
+.q-title {
+	font-size: 1.3rem;
+	font-weight: 700;
+}
+
+.about-dist {
+	font-size: 1.1rem;
+	font-weight: 300;
+}
+
+
+
+
+.my-bg-quaternary-color {
+	background-color: var(--secondary-color);
+}
+
+
 .my-bg-special-color {
-	background-color: #5bc793;
+	background-color: #2b5448;
 }
 
 
@@ -115,7 +99,7 @@ h3,
 h4,
 h5,
 strong {
-	font-weight: bolder;
+
 	margin: 0 auto;
 }
 
@@ -123,28 +107,35 @@ strong {
 	backdrop-filter: blur(16px) saturate(180%);
 	-webkit-backdrop-filter: blur(16px) saturate(180%);
 	border-radius: 12px;
-	border: 1px solid rgba(255, 255, 255, 0.125);
+	border: 1px solid var(--quaternary-color);
 }
 
-a:hover {
-	color: #1edcc3 !important;
+a {
+	padding: 0.2rem 0.3rem;
 }
 
-.btn-view:hover {
+
+.highlight {
+	max-width: 100%;
+	max-height: 100%;
+	/* Add any other styling properties for the highlighted image */
+}
+
+
+.btn-view {
 	font-size: 1.0rem;
-	color: #16ad9a !important;
-	background-color: var(--special-color) !important;
+	border: 1px solid var(--quaternary-color);
 }
 
 .app-title {
 	font-weight: 900;
-	font-size: 2.0em;
+	font-size: 1.4rem;
 	margin: 0 auto;
 }
 
 #quote-welcome-message {
-	font-weight: 900;
-	font-size: 2.5em;
+	font-weight: 700;
+	font-size: 3.0rem;
 
 }
 
@@ -158,8 +149,7 @@ a:hover {
 	h4,
 	h5,
 	strong {
-		font-family: "Roboto", sans-serif;
-		font-weight: 900;
+		font-weight: 500;
 		margin: 0 auto;
 	}
 

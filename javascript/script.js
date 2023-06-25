@@ -28,68 +28,109 @@ function insertProject(containerId, project) {
 	contentContainer.append(languageElement);
 	contentContainer.append(descriptionElement);
 
-	// topics here
-	const topicsContainer = $("<div>", { class: "flex flex-wrap mt-2" });
-	project.topics.forEach((topic) => {
-		const topicElement = $("<span>", {
-			class:
-				"rounded-lg  shadow-none my-bg-special-color  text-xs bold  mr-2 px-2 py-1 m-2",
-			text: topic,
-		});
-		topicsContainer.append(topicElement);
-	});
-
 	const otherContainer = $("<div>", {
 		class: "flex flex-wrap m-2 text-center text-sm",
 	});
 
 	const repoElement = $("<a>", {
-		class: " p-2 m-2  inline  shadow-lg  text-xs text-gray-300",
+		class: " p-2 m-2  inline border rounded text-xs text-gray-100 ",
 		href: project.link,
 		text: "Repository",
 	});
-	const repoIcon = $("<span>", {
-		class: "fas fa-file-code me-1 text-gray-300",
-	});
-	repoElement.prepend(repoIcon);
 
 	const docElement = $("<a>", {
-		class: "  p-2 m-2  inline shadow-lg   text-xs text-gray-300",
+		class: "border p-2 m-2  inline  rounded text-xs text-gray-100 ",
 		href: project.link,
 		text: "Documentation",
 	});
-	const docIcon = $("<span>", { class: "fas fa-file-pdf me-1 text-gray-300" });
-	docElement.prepend(docIcon);
 
-	function createImageGrid(images) {
+	function createImageGallery(images) {
 		const container = document.createElement("div");
-		container.classList.add(
-			"grid",
-			"grid-cols-2",
-			"md:grid-cols-3",
-			"gap-4",
-			"my-2",
-			"p-4"
+		container.classList.add("w-full", "max-w-lg", "mx-auto");
+
+		const previewContainer = document.createElement("div");
+		previewContainer.classList.add("relative", "overflow-hidden", "h-64");
+
+		const previewImage = document.createElement("img");
+		previewImage.classList.add(
+			"object-cover",
+			"h-full",
+			"w-full",
+			"border",
+			"border-gray-700",
+			"rounded"
+		);
+		previewImage.setAttribute("src", images[0] || "../assets/placeholder.jpg");
+		previewImage.setAttribute("alt", "Preview Image");
+
+		previewContainer.appendChild(previewImage);
+
+		// Create a preview button
+		const previewButton = document.createElement("button");
+		previewButton.classList.add(
+			"absolute",
+			"top-0",
+			"right-0",
+			"p-2",
+			"bg-gray-700",
+			"text-white",
+			"text-xs"
+		);
+		previewButton.textContent = "Preview";
+		previewButton.addEventListener("click", () => {
+			// Open a new window or popup to show the full image
+			window.open(images[0] || "../assets/placeholder.jpg", "_blank");
+		});
+		previewContainer.appendChild(previewButton);
+
+		const slideContainer = document.createElement("div");
+		slideContainer.classList.add(
+			"flex",
+			"space-x-2",
+			"overflow-x-auto",
+			"mt-4",
+			"justify-center"
 		);
 
-		images.forEach((imageUrl) => {
-			const div = document.createElement("div");
-			const img = document.createElement("img");
-			const link = document.createElement("a");
-			link.setAttribute("href", imageUrl);
-			link.setAttribute("target", "_blank");
-			img.classList.add("h-auto", "max-w-full", "shadow-xl");
-			img.setAttribute("src", imageUrl);
-			img.setAttribute("alt", "");
-			link.appendChild(img);
+		images.forEach((imageUrl, index) => {
+			const slideImage = document.createElement("img");
+			slideImage.classList.add(
+				"object-cover",
+				"h-16",
+				"w-16",
+				"cursor-pointer",
+				"shadow-xl",
+				"border",
+				"border-gray-700",
+				"rounded"
+			);
+			slideImage.setAttribute("src", imageUrl || "../assets/placeholder.jpg");
+			slideImage.setAttribute("alt", `Slide Image ${index + 1}`);
 
-			div.appendChild(link);
-			container.appendChild(div);
+			slideImage.addEventListener("click", () => {
+				previewImage.setAttribute(
+					"src",
+					imageUrl || "../assets/placeholder.jpg"
+				);
+
+				// Remove the highlight class from all slide images
+				const slideImages = slideContainer.querySelectorAll("img");
+				slideImages.forEach((img) => {
+					img.classList.remove("border-red-500");
+				});
+
+				// Add the highlight class to the selected slide image
+				slideImage.classList.add("border-red-500");
+			});
+
+			slideContainer.appendChild(slideImage);
 		});
+
+		container.appendChild(previewContainer);
+		container.appendChild(slideContainer);
+
 		return container;
 	}
-
-	const imageGrid = createImageGrid(project.screenshots);
 
 	otherContainer.append(repoElement);
 	otherContainer.append(docElement);
@@ -97,13 +138,23 @@ function insertProject(containerId, project) {
 	projectCard.append(contentContainer);
 
 	projectCard.append(otherContainer);
-	projectCard.append(document.createElement("hr"));
-	projectCard.append(imageGrid);
+
+	projectCard.append(createImageGallery(project.screenshots));
+
 	let topicsTitle = document.createElement("h5");
 	topicsTitle.textContent = "Topics and keywords";
+	topicsTitle.className = "text-lg font-bold text-gray-300 py-5";
 	topicsTitle.classList.add("my-text-secondary-color");
 
-	projectCard.append(document.createElement("hr"));
+	const topicsContainer = $("<div>", { class: "flex flex-wrap mt-2" });
+	project.topics.forEach((topic) => {
+		const topicElement = $("<span>", {
+			class: "topic-item border rounded  text-xs   mr-2 px-2 py-1 m-2",
+			text: topic,
+		});
+		topicsContainer.append(topicElement);
+	});
+
 	projectCard.append(topicsTitle);
 	projectCard.append(topicsContainer);
 	projectContainer.append(projectCard);

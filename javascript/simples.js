@@ -64,7 +64,12 @@ const simpleProjects = [
 		link: "https://github.com/marcuwynu23/quiz-app.git",
 		language: "Javascript, HTML, CSS,Angular and Bootstrap",
 		topics: ["quiz", "quiz-app", "quiz-app-web", "angular", "angular-quiz-app"],
-		screenshots: [],
+		screenshots: [
+			"assets/placeholder.svg",
+			"assets/placeholder.svg",
+			"assets/placeholder.svg",
+			"assets/placeholder.svg",
+		],
 	},
 	{
 		title: "Subject Management Tool",
@@ -77,11 +82,6 @@ const simpleProjects = [
 			"assets/screenshots/simples/subject-management-tool/7.jpg",
 			"assets/screenshots/simples/subject-management-tool/8.jpg",
 			"assets/screenshots/simples/subject-management-tool/1.jpg",
-			"assets/screenshots/simples/subject-management-tool/2.jpg",
-			"assets/screenshots/simples/subject-management-tool/3.jpg",
-			"assets/screenshots/simples/subject-management-tool/4.jpg",
-			"assets/screenshots/simples/subject-management-tool/5.jpg",
-			"assets/screenshots/simples/subject-management-tool/6.jpg",
 		],
 	},
 	{
@@ -106,7 +106,6 @@ const simpleProjects = [
 			"assets/screenshots/simples/map-linker/1.jpg",
 			"assets/screenshots/simples/map-linker/2.jpg",
 			"assets/screenshots/simples/map-linker/3.jpg",
-			"assets/screenshots/simples/map-linker/4.jpg",
 		],
 	},
 ];

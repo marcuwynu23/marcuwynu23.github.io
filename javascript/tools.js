@@ -51,6 +51,19 @@ const toolProjects = [
 		],
 	},
 	{
+		title: "sdir",
+		description: "A simple directory saving tool",
+		link: "https://github.com/marcuwynu23/sdir",
+		language: "Python",
+		topics: ["python", "console", "tool", "directory", "directory saver"],
+		screenshots: [
+			"assets/screenshots/tools/sdir/0.jpg",
+			"assets/screenshots/tools/sdir/1.jpg",
+			"assets/screenshots/tools/sdir/2.jpg",
+			"assets/screenshots/tools/sdir/3.jpg",
+		],
+	},
+	{
 		title: "stgen-cli",
 		description:
 			"a commandline tool or a program use to generate static html file",
@@ -94,7 +107,10 @@ const toolProjects = [
 		link: "https://github.com/marcuwynu23/object-file-encrypter.git",
 		language: "javascript,node.js",
 		topics: ["encrypt", "console", "library"],
-		screenshots: [],
+		screenshots: [
+			"assets/placeholder.jpg",
+			"assets/placeholder.jpg",
+		],
 	},
 	{
 		title: "Website Phisher",
@@ -103,10 +119,10 @@ const toolProjects = [
 		language: "javascript,node.js",
 		topics: ["phisher", "tool", "website", "website phisher"],
 		screenshots: [
-			"assets/screenshots/tools/website-phisher/0.jpg",
 			"assets/screenshots/tools/website-phisher/1.jpg",
-			"assets/screenshots/tools/website-phisher/2.jpg",
-			"assets/screenshots/tools/website-phisher/3.jpg",
+			"assets/screenshots/tools/website-phisher/1.jpg",
+			"assets/screenshots/tools/website-phisher/1.jpg",
+			"assets/screenshots/tools/website-phisher/1.jpg",
 		],
 	},
 ];

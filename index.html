@@ -40,43 +40,45 @@
 	rel="stylesheet" />
 <link href="style/style.css"
 	rel="stylesheet" />
+<link href="style/gallery.css"
+	rel="stylesheet" />
 <title>Peculiar Portfolio</title>
 </head>
 
 <body class="my-bg-quaternary-color">
 	<div class="landing-bg">
-		<header class=" flex justify-end items-center mx-5  px-5 md:block "
+		<header class=" flex justify-end items-center m-0  px-5 py-1 md:block"
 			id="header">
 			<div class="flex items-center">
 				<img src="./assets/logo.svg"
 					alt="Logo"
-					class="w-10 h-10 ">
-				<p class="mx-2 text-xl"
-					id="app-title">MW Portfolio</p>
+					class="w-6 h-6">
+				<p class="mx-0 font-bold"
+					id="app-title">Portfolio</p>
 				<ul class="flex ml-4">
-					<li class="my-2 px-4">
+					<li class="px-3">
 						<a href="#home"
-							class="text-lg">Home</a>
+							class="text-lg ">Home</a>
 					</li>
-					<li class="my-2 px-4">
+					<li class=" px-3">
 						<a href="#about"
 							class="text-lg ">About</a>
 					</li>
-					<li class="my-2 px-4">
+					<li class=" px-3">
 						<a href="#skills"
 							class="text-lg ">Skills</a>
 					</li>
-					<li class="my-2 px-4">
+					<li class=" px-3">
 						<a href="#projects"
 							class="text-lg ">Projects</a>
 					</li>
-					<li class="my-2 px-4">
+					<li class=" px-3">
 						<a href="#videos"
 							class="text-lg "> Videos</a>
 					</li>
 				</ul>
 				<ul class="ms-auto">
-					<li class="inline-block mx-2 my-5 ">
+					<li class="inline-block mx-2">
 						<a href="https://github.com/marcuwynu23"
 							target="_blank">
 							<i class="fab fa-github fs-1"
@@ -84,14 +86,14 @@
 
 						</a>
 					</li>
-					<li class="inline-block mx-2 my-5 ">
+					<li class="inline-block mx-2">
 						<a href="https://twitter.com/"
 							target="_blank">
 							<i class="fab fa-twitter fs-1"
 								title="Twitter"></i>
 						</a>
 					</li>
-					<li class="inline-block mx-2 my-5 ">
+					<li class="inline-block mx-2 ">
 						<a href="https://www.linkedin.com/in/marcuwynu23/"
 							target="_blank">
 							<i class="fab fa-linkedin fs-1"
@@ -104,14 +106,14 @@
 
 
 
-		<div class="md:hidden"
+		<div class="md:hidden p-3"
 			id="header-mobile">
 			<div class="flex justify-start mx-2">
 				<button id="toggleBtn"
 					class="inline-block py-2  my-text-secondary-color">
 					<!-- make svg white -->
 					<svg xmlns="http://www.w3.org/2000/svg"
-						class="h-10 w-10 my-text-secondary-color"
+						class="h-8 w-8  my-text-secondary-color"
 						fill="none"
 						viewBox="0 0 24 24"
 						stroke="currentColor">
@@ -122,38 +124,38 @@
 					</svg>
 				</button>
 				<p class="py-4  mx-2 text-xl"
-					id="app-title-mobile">MW Portfolio</p>
+					id="app-title-mobile">MWPortfolio</p>
 			</div>
 
-			<ul class="hidden text-center"
+			<ul class="hidden mx-5 my-5"
 				id="menu">
 
-				<li class="block py-2">
-					<a class="text-xl"
+				<li class="block p-2">
+					<a class="text-2xl  text-left"
 						href="#home">
 						Home
 					</a>
 				</li>
-				<li class="block py-2 ">
-					<a class="text-xl"
+				<li class="block p-2 ">
+					<a class="text-2xl"
 						href="#about">
 						About
 					</a>
 				</li>
-				<li class="block py-2">
-					<a class="text-xl"
+				<li class="block p-2">
+					<a class="text-2xl"
 						href="#skills">
 						Skills
 					</a>
 				</li>
-				<li class="block py-2">
-					<a class="text-xl"
+				<li class="block p-2">
+					<a class="text-2xl"
 						href="#projects">
 						Projects
 					</a>
 				</li>
-				<li class="block py-2">
-					<a class="text-xl"
+				<li class="block p-2">
+					<a class="text-2xl"
 						href="#videos">
 						Videos
 					</a>
@@ -161,32 +163,36 @@
 			</ul>
 		</div>
 		<section id="home"
-			class="my-text-color">
-			<div class="flex flex-col justify-center items-center w-full h-screen my-xl-5 px-2">
+			class="my-text-color my-5">
+			<div class="flex flex-col justify-center  items-center  h-screen  px-2">
 				<p id="quote-welcome-message"
-					class="my-5 max-w-md text-center text-white q-title animate__animated  animate__flipInY">
+					class=" my-5 max-w-md text-center text-white q-title">
 					Maestros of
 					creation
 					evoke marvels from the
 					unimagined.
 				</p>
-				<p class="mt-2 mx-4 max-w-lg max-h-lg text-gray-50 text-center text-lg animate__animated animate__fadeIn">
+
+				<p class=" mt-2 mx-4 max-w-lg max-h-lg text-gray-50 text-center text-lg">
 					Developers can unlock their potential for innovation in software development by becoming skilled creators,
 					using their creativity, imagination, and technical expertise to come up with extraordinary ideas and explore
 					new technologies. This emphasizes the importance of creativity and innovation in the field, inspiring
 					developers to push themselves to create marvels from the unimagined.
 				</p>
 				<a href="#projects"
-					class="my-bg-special-color rounded-lg  text-gray-700   shadow py-2 px-4  mt-8">View
+					class="btn-view my-bg-quaternary-color   rounded-lg text-gray-200   py-2 px-4  mt-8">View
 					Projects</a>
 			</div>
 		</section>
 	</div>
+
+
+
 	<main>
 		<div class="container-fluid ">
 			<!-- about section -->
 			<section id="about"
-				class="mb-8 flex flex-col md:flex-row">
+				class="my-5 mb-8 flex flex-col md:flex-row">
 				<div class="container mx-auto px-2 py-4 mt-5">
 					<div class="container mx-auto my-1">
 						<div class="container mx-auto">
@@ -228,9 +234,9 @@
 			<section>
 				<ul class="text-lg p-5 m-5 grid md:grid-cols-3 gap-4">
 					<li class="text-justify list-none py-5">
-						<div class="card  p-5 ">
-							<strong class="font-semibold ">
-								<i class="fas fa-hammer "></i> Console, Libs andTools
+						<div class="card p-5 ">
+							<strong class="font-semibold text-lg">
+								<i class="fas fa-hammer "></i> Commandline, Libraries and Tools
 							</strong>
 							<br>
 							<p class="text-gray-200">
@@ -246,8 +252,8 @@
 					</li>
 					<li class="py-5 text-justify list-none">
 						<div class="card p-5 ">
-							<strong class="font-semibold ">
-								<i class="fas fa-briefcase "></i> Simple and Common Programs
+							<strong class="font-semibold text-lg">
+								<i class="fas fa-briefcase "></i> Common Programs
 							</strong>
 							<br>
 							<p class="text-gray-200">
@@ -265,8 +271,8 @@
 					</li>
 					<li class="py-5 text-justify list-none">
 						<div class="card   p-5 ">
-							<strong class="font-semibold ">
-								<i class="fas fa-cubes "></i> System Projects
+							<strong class="font-semibold text-lg">
+								<i class="fas fa-cubes "></i> System and Enterprise Application
 							</strong>
 							<br>
 							<p class="text-gray-200">
@@ -280,15 +286,11 @@
 						</div>
 					</li>
 				</ul>
-				<p class="mx-5 px-5 text-justify text-gray-200">
-					Overall, Mark is a passionate and dedicated developer who is always eager to learn new
-					technologies
-					and create innovative solutions to real-world problems.
-				</p>
+
 			</section>
 			<!-- skill section -->
 			<section id="skills"
-				class="h-auto my-3">
+				class="my-5 h-auto">
 				<div class="container mx-auto px-5 ">
 					<h2 class="text-3xl  font-bold py-5">Skills</h2>
 					<div class="container mx-auto">
@@ -308,8 +310,8 @@
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-Java-red?logo=java&logoColor=white?logoWidth=40"
 													alt="Java Logo" />
-												<div class="relative h-2 my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2 my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 70%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">4 years</p>
@@ -317,8 +319,8 @@
 											<div>
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-Python-white?logo=python&logoColor=black?logoWidth=40" />
-												<div class="relative h-2 my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2 my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 80%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">6 years</p>
@@ -326,8 +328,8 @@
 											<div>
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-JavaScript-f2f2f2?logo=javascript&logoColor=white?logoWidth=40" />
-												<div class="relative h-2 my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2 my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 80%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">3 years</p>
@@ -335,8 +337,8 @@
 											<div>
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-HTML5-f2f2f2?logo=html5&logoColor=121212?logoWidth=40" />
-												<div class="relative h-2 my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2 my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 90%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">3 years</p>
@@ -344,8 +346,8 @@
 											<div>
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white?logoWidth=40" />
-												<div class="relative h-2 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 60%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">3 years</p>
@@ -353,8 +355,8 @@
 											<div>
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-C%2B%2B-00599C?logo=c%2B%2B&logoColor=white?logoWidth=40" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 30%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">3 years</p>
@@ -379,8 +381,8 @@
 										shadow"
 													src="https://img.shields.io/badge/-Bootstrap-white?logo=bootstrap&logoColor=white?logoWidth=40"
 													alt="Bootstrap Logo" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 50%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">3 years</p>
@@ -389,8 +391,8 @@
 												<img class=" inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-Tailwindcss-white?logo=tailwindcss&logoColor=white?logoWidth=40"
 													alt="Tailwind Logo" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 20%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">2 months</p>
@@ -400,8 +402,8 @@
 											<div>
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-React.js-343e3e?logo=react&logoColor=white?logoWidth=40" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 50%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">2 years</p>
@@ -410,8 +412,8 @@
 											<div>
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-Vue.js-white?logo=vue.js&logoColor=white?logoWidth=40" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 70%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">2 months</p>
@@ -421,8 +423,8 @@
 											<div>
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-Angular.js-red?logo=angular&logoColor=red?logoWidth=40" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 20%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">2 months</p>
@@ -448,8 +450,8 @@
 											shadow"
 													src="https://img.shields.io/badge/-Express.js-green?logo=express&logoColor=green?logoWidth=40"
 													alt="Bootstrap Logo" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 70%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">2 years</p>
@@ -462,8 +464,8 @@
 												shadow"
 													src="https://img.shields.io/badge/-Flask-blue?logo=flask&logoColor=white?logoWidth=40"
 													alt="Tailwind Logo" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 30%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">2 years</p>
@@ -472,8 +474,8 @@
 											<div>
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-Nest.js-e42644?logo=nestJS&logoColor=white?logoWidth=40" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 20%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">2 months</p>
@@ -482,8 +484,8 @@
 											<div>
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-Django-0f3c2d?logo=django&logoColor=white?logoWidth=40" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 40%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">3 years</p>
@@ -492,8 +494,8 @@
 											<div>
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-Laravel-white?logo=laravel&logoColor=red?logoWidth=40" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 30%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">4 months</p>
@@ -511,24 +513,24 @@
 											<div>
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-MySQL-white?logo=mysql&logoColor=blue?logoWidth=40" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 70%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">3 years</p>
 											</div>
 											<div><img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-Mongodb-3f2f1f?logo=mongodb&logoColor=519748?logoWidth=40" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 60%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">3 years</p>
 											</div>
 											<div> <img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-SQLite-blue?logo=sqlite&logoColor=white?logoWidth=40" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 50%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">4 years</p>
@@ -548,8 +550,8 @@
 											<div>
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-Github-black?logo=github&logoColor=white?logoWidth=40" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 70%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">4 years</p>
@@ -557,8 +559,8 @@
 											<div>
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-Git-FCC624?logo=git&logoColor=orange?logoWidth=40" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 60%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">4 years</p>
@@ -566,8 +568,8 @@
 											<div>
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-Docker-white?logo=docker&logoColor=blue?logoWidth=40" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 50%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">4 months</p>
@@ -576,8 +578,8 @@
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-Docker%20Compose-blue?logo=docker%20compose&logoColor=blue?logoWidth=40"
 													alt="Docker Compose Logo" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 50%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">4 months</p>
@@ -586,8 +588,8 @@
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-VSCode-blue?logo=visual%20studio%20code&logoColor=white?logoWidth=40"
 													alt="VSCode Logo" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 90%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">3 years</p>
@@ -596,8 +598,8 @@
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-Sublime%20Text-4e4e4e?logo=sublime%20text&logoColor=fb9500?logoWidth=40"
 													alt="Sublime Text Logo" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 80%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">3 years</p>
@@ -605,8 +607,8 @@
 											<div>
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-Insomnia-white?logo=insomnia&logoColor=indigo?logoWidth=40" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 70%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">4 months</p>
@@ -614,16 +616,16 @@
 											<div>
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-npm-white?logo=npm&logoColor=bf0300?logoWidth=40" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 70%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">3 years</p>
 											</div>
 											<div> <img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-yarn-white?logo=yarn&logoColor=2a8db5?logoWidth=40" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 50%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">2 years</p>
@@ -631,8 +633,8 @@
 											<div>
 												<img class="inline h-5 w-auto shadow"
 													src="https://img.shields.io/badge/-Busybox-black?logo=busybox&logoColor=white?logoWidth=40" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 60%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">6 years</p>
@@ -658,8 +660,8 @@
 													src="https://myket.ir/app-icon/fe00cf47-a5d4-4c9a-b390-4d78bc774a07_.png"
 													alt="Nmap Logo"
 													title="nmap">
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 80%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">4 monthss</p>
@@ -669,8 +671,8 @@
 												<img class="inline"
 													src="https://img.shields.io/badge/-netstat-00acee?logo=network-protocol&logoColor=white"
 													alt="netstat Logo">
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 90%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">6 years</p>
@@ -680,8 +682,8 @@
 													src="http://netamooz.net/wp-content/uploads/2016/02/ipconfig-command.png"
 													alt="ipconfig Logo"
 													title="ipconfig">
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 90%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">6 years</p>
@@ -691,8 +693,8 @@
 													src="https://icon-library.com/images/icon-ping/icon-ping-28.jpg"
 													alt="ping Logo"
 													title="ping">
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 90%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">6 years</p>
@@ -703,8 +705,8 @@
 													src="http://1.bp.blogspot.com/-bmO8Bt7JW9A/Tok6psbeL-I/AAAAAAAAATY/s6Y-Ysqd2Xc/s1600/500px-IP.svg_.png"
 													alt="traceroute Logo"
 													title="traceroute">
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 80%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">2 years</p>
@@ -714,8 +716,8 @@
 													src="https://www.solingest.com/wp-content/uploads/2018/05/dns_300.png"
 													alt="dnslookup Logo"
 													title="DN Lookup Tools">
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 90%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">2 years</p>
@@ -726,8 +728,9 @@
 													src="https://media.trustradius.com/product-logos/dT/3e/JWKABGMWXUZ3.PNG"
 													alt="Wireshark Logo"
 													title="Wireshark">
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 30%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">2 years</p>
@@ -738,8 +741,9 @@
 													src="https://logos.bugcrowdusercontent.com/logos/2376/fdfa/651b17be/051e0245d787d1f71246d515e88a8564_zap256x256-oversize.png"
 													alt="OWASP ZAP Logo"
 													title="OWASP ZAP">
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 10%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">2 months</p>
@@ -751,8 +755,8 @@
 													src="https://image.winudf.com/v2/image1/Y29tLmZpcmV3YWxsLnNzaGNsaWVudF9pY29uXzE1NTk3NTI0NDhfMDA1/icon.png?w=&fakeurl=1"
 													alt="SSH Logo"
 													title="SSH">
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 90%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">6 years</p>
@@ -774,8 +778,8 @@
 													src="https://cdn.freebiesupply.com/logos/large/2x/microsoft-windows-22-logo-png-transparent.png"
 													alt="windows logo"
 													title="windows" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 70%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">4 years</p>
@@ -785,8 +789,8 @@
 													src="https://pngimg.com/uploads/linux/linux_PNG1.png"
 													alt="linux logo"
 													title="linux" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 60%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">2 years</p>
@@ -796,8 +800,8 @@
 													src="https://cdn.freebiesupply.com/logos/large/2x/android-logo-png-transparent.png"
 													alt="android logo"
 													title="android" />
-												<div class="relative h-2  my-1 bg-gray-200 rounded">
-													<div class="absolute top-0 left-0 h-full my-bg-special-color rounded"
+												<div class="relative h-2  my-1 bg-gray-200 ">
+													<div class="absolute top-0 left-0 h-full my-bg-special-color "
 														style="width: 70%;"></div>
 												</div>
 												<p class="text-xs mt-1 text-gray-300">8 years</p>
@@ -869,7 +873,7 @@
 		</section>
 
 		<section id="projects"
-			class="h-auto my-8">
+			class="h-auto my-5">
 			<div class="container mx-auto px-5">
 
 				<h2 class="text-3xl  font-bold py-5">Projects</h2>
@@ -914,20 +918,111 @@
 			</div>
 		</section>
 
-		<section id="videos"
+		<!-- <section id="videos"
 			class="h-auto my-8">
 			<div class="container mx-auto px-5">
 				<h2 class="text-3xl  font-bold py-5">Videos and Clips</h2>
 			</div>
-		</section>
+		</section> -->
 
 		</div>
 	</main>
-	<footer class="text-center py-4 my-bg-tertiary-color  shadow-lg ">
-		<div class="container-fluid bottom py-1">
-			<p class="text-xs">© Copyright © 2023 Mark Wayne Menorca. All Rights Reserved.</p>
+	<footer class="text-center p-5 ">
+
+		<div class="grid 	grid-cols-1 md:grid-cols-2 gap-2 ">
+			<div class="py-1">
+
+
+
+			</div>
+			<div class="container-fluid bottom py-1">
+				<div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+					<div>
+						<p class="text-left text-sm font-bold ">Highlights</p>
+						<div class="container">
+							<ul>
+								<li class="text-left"><a class="text-sm underline"
+										href="#">Auto-cli</a></li>
+								<li class="text-left"><a class="text-sm underline"
+										href="#">Just Utility</a></li>
+								<li class="text-left"><a class="text-sm underline"
+										href="#">sdir Command</a></li>
+							</ul>
+						</div>
+					</div>
+					<div>
+						<p class="text-left text-sm font-bold ">Resources</p>
+						<div class="container">
+							<ul>
+								<li class="text-left"><a class="text-sm underline"
+										href="#">Favorite Tools</a></li>
+								<li class="text-left"><a class="text-sm underline"
+										href="#">Console Commands</a></li>
+								<li class="text-left"><a class="text-sm underline"
+										href="#">System Administration Guide</a></li>
+								<li class="text-left"><a class="text-sm underline"
+										href="#">Python Scripting Basics</a></li>
+								<li class="text-left"><a class="text-sm underline"
+										href="#">Penetration Basics</a></li>
+							</ul>
+						</div>
+					</div>
+					<div>
+						<p class="text-left text-sm font-bold ">Concepts</p>
+						<div class="container">
+							<ul>
+								<li class="text-left"><a class="text-sm underline"
+										href="#">Programming Fundamentals</a></li>
+								<li class="text-left"><a class="text-sm underline"
+										href="#">Scripting and Shell</a></li>
+								<li class="text-left"><a class="text-sm underline"
+										href="#">DevOpSec Methodology</a></li>
+								<li class="text-left"><a class="text-sm underline"
+										href="#">Web Enterprise Architecture</a></li>
+								<li class="text-left"><a class="text-sm underline"
+										href="#">Cryptography Fundamentals</a></li>
+								<li class="text-left"><a class="text-sm underline"
+										href="#">OS Security</a></li>
+								<li class="text-left"><a class="text-sm underline"
+										href="#">Web Exploits</a></li>
+								<li class="text-left"><a class="text-sm underline"
+										href="#">Social Engineering</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+		<ul>
+			<li class="text-left inline-block mx-1 my-2 ">
+				<a href="https://github.com/marcuwynu23"
+					target="_blank">
+					<i class="fab fa-github"
+						title="GitHub"></i>
+
+				</a>
+			</li>
+			<li class="inline-block mx-1 my-2 ">
+				<a href="https://twitter.com/"
+					target="_blank">
+					<i class="fab fa-twitter fs-1"
+						title="Twitter"></i>
+				</a>
+			</li>
+			<li class="inline-block mx-1 my-2 ">
+				<a href="https://www.linkedin.com/in/marcuwynu23/"
+					target="_blank">
+					<i class="fab fa-linkedin fs-1"
+						title="LinkedIn"></i>
+				</a>
+			</li>
+		</ul>
+		<p class="text-sm">© Copyright © 2023 Mark Wayne Menorca. All Rights Reserved.</p>
 	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<script src="javascript/animation.js"></script>
+
 	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js'
 		integrity='sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=='
