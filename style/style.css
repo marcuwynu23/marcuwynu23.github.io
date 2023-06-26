@@ -1,14 +1,14 @@
 :root {
-	--primary-color: #2a2f2e;
-	--secondary-color: #252928;
-	--tertiary-color: #202423;
-	--quaternary-color: #434248;
+	--primary-color: #192220;
+	--secondary-color: #101515;
+	--tertiary-color: #0d1111;
+	--quaternary-color: #2f2e2e;
 	--font: 'Segoe UI', sans-serif;
 }
 
 * {
 	color: white;
-	font-size:  0.9rem;
+	font-size: 0.9rem;
 	font-weight: 300;
 	font-family: var(--font);
 }
@@ -18,9 +18,11 @@
 }
 
 .landing-bg {
-	background-image: url("../assets/background4.svg");
+	background-color: var(--tertiary-color);
+	/* background-image: url('../assets//background.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover; */
+
 }
 
 #app-title-mobile {
@@ -37,11 +39,11 @@
 	border: 1px solid var(--quaternary-color);
 }
 
+
 .card {
 	background-color: var(--primary-color);
 	padding: 2rem;
 	border: 1px solid var(--quaternary-color);
-	border-radius: 12px;
 }
 
 .card:hover {
@@ -61,19 +63,15 @@
 	border-bottom: 1px solid var(--quaternary-color);
 }
 
-footer {
-	background-color: var(--tertiary-color);
-}
-
 
 footer {
-	border-top: 1px solid var(--quaternary-color);
+	background-color: var(--tertiary-color) !important;
+	filter: opacity(0.9);
 }
 
-.q-title {
-	font-size: 1.3rem;
-	font-weight: 700;
-}
+
+
+
 
 .about-dist {
 	font-size: 1.1rem;
@@ -106,7 +104,6 @@ strong {
 .btn {
 	backdrop-filter: blur(16px) saturate(180%);
 	-webkit-backdrop-filter: blur(16px) saturate(180%);
-	border-radius: 12px;
 	border: 1px solid var(--quaternary-color);
 }
 
@@ -134,8 +131,8 @@ a {
 }
 
 #quote-welcome-message {
-	font-weight: 700;
-	font-size: 3.0rem;
+	font-weight: 600;
+	font-size: 2.0rem;
 
 }
 

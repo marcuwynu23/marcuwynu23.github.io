@@ -36,6 +36,10 @@
 	href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
 	integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=='
 	crossorigin='anonymous' />
+<link rel='stylesheet'
+	href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
+	integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=='
+	crossorigin='anonymous' />
 <link href="style/tailwind.css"
 	rel="stylesheet" />
 <link href="style/style.css"
@@ -54,31 +58,40 @@
 					alt="Logo"
 					class="w-6 h-6">
 				<p class="mx-0 font-bold"
-					id="app-title">Portfolio</p>
-				<ul class="flex ml-4">
-					<li class="px-3">
+					id="app-title">
+					Portfolio</p>
+				<ul class="flex ms-auto">
+					<li class="p-1 mx-1">
 						<a href="#home"
-							class="text-lg ">Home</a>
+							class="text-lg ">
+							<i class="fas fa-house"></i>
+							<span class="font-bold">Home</span></a>
 					</li>
-					<li class=" px-3">
+					<li class=" p-1 mx-2">
 						<a href="#about"
-							class="text-lg ">About</a>
+							class="text-lg ">
+							<i class="fas fa-book"></i>
+							<span class="font-bold">About</span></a>
 					</li>
-					<li class=" px-3">
+					<li class=" p-1 mx-2">
 						<a href="#skills"
-							class="text-lg ">Skills</a>
+							class="text-lg ">
+							<i class="fas fa-chess-rook"></i>
+							<span class="font-bold">Skills</span> </a>
 					</li>
-					<li class=" px-3">
+					<li class=" p-1 mx-2">
 						<a href="#projects"
-							class="text-lg ">Projects</a>
+							class="text-lg "> <i class="fas fa-briefcase"></i>
+							<span class="font-bold">Projects</span></a>
 					</li>
-					<li class=" px-3">
+					<li class=" p-1 mx-2">
 						<a href="#videos"
-							class="text-lg "> Videos</a>
+							class="text-lg "> <i class="fas fa-video"></i>
+							<span class="font-bold">Videos</span></a>
 					</li>
 				</ul>
 				<ul class="ms-auto">
-					<li class="inline-block mx-2">
+					<li class="inline-block mx-2   ">
 						<a href="https://github.com/marcuwynu23"
 							target="_blank">
 							<i class="fab fa-github fs-1"
@@ -86,14 +99,14 @@
 
 						</a>
 					</li>
-					<li class="inline-block mx-2">
+					<li class="inline-block mx-2   ">
 						<a href="https://twitter.com/"
 							target="_blank">
 							<i class="fab fa-twitter fs-1"
 								title="Twitter"></i>
 						</a>
 					</li>
-					<li class="inline-block mx-2 ">
+					<li class="inline-block mx-2  ">
 						<a href="https://www.linkedin.com/in/marcuwynu23/"
 							target="_blank">
 							<i class="fab fa-linkedin fs-1"
@@ -106,7 +119,7 @@
 
 
 
-		<div class="md:hidden p-3"
+		<div class="md:hidden px-3"
 			id="header-mobile">
 			<div class="flex justify-start mx-2">
 				<button id="toggleBtn"
@@ -124,40 +137,54 @@
 					</svg>
 				</button>
 				<p class="py-4  mx-2 text-xl"
-					id="app-title-mobile">MWPortfolio</p>
+					id="app-title-mobile">
+				<div class="flex justify-center py-4">
+					<img src="./assets/logo.svg"
+						alt="Logo"
+						class="w-8 h-8">
+					<p class="mx-0 font-bold"
+						id="app-title">
+						Portfolio</p>
+				</div>
+				</p>
 			</div>
 
-			<ul class="hidden mx-5 my-5"
+			<ul class="hidden "
 				id="menu">
 
 				<li class="block p-2">
 					<a class="text-2xl  text-left"
 						href="#home">
-						Home
+						<i class="fas fa-house"></i>
+						<span class="font-bold">Home</span></a>
 					</a>
 				</li>
 				<li class="block p-2 ">
 					<a class="text-2xl"
 						href="#about">
-						About
+						<i class="fas fa-book"></i>
+						<span class="font-bold">About</span></a>
 					</a>
 				</li>
 				<li class="block p-2">
 					<a class="text-2xl"
 						href="#skills">
-						Skills
+						<i class="fas fa-chess-rook"></i>
+						<span class="font-bold">Skills</span> </a>
 					</a>
 				</li>
 				<li class="block p-2">
 					<a class="text-2xl"
 						href="#projects">
-						Projects
+						<i class="fas fa-briefcase"></i>
+						<span class="font-bold">Projects</span></a>
 					</a>
 				</li>
 				<li class="block p-2">
 					<a class="text-2xl"
 						href="#videos">
-						Videos
+						<i class="fas fa-video"></i>
+						<span class="font-bold">Videos</span></a>
 					</a>
 				</li>
 			</ul>
@@ -180,7 +207,7 @@
 					developers to push themselves to create marvels from the unimagined.
 				</p>
 				<a href="#projects"
-					class="btn-view my-bg-quaternary-color   rounded-lg text-gray-200   py-2 px-4  mt-8">View
+					class="btn-view my-bg-quaternary-color text-gray-200   py-2 px-4  mt-8">View
 					Projects</a>
 			</div>
 		</section>
