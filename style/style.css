@@ -1,15 +1,19 @@
+@import url('https://fonts.cdnfonts.com/css/rutina-grace');
+@import url('https://fonts.cdnfonts.com/css/movistar-text');
+
 :root {
-	--primary-color: #192220;
-	--secondary-color: #101515;
-	--tertiary-color: #0d1111;
-	--quaternary-color: #2f2e2e;
-	--font: 'Segoe UI', sans-serif;
+	--primary-color: #152e31;
+	--secondary-color: #172627;
+	--tertiary-color: #131f20;
+	--quaternary-color: #ffffff;
+	--font: 'Roboto', sans-serif;
+	--font-special: 'Roboto', sans-serif;
 }
 
-* {
+*:not(i) {
 	color: white;
-	font-size: 0.9rem;
-	font-weight: 300;
+	font-size: 1.006rem;
+	font-weight: 100;
 	font-family: var(--font);
 }
 
@@ -18,7 +22,7 @@
 }
 
 .landing-bg {
-	background-color: var(--tertiary-color);
+	background-color: var(--primary-color);
 	/* background-image: url('../assets//background.jpg');
 	background-repeat: no-repeat;
 	background-size: cover; */
@@ -28,10 +32,12 @@
 #app-title-mobile {
 	font-weight: 900;
 	font-size: 1.4em;
+	font-family: 'Rutina Grace', sans-serif;
 }
 
 #app-title {
 	font-size: 1.3em;
+	font-family: 'Rutina Grace', sans-serif;
 }
 
 
@@ -40,28 +46,21 @@
 }
 
 
+
 .card {
+	border-radius: 12px;
 	background-color: var(--primary-color);
 	padding: 2rem;
-	border: 1px solid var(--quaternary-color);
 }
 
-.card:hover {
-	background-color: #224037;
-	border: 1px solid #535353;
-}
 
 .card:hover a,
 .card:hover .topic-item {
-	border: 1px solid #ffffff;
+
 	background-color: transparent;
 }
 
 
-
-#home {
-	border-bottom: 1px solid var(--quaternary-color);
-}
 
 
 footer {
@@ -87,7 +86,7 @@ footer {
 
 
 .my-bg-special-color {
-	background-color: #2b5448;
+	background-color: #0c6366;
 }
 
 
@@ -97,15 +96,11 @@ h3,
 h4,
 h5,
 strong {
-
+	font-family: var(--font-special) !important;
 	margin: 0 auto;
 }
 
-.btn {
-	backdrop-filter: blur(16px) saturate(180%);
-	-webkit-backdrop-filter: blur(16px) saturate(180%);
-	border: 1px solid var(--quaternary-color);
-}
+
 
 a {
 	padding: 0.2rem 0.3rem;
@@ -131,9 +126,9 @@ a {
 }
 
 #quote-welcome-message {
-	font-weight: 600;
-	font-size: 2.0rem;
-
+	font-weight: 600 !important;
+	font-size: 2.3rem !important;
+	font-family:  'Movistar Text', sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -146,8 +141,8 @@ a {
 	h4,
 	h5,
 	strong {
-		font-weight: 500;
-		margin: 0 auto;
+		font-weight: 500 !important;
+		margin: 0 auto !important;
 	}
 
 	/* Hide the desktop header */

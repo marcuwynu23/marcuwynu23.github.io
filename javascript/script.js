@@ -6,7 +6,7 @@ function insertProject(containerId, project) {
   const projectContainer = $(containerId);
   const projectCard = $("<div>", {
     class:
-      "card overflow-hidden p-5 m-4 flex flex-col animate__animated animate__fadeIn",
+      "card shadow-md overflow-hidden m-4 flex flex-col animate__animated animate__fadeIn",
   });
 
   const contentContainer = $("<div>", { class: "px-5 py-2" });
@@ -33,7 +33,7 @@ function insertProject(containerId, project) {
   });
 
   const repoElement = $("<a>", {
-    class: " p-2 m-2  inline border  text-xs text-gray-100 ",
+    class: " p-2 m-2 rounded-lg  inline border  text-xs text-gray-100 ",
     href: project.link,
     text: "Repository",
   });
@@ -43,7 +43,7 @@ function insertProject(containerId, project) {
   repoElement.prepend(repoIcon);
 
   const docElement = $("<a>", {
-    class: "border p-2 m-2  inline   text-xs text-gray-100 ",
+    class: "border rounded-lg p-2 m-2  inline   text-xs text-gray-100 ",
     href: project.link,
     text: "Documentation",
   });
@@ -64,8 +64,10 @@ function insertProject(containerId, project) {
       "object-cover",
       "h-full",
       "w-full",
-      "border",
-      "border-gray-700"
+      "border-none",
+      "shadow-xl",
+      "cursor-pointer",
+      "rounded-md"
     );
     previewImage.setAttribute("src", images[0] || "../assets/placeholder.jpg");
     previewImage.setAttribute("alt", "Preview Image");
@@ -97,7 +99,7 @@ function insertProject(containerId, project) {
       "flex",
       "space-x-2",
       "overflow-x-auto",
-      "mt-4",
+      "mt-2",
       "justify-center"
     );
 
@@ -109,8 +111,8 @@ function insertProject(containerId, project) {
         "w-16",
         "cursor-pointer",
         "shadow-xl",
-        "border",
-        "border-gray-700"
+        "border-none",
+        "rounded-md"
       );
       slideImage.setAttribute("src", imageUrl || "../assets/placeholder.jpg");
       slideImage.setAttribute("alt", `Slide Image ${index + 1}`);
@@ -143,11 +145,10 @@ function insertProject(containerId, project) {
   otherContainer.append(repoElement);
   otherContainer.append(docElement);
 
+  projectCard.append(createImageGallery(project.screenshots));
   projectCard.append(contentContainer);
 
   projectCard.append(otherContainer);
-
-  projectCard.append(createImageGallery(project.screenshots));
 
   let topicsTitle = document.createElement("h5");
   topicsTitle.textContent = "Topics and keywords";
@@ -157,7 +158,7 @@ function insertProject(containerId, project) {
   const topicsContainer = $("<div>", { class: "flex flex-wrap mt-2" });
   project.topics.forEach((topic) => {
     const topicElement = $("<span>", {
-      class: "topic-item border  text-xs   mr-2 px-2 py-1 m-2",
+      class: "topic-item border rounded-lg  text-xs   mr-2 px-2 py-1 m-2",
       text: topic,
     });
     topicsContainer.append(topicElement);
