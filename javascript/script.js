@@ -9,7 +9,7 @@ function insertProject(containerId, project) {
       "card shadow-md overflow-hidden m-4 flex flex-col animate__animated animate__fadeIn",
   });
 
-  const contentContainer = $("<div>", { class: "px-5 py-2" });
+  const contentContainer = $("<div>", { class: "px-2 py-3" });
   const titleElement = $("<h3>", {
     class: "text-2xl font-bold mb-2",
     text: project.title,

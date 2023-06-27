@@ -2,10 +2,10 @@
 @import url('https://fonts.cdnfonts.com/css/movistar-text');
 
 :root {
-	--primary-color: #152e31;
-	--secondary-color: #172627;
-	--tertiary-color: #131f20;
-	--quaternary-color: #ffffff;
+	--primary-color: #222222;
+	--secondary-color: #242d2e;
+	--tertiary-color: #1e1e1e;
+	--quaternary-color: #a8a8a8;
 	--font: 'Roboto', sans-serif;
 	--font-special: 'Roboto', sans-serif;
 }
@@ -22,7 +22,7 @@
 }
 
 .landing-bg {
-	background-color: var(--primary-color);
+	background-color: #1e1e1e;
 	/* background-image: url('../assets//background.jpg');
 	background-repeat: no-repeat;
 	background-size: cover; */
