@@ -1,37 +1,33 @@
 @import url('https://fonts.cdnfonts.com/css/rutina-grace');
 @import url('https://fonts.cdnfonts.com/css/movistar-text');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
 :root {
-	--primary-color: #1e1e1e;
-	--secondary-color: #173d34;
-	--tertiary-color: #1e1e1e;
-	--quaternary-color: #a8a8a8;
-	--font: 'Roboto Light', sans-serif;
-	--font-special: 'Roboto', sans-serif;
+	--primary-color: #3e7639;
+	--secondary-color: #3e7639;
+	--tertiary-color: #181b1a;
+	--quaternary-color: #ffffff;
+	--font: 'Roboto', sans-serif;
+	--font-special: 'Arial', sans-serif;
 }
 
 *:not(i) {
 	color: white;
 	font-weight: 100;
+	font-size: 12pt;
 	font-family: var(--font);
+	letter-spacing: 1.3px;
 }
 
-.drop-shadow {
-	filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
-}
 
 .landing-bg {
-	background-color: #1e1e1e;
-	/* background-image: url('../assets//background.jpg');
-	background-repeat: no-repeat;
-	background-size: cover; */
-
+	background-color: var(--tertiary-color);
 }
+
 
 #app-title-mobile {
 	font-weight: 900;
-	font-size: 1.4em;
+	font-size: 1.5em;
 	font-family: 'Rutina Grace', sans-serif;
 }
 
@@ -56,20 +52,8 @@
 
 .card:hover a,
 .card:hover .topic-item {
-
 	background-color: transparent;
 }
-
-
-
-
-footer {
-	background-color: var(--tertiary-color) !important;
-	filter: opacity(0.9);
-}
-
-
-
 
 
 .about-dist {
@@ -78,15 +62,38 @@ footer {
 }
 
 
+.my-text-primary-color {
+	color: var(--primary-color);
+}
 
+.my-text-quaternary-color {
+	color: var(--quaternary-color);
+}
+
+.my-text-secondary-color {
+	color: var(--secondary-color);
+}
+
+.my-text-tertiary-color {
+	color: var(--tertiary-color);
+}
 
 .my-bg-quaternary-color {
+	background-color: var(--quaternary-color);
+}
+
+.my-bg-secondary-color {
 	background-color: var(--secondary-color);
 }
 
 
+.my-bg-tertiary-color {
+	background-color: var(--tertiary-color);
+}
+
+
 .my-bg-special-color {
-	background-color: #0c6366;
+	background-color: #2b2b2b;
 }
 
 
