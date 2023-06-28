@@ -6,12 +6,12 @@ function insertProject(containerId, project) {
   const projectContainer = $(containerId);
   const projectCard = $("<div>", {
     class:
-      "card shadow-md overflow-hidden m-4 flex flex-col animate__animated animate__fadeIn",
+      "card shadow overflow-hidden m-4 flex flex-col animate__animated animate__fadeIn",
   });
 
   const contentContainer = $("<div>", { class: "px-2 py-3" });
   const titleElement = $("<h3>", {
-    class: "text-base md:text-lg md:text-xl font-bold mb-2",
+    class: "text-xl md:text-2xl  text-left mt-2 font-bold mb-2",
     text: project.title,
   });
   const descriptionElement = $("<p>", {
@@ -155,7 +155,7 @@ function insertProject(containerId, project) {
 
   let topicsTitle = document.createElement("h5");
   topicsTitle.textContent = "Topics and keywords";
-  topicsTitle.className = "text-base md:text-lg font-bold text-gray-300 py-5";
+  topicsTitle.className = "text-base md:text-lg font-bold text-gray-300 pt-5";
   topicsTitle.classList.add("my-text-secondary-color");
 
   const topicsContainer = $("<div>", { class: "flex flex-wrap mt-2" });

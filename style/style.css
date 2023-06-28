@@ -2,11 +2,11 @@
 @import url('https://fonts.cdnfonts.com/css/movistar-text');
 
 :root {
-	--primary-color: #222222;
-	--secondary-color: #242d2e;
-	--tertiary-color: #1e1e1e;
+	--primary-color: #222525;
+	--secondary-color: #174137;
+	--tertiary-color: #222525;
 	--quaternary-color: #a8a8a8;
-	--font: 'Roboto', sans-serif;
+	--font: 'Roboto Light', sans-serif;
 	--font-special: 'Roboto', sans-serif;
 }
 
@@ -35,7 +35,7 @@
 }
 
 #app-title {
-	font-size: 1.3em;
+	font-size: 1.6em;
 	font-family: 'Rutina Grace', sans-serif;
 }
 
@@ -49,7 +49,7 @@
 .card {
 	border-radius: 12px;
 	background-color: var(--primary-color);
-	padding: 2rem;
+	padding: 3rem;
 }
 
 
@@ -118,11 +118,6 @@ a {
 	border: 1px solid var(--quaternary-color);
 }
 
-.app-title {
-	font-weight: 900;
-	font-size: 1.4rem;
-	margin: 0 auto;
-}
 
 #quote-welcome-message {
 	font-family: 'Movistar Text', sans-serif;
