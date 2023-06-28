@@ -1,1 +1,1 @@
-+ tailwindcss -i ./style/input.css -o ./style/tailwind.css --watch 
+$ tailwindcss -i ./style/input.css -o ./style/tailwind.css --watch 

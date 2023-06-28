@@ -11,16 +11,16 @@ function insertProject(containerId, project) {
 
   const contentContainer = $("<div>", { class: "px-2 py-3" });
   const titleElement = $("<h3>", {
-    class: "text-2xl font-bold mb-2",
+    class: "text-base md:text-lg md:text-xl font-bold mb-2",
     text: project.title,
   });
   const descriptionElement = $("<p>", {
-    class: " text-gray-200 text-justify ",
+    class: " text-gray-200  text-left ",
     text: project.description,
   });
 
   const languageElement = $("<span>", {
-    class: "text-sm text-gray-300 py-5",
+    class: "text-xs md:text-sm text-gray-300 py-5",
     text: project.language,
   });
 
@@ -29,11 +29,12 @@ function insertProject(containerId, project) {
   contentContainer.append(descriptionElement);
 
   const otherContainer = $("<div>", {
-    class: "flex flex-wrap m-2 text-center text-sm",
+    class: "flex flex-wrap m-2 text-center text-xs md:text-sm",
   });
 
   const repoElement = $("<a>", {
-    class: " p-2 m-2 rounded-lg  inline border  text-xs text-gray-100 ",
+    class:
+      " p-2 m-2 rounded-lg  inline border  text-xs md:text-sm text-gray-100 ",
     href: project.link,
     text: "Repository",
   });
@@ -43,7 +44,8 @@ function insertProject(containerId, project) {
   repoElement.prepend(repoIcon);
 
   const docElement = $("<a>", {
-    class: "border rounded-lg p-2 m-2  inline   text-xs text-gray-100 ",
+    class:
+      "border rounded-lg p-2 m-2  inline  text-xs md:text-sm text-gray-100 ",
     href: project.link,
     text: "Documentation",
   });
@@ -83,7 +85,8 @@ function insertProject(containerId, project) {
       "p-2",
       "bg-transparent",
       "text-white",
-      "text-xs"
+      "text-xs",
+      "md:text-sm"
     );
     let icon = document.createElement("i");
     icon.classList.add("fas", "fa-eye");
@@ -152,13 +155,14 @@ function insertProject(containerId, project) {
 
   let topicsTitle = document.createElement("h5");
   topicsTitle.textContent = "Topics and keywords";
-  topicsTitle.className = "text-lg font-bold text-gray-300 py-5";
+  topicsTitle.className = "text-base md:text-lg font-bold text-gray-300 py-5";
   topicsTitle.classList.add("my-text-secondary-color");
 
   const topicsContainer = $("<div>", { class: "flex flex-wrap mt-2" });
   project.topics.forEach((topic) => {
     const topicElement = $("<span>", {
-      class: "topic-item border rounded-lg  text-xs   mr-2 px-2 py-1 m-2",
+      class:
+        "topic-item border rounded-lg  text-xs md:text-sm  mr-2 px-2 py-1 m-2",
       text: topic,
     });
     topicsContainer.append(topicElement);
