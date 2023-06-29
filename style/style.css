@@ -3,20 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
 :root {
-	--primary-color: #3e7639;
-	--secondary-color: #3e7639;
-	--tertiary-color: #181b1a;
+	--primary-color: #29212e;
+	--secondary-color: #58057f;
+	--tertiary-color: #1e1a20;
 	--quaternary-color: #ffffff;
 	--font: 'Roboto', sans-serif;
 	--font-special: 'Arial', sans-serif;
 }
 
 *:not(i) {
-	color: white;
-	font-weight: 100;
-	font-size: 12pt;
+	color: white !important;
+	font-weight: 200;
 	font-family: var(--font);
-	letter-spacing: 1.3px;
+	letter-spacing: 1px;
 }
 
 
@@ -44,9 +43,8 @@
 
 
 .card {
-	border-radius: 12px;
+	border-radius: 5px;
 	background-color: var(--primary-color);
-	padding: 3rem;
 }
 
 
@@ -93,7 +91,7 @@
 
 
 .my-bg-special-color {
-	background-color: #2b2b2b;
+	background-color: #a242ce;
 }
 
 
