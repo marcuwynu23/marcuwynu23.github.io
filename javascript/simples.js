@@ -65,10 +65,10 @@ const simpleProjects = [
 		language: "Javascript, HTML, CSS,Angular and Bootstrap",
 		topics: ["quiz", "quiz-app", "quiz-app-web", "angular", "angular-quiz-app"],
 		screenshots: [
-			"assets/placeholder.svg",
-			"assets/placeholder.svg",
-			"assets/placeholder.svg",
-			"assets/placeholder.svg",
+			"assets/placeholder.jpg",
+			"assets/placeholder.jpg",
+			"assets/placeholder.jpg",
+			"assets/placeholder.jpg",
 		],
 	},
 	{

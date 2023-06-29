@@ -6,7 +6,7 @@ function insertProject(containerId, project) {
   const projectContainer = $(containerId);
   const projectCard = $("<div>", {
     class:
-      "card shadow-none overflow-hidden m-4 flex flex-col animate__animated animate__fadeIn",
+      "card  shadow-md overflow-hidden m-4 flex flex-col animate__animated animate__fadeIn",
   });
 
   const contentContainer = $("<div>", { class: "px-2 py-3" });
@@ -31,20 +31,18 @@ function insertProject(containerId, project) {
   });
 
   const repoElement = $("<a>", {
-    class:
-      "p-2 m-2 rounded-lg  inline border  text-xs md:text-sm  ",
+    class: "p-2 m-2 rounded-lg  inline border  text-xs md:text-sm  ",
     href: project.link,
     text: "Repository",
   }).prepend($("<i>", { class: "fas fa-link mr-2" }));
 
   const docElement = $("<a>", {
-    class:
-      "border rounded-lg p-2 m-2  inline  text-xs md:text-sm  ",
+    class: "border rounded-lg p-2 m-2  inline  text-xs md:text-sm  ",
     href: project.link,
     text: "Documentation",
   }).prepend($("<i>", { class: "fas fa-book-open mr-2" }));
 
-    function createFullWidthImage(imageUrl) {
+  function createFullWidthImage(imageUrl) {
     const imageContainer = $("<div>", {});
 
     const image = $("<img>", {
