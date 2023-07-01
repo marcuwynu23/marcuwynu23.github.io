@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
 :root {
-	--primary-color: #58057fdb;
-	--secondary-color: #58057f;
-	--tertiary-color: #14091b;
+	--primary-color: #353336db;
+	--secondary-color: #4f1e66;
+	--tertiary-color: #2b2b2b;
 	--quaternary-color: #ffffff;
 	--font: 'Roboto', sans-serif;
 	--font-special: 'Arial', sans-serif;
@@ -23,6 +23,10 @@
 	background-color: var(--tertiary-color);
 }
 
+
+.filter-bland-and-white {
+	filter: grayscale(100%);
+}
 
 #app-title-mobile {
 	font-weight: 900;
@@ -126,7 +130,8 @@ a {
 
 
 #quote-welcome-message {
-	font-family: 'Movistar Text', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
 }
 
 @media (max-width: 767px) {

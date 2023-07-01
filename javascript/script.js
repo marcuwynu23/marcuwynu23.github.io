@@ -6,7 +6,7 @@ function insertProject(containerId, project) {
   const projectContainer = $(containerId);
   const projectCard = $("<div>", {
     class:
-      "card  shadow-md overflow-hidden m-4 flex flex-col animate__animated animate__fadeIn",
+      "card  shadow-sm overflow-hidden m-4 flex flex-col animate__animated animate__fadeIn",
   });
 
   const contentContainer = $("<div>", { class: "px-2 py-3" });
@@ -80,7 +80,7 @@ function insertProject(containerId, project) {
   projectCard.append(createFullWidthImage(project.screenshots[0]));
   let container = $("<div>", {
     class: "p-4",
-  });
+  }); 
   container.append(contentContainer);
   container.append(otherContainer);
   container.append(topicsTitle, topicsContainer);
