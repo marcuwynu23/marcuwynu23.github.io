@@ -15,7 +15,7 @@ function insertProject(containerId, project) {
     text: project.title,
   });
   const descriptionElement = $("<p>", {
-    class: "    text-left ",
+    class: "text-justify",
     text: project.description,
   });
 
@@ -80,7 +80,7 @@ function insertProject(containerId, project) {
   projectCard.append(createFullWidthImage(project.screenshots[0]));
   let container = $("<div>", {
     class: "p-4",
-  }); 
+  });
   container.append(contentContainer);
   container.append(otherContainer);
   container.append(topicsTitle, topicsContainer);
