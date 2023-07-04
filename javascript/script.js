@@ -31,13 +31,13 @@ function insertProject(containerId, project) {
   });
 
   const repoElement = $("<a>", {
-    class: "p-2 m-2 rounded-lg  inline border  text-xs md:text-sm  ",
+    class: "  inline   text-xs md:text-sm  ",
     href: project.link,
     text: "Repository",
   }).prepend($("<i>", { class: "fas fa-link mr-2" }));
 
   const docElement = $("<a>", {
-    class: "border rounded-lg p-2 m-2  inline  text-xs md:text-sm  ",
+    class: "mb-3 inline  text-xs md:text-sm  ",
     href: project.link,
     text: "Documentation",
   }).prepend($("<i>", { class: "fas fa-book-open mr-2" }));
