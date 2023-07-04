@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
 :root {
-	--primary-color: #383838;
-	--secondary-color: #4f1e66;
-	--tertiary-color: #303030;
+	--primary-color: #2b2b2b;
+	--secondary-color: #6b1394;
+	--tertiary-color: #232323;
 	--quaternary-color: #ffffff;
 	--font: 'Roboto Condensed', sans-serif;
 	--font-special: 'Arial', sans-serif;
@@ -54,10 +54,6 @@
 }
 
 
-.card:hover a,
-.card:hover .topic-item {
-	background-color: transparent;
-}
 
 
 .about-dist {
@@ -75,7 +71,7 @@
 }
 
 .my-text-secondary-color {
-	color: var(--secondary-color);
+	color: var(--secondary-color) !important;
 }
 
 .my-text-tertiary-color {
@@ -97,7 +93,7 @@
 
 
 .my-bg-special-color {
-	background-color: #a242ce;
+	background-color: #6b1394;
 }
 
 
@@ -133,6 +129,8 @@ a {
 
 #quote-welcome-message {
 	font-weight: 900;
+	font-family: 'Rutina Grace', sans-serif;
+	color: #8015b2 !important;
 }
 
 @media (max-width: 767px) {

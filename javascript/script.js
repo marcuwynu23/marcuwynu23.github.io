@@ -11,7 +11,7 @@ function insertProject(containerId, project) {
 
   const contentContainer = $("<div>", { class: "px-2 py-3" });
   const titleElement = $("<h3>", {
-    class: "text-xl md:text-2xl  text-left mt-2 font-bold mb-2",
+    class: "text-xl md:text-2xl  text-left mt-2 font-bold mb-2 ",
     text: project.title,
   });
   const descriptionElement = $("<p>", {
@@ -69,7 +69,7 @@ function insertProject(containerId, project) {
   project.topics.forEach((topic) => {
     const topicElement = $("<span>", {
       class:
-        "topic-item border rounded-lg text-xs md:text-sm mr-2 px-2 py-1 m-2",
+        "topic-item  rounded-lg text-xs md:text-sm mr-2 px-2 py-1 m-2 my-bg-secondary-color",
       text: topic,
     });
 
