@@ -130,7 +130,6 @@ a {
 #quote-welcome-message {
 	font-weight: 900;
 	font-family: 'Rutina Grace', sans-serif;
-	color: #68147b !important;
 }
 
 @media (max-width: 767px) {
