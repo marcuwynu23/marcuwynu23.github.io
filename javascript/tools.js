@@ -122,6 +122,19 @@ const toolProjects = [
       "assets/screenshots/tools/website-phisher/1.jpg",
     ],
   },
+  {
+    title: "Yano Text Editor",
+    description: "A simple text editor",
+    link: "https://github.com/marcuwynu23/yano-text-editor.git",
+    language: "javascript,node.js",
+    topics: ["editor", "tool", "text-editor", "swing", "java"],
+    screenshots: [
+      "assets/placeholder.jpg",
+      "assets/placeholder.jpg",
+      "assets/placeholder.jpg",
+      "assets/placeholder.jpg",
+    ],
+  },
 ];
 let toolProjectContainerId = "#console-tools-container";
 toolProjects.forEach((project) =>
