@@ -3,7 +3,7 @@
 
 :root {
 	--primary-color: #222122;
-	--secondary-color: #82159a;
+	--secondary-color: #5a0483;
 	--tertiary-color: #1c1b1c;
 	--quaternary-color: #ffffff;
 	--font: 'Segoe UI', sans-serif;
@@ -36,6 +36,11 @@
 #app-title {
 	font-size: 1.6em;
 	font-family: 'Rutina Grace', sans-serif;
+}
+
+#greeting-text {
+	font-style: italic !important;
+	font-weight: 900;
 }
 
 
