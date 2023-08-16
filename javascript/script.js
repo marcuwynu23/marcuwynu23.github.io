@@ -42,6 +42,12 @@ function insertProject(containerId, project) {
     text: "Documentation",
   }).prepend($("<i>", { class: "fas fa-book-open mr-2" }));
 
+  const demoElement = $("<a>", {
+    class: "mb-3 inline  text-xs md:text-sm  ",
+    href: project.link,
+    text: "Demo",
+  }).prepend($("<i>", { class: "fas fa-video mr-2" }));
+
   function createFullWidthImage(imageUrl) {
     const imageContainer = $("<div>", {});
 
@@ -56,7 +62,7 @@ function insertProject(containerId, project) {
     return imageContainer;
   }
 
-  otherContainer.append(repoElement, docElement);
+  otherContainer.append(repoElement, docElement, demoElement);
 
   const topicsTitle = $("<h5>", {
     text: "Topics and keywords",
