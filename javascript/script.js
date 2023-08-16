@@ -6,7 +6,7 @@ function insertProject(containerId, project) {
   const projectContainer = $(containerId);
   const projectCard = $("<div>", {
     class:
-      "card  shadow-sm overflow-hidden m-4 flex flex-col animate__animated animate__fadeIn",
+      "card  shadow-md overflow-hidden m-4 flex flex-col animate__animated animate__fadeIn",
   });
 
   const contentContainer = $("<div>", { class: "px-2 py-3" });
@@ -69,7 +69,7 @@ function insertProject(containerId, project) {
   project.topics.forEach((topic) => {
     const topicElement = $("<span>", {
       class:
-        "topic-item  rounded-lg text-xs md:text-sm mr-2 px-2 py-1 m-2 my-bg-secondary-color",
+        "topic-item  text-xs md:text-sm mr-2 px-2 py-1 m-2 my-bg-quaternary-color ",
       text: topic,
     });
 

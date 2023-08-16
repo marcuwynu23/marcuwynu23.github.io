@@ -2,10 +2,11 @@
 @import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
 
 :root {
-	--primary-color: #222122;
-	--secondary-color: #5a0483;
-	--tertiary-color: #1c1b1c;
-	--quaternary-color: #ffffff;
+	--primary-color: #232323;
+	--secondary-color: #1d1d1d;
+	--tertiary-color: #1b1b1b;
+	--quaternary-color: #aa1bec;
+	/* --font: 'Roboto', sans-serif; */
 	--font: 'Segoe UI', sans-serif;
 	--font-special: 'Arial', sans-serif;
 }
@@ -18,8 +19,28 @@
 }
 
 
+footer {
+	border-top: 1pt solid #303030;
+}
+
+
 .landing-bg {
 	background-color: var(--tertiary-color);
+}
+
+
+#go-to-project-button {
+	background-color: var(--secondary-color) !important;
+	color: #fff;
+	border-radius: 25px;
+}
+
+.topic-item {
+	border-radius: 25px;
+}
+
+#go-to-project-button:hover {
+	background-color: var(--quaternary-color) !important;
 }
 
 
@@ -31,11 +52,13 @@
 	font-weight: 900;
 	font-size: 1.5em;
 	font-family: 'Rutina Grace', sans-serif;
+	color: var(--quaternary-color) !important;
 }
 
 #app-title {
 	font-size: 1.6em;
 	font-family: 'Rutina Grace', sans-serif;
+	color: var(--quaternary-color) !important;
 }
 
 #greeting-text {
@@ -51,9 +74,10 @@
 
 
 .card {
-	border-radius: 5px;
-	border: 1pt solid #272627;
-	background-color: var(--primary-color);
+	border-radius: 25px;
+	border: 1pt solid #303030;
+	background-color: var(--secondary-color);
+	padding: 12px;
 }
 
 
@@ -100,6 +124,18 @@
 }
 
 
+.link-item {
+	background-color: var(--secondary-color) !important;
+	border: 1px solid #303030;
+	margin: 12px;
+	border-radius: 25px;
+	padding: 6px;
+}
+
+.link-item:hover {
+	background-color: var(--quaternary-color) !important;
+
+}
 
 h2,
 h3,
@@ -114,8 +150,16 @@ strong {
 
 a {
 	padding: 0.2rem 0.3rem;
+
 }
 
+a:hover:not(#go-to-project-button) {
+	color: var(--quaternary-color) !important;
+}
+
+img {
+	border-radius: 12px;
+}
 
 .highlight {
 	max-width: 100%;
