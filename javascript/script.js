@@ -15,7 +15,7 @@ function insertProject(containerId, project) {
     text: project.title,
   });
   const descriptionElement = $("<p>", {
-    class: "text-justify",
+    class: "text-justify mt-5",
     text: project.description,
   });
 
