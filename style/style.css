@@ -2,9 +2,9 @@
 @import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
 
 :root {
-	--primary-color: #2a2a2a;
-	--secondary-color: #17121a;
-	--tertiary-color: #231c29;
+	--primary-color: #151515;
+	--secondary-color: #231f23;
+	--tertiary-color: #100e11;
 	--quaternary-color: #aa1bec;
 	/* --font: 'Roboto', sans-serif; */
 	--font: 'Segoe UI', sans-serif;
@@ -52,13 +52,13 @@ footer {
 	font-weight: 900;
 	font-size: 1.5em;
 	font-family: 'Rutina Grace', sans-serif;
-	color: var(--quaternary-color) !important;
+	/* color: var(--quaternary-color) !important; */
 }
 
 #app-title {
 	font-size: 1.6em;
 	font-family: 'Rutina Grace', sans-serif;
-	color: var(--quaternary-color) !important;
+	/* color: var(--quaternary-color) !important; */
 }
 
 #greeting-text {
@@ -75,7 +75,7 @@ footer {
 
 .card {
 	border-radius: 25px;
-	border: 1pt solid #303030;
+	border: 1pt solid #2b2b2b;
 	background-color: var(--secondary-color);
 	padding: 12px;
 }

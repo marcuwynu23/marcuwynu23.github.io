@@ -31,19 +31,19 @@ function insertProject(containerId, project) {
   });
 
   const repoElement = $("<a>", {
-    class: "  inline   text-xs md:text-sm  ",
+    class: " mx-3 inline   text-xs md:text-sm  ",
     href: project.link,
     text: "Repository",
   }).prepend($("<i>", { class: "fas fa-link mr-2" }));
 
   const docElement = $("<a>", {
-    class: "mb-3 inline  text-xs md:text-sm  ",
+    class: "mx-3 inline  text-xs md:text-sm  ",
     href: project.link,
     text: "Documentation",
   }).prepend($("<i>", { class: "fas fa-book-open mr-2" }));
 
   const demoElement = $("<a>", {
-    class: "mb-3 inline  text-xs md:text-sm  ",
+    class: "mx-3 inline  text-xs md:text-sm  ",
     href: project.link,
     text: "Demo",
   }).prepend($("<i>", { class: "fas fa-video mr-2" }));
