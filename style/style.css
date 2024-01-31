@@ -1,14 +1,15 @@
 @import url('https://fonts.cdnfonts.com/css/rutina-grace');
 @import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100&family=Roboto+Slab:wght@100..900&display=swap');
 
 :root {
-	--primary-color: #250b30;
-	--secondary-color: #383838;
-	--tertiary-color: #303030;
-	--quaternary-color: #781d9f;
+	--primary-color: #010101;
+	--secondary-color: #1e1e1e;
+	--tertiary-color: #141414;
+	--quaternary-color: #54007b;
 	/* --font: 'Roboto', sans-serif; */
-	--font: 'Roboto', sans-serif;
-	--font-special: 'Roboto', sans-serif;
+	--font: "Roboto Slab", serif;
+	--font-special: "Roboto Slab", serif
 }
 
 *:not(i) {
@@ -19,7 +20,7 @@
 }
 
 footer {
-	border-top: 1pt solid #303030;
+	border-top: 1pt solid #212121;
 }
 
 
@@ -73,9 +74,9 @@ footer {
 
 .card {
 	border-radius: 12px;
-	border: 1pt solid #2b2b2b;
+	border: 1pt solid #1e1e1e;
 	background-color: var(--secondary-color);
-	padding: 12px;
+	padding: 15px;
 }
 
 
@@ -92,7 +93,7 @@ footer {
 }
 
 .my-text-quaternary-color {
-	color: var(--quaternary-color);
+	color: var(--quaternary-color) !important;
 }
 
 .my-text-secondary-color {
@@ -118,12 +119,12 @@ footer {
 
 
 .my-bg-special-color {
-	background-color: #6b1394;
+	background-color: #5a0483;
 }
 
 
 .link-item {
-	background-color: var(--quaternary-color) !important;
+	/* background-color: var(--quaternary-color); */
 	margin: 12px;
 	border-radius: 12px;
 	padding: 6px;
@@ -150,11 +151,6 @@ a {
 
 }
 
-
-img {
-	border-radius: 12px;
-}
-
 .highlight {
 	max-width: 100%;
 	max-height: 100%;
@@ -167,6 +163,12 @@ img {
 	border: 1px solid var(--quaternary-color);
 }
 
+
+#home {
+	background-image: url("https://wallpapercave.com/wp/wp5308033.png");
+	background-size: cover;
+	background-position: center;
+}
 
 #quote-welcome-message {
 	font-weight: 900;

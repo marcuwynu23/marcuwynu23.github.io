@@ -66,8 +66,7 @@ function insertProject(containerId, project) {
 
   const topicsTitle = $("<h5>", {
     text: "Topics and keywords",
-    class:
-      "text-base md:text-lg font-bold text-gray-300 px-1 my-text-quaternary-color",
+    class: "text-base md:text-lg font-bold text-gray-300 px-1 ",
   });
 
   const topicsContainer = $("<div>", { class: "flex flex-wrap mt-2" });
