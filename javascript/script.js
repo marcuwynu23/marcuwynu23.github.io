@@ -92,3 +92,135 @@ function insertProject(containerId, project) {
   projectCard.append(container);
   projectContainer.append(projectCard);
 }
+
+function insertDesign(
+  containerId,
+  imageSrc,
+  smallerImages,
+  title,
+  description
+) {
+  const cardContainer = document.createElement("div");
+  cardContainer.classList.add(
+    "card",
+    "rounded-lg",
+    "overflow-hidden",
+    "shadow-md",
+    "flex",
+    "flex-col"
+  );
+
+  const largerImageLink = document.createElement("a");
+  largerImageLink.href = imageSrc;
+  largerImageLink.target = "_blank"; // Open in a new tab
+  largerImageLink.rel = "noopener noreferrer"; // Security best practices
+
+  const largerImageElement = document.createElement("img");
+  largerImageElement.src = imageSrc;
+  largerImageElement.alt = "Video 1";
+  largerImageElement.classList.add("w-full", "h-30", "object-cover", "mb-2");
+
+  largerImageLink.appendChild(largerImageElement);
+  cardContainer.appendChild(largerImageLink);
+
+  const smallerImagesContainer = document.createElement("div");
+  smallerImagesContainer.classList.add(
+    "flex-grow",
+    "flex",
+    "flex-row",
+    "overflow-x-auto",
+    "scroll-container",
+    "justify-center"
+  );
+
+  const smallerImagesFlexContainer = document.createElement("div");
+  smallerImagesFlexContainer.classList.add("flex", "flex-row");
+
+  smallerImages.forEach((smallerImageSrc) => {
+    const smallerImageLink = document.createElement("a");
+    smallerImageLink.href = smallerImageSrc;
+    smallerImageLink.target = "_blank"; // Open in a new tab
+    smallerImageLink.rel = "noopener noreferrer"; // Security best practices
+
+    const smallerImageElement = document.createElement("img");
+    smallerImageElement.src = smallerImageSrc;
+    smallerImageElement.alt = "Video";
+    smallerImageElement.classList.add("w-24", "h-24", "mr-2", "object-cover");
+
+    smallerImageLink.appendChild(smallerImageElement);
+    smallerImagesFlexContainer.appendChild(smallerImageLink);
+  });
+
+  smallerImagesContainer.appendChild(smallerImagesFlexContainer);
+  cardContainer.appendChild(smallerImagesContainer);
+
+  const descriptionSection = document.createElement("div");
+  descriptionSection.classList.add("p-4", "my-bg-secondary-color");
+
+  const titleElement = document.createElement("h3");
+  titleElement.classList.add("text-lg", "font-bold", "mb-2");
+  titleElement.textContent = title;
+
+  const descriptionElement = document.createElement("p");
+  descriptionElement.classList.add("text-gray-700", "text-sm");
+  descriptionElement.textContent = description;
+
+  descriptionSection.appendChild(titleElement);
+  descriptionSection.appendChild(descriptionElement);
+
+  cardContainer.appendChild(descriptionSection);
+
+  const targetContainer = document.getElementById(containerId);
+  if (targetContainer) {
+    targetContainer.appendChild(cardContainer);
+  } else {
+    console.error(`Container with ID "${containerId}" not found.`);
+  }
+}
+
+function insertVideo(containerId, videoLink, title, description) {
+  const cardContainer = document.createElement("div");
+  cardContainer.classList.add(
+    "card",
+    "rounded-lg",
+    "overflow-hidden",
+    "shadow-md"
+  );
+
+  const videoEmbed = document.createElement("iframe");
+  videoEmbed.src = videoLink;
+  videoEmbed.width = "100%";
+  videoEmbed.height = "315";
+  videoEmbed.frameBorder = "0";
+  videoEmbed.allowFullscreen = true;
+  videoEmbed.setAttribute(
+    "allow",
+    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  );
+
+  const cardContent = document.createElement("div");
+  cardContent.classList.add("p-4", "my-bg-secondary-color");
+
+  const videoTitle = document.createElement("h3");
+  videoTitle.classList.add("text-lg", "font-bold", "mb-2");
+  videoTitle.textContent = title;
+
+  const videoDescription = document.createElement("p");
+  videoDescription.classList.add("text-gray-700", "text-sm");
+  videoDescription.textContent = description;
+
+  // Append elements to their respective parent containers
+  cardContent.appendChild(videoTitle);
+  cardContent.appendChild(videoDescription);
+
+  cardContainer.appendChild(videoEmbed);
+  cardContainer.appendChild(cardContent);
+
+  // Append the card to the specified container by ID
+  const targetContainer = document.getElementById(containerId);
+  if (targetContainer) {
+    targetContainer.appendChild(cardContainer);
+  } else {
+    console.error(`Container with ID "${containerId}" not found.`);
+  }
+}
