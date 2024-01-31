@@ -4,9 +4,9 @@
 
 :root {
 	--primary-color: #010101;
-	--secondary-color: #1e1e1e;
-	--tertiary-color: #141414;
-	--quaternary-color: #54007b;
+	--secondary-color: #141414;
+	--tertiary-color: #0e0e0e;
+	--quaternary-color: #5c5c5c;
 	/* --font: 'Roboto', sans-serif; */
 	--font: "Roboto Slab", serif;
 	--font-special: "Roboto Slab", serif
@@ -29,7 +29,7 @@ footer {
 }
 
 #go-to-project-button {
-	background-color: var(--secondary-color) !important;
+	background-color: var(--quaternary-color) !important;
 	color: #fff;
 	border-radius: 12px;
 }
