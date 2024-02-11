@@ -107,7 +107,8 @@ function insertDesign(
     "overflow-hidden",
     "shadow-md",
     "flex",
-    "flex-col"
+    "flex-col",
+    "mx-4"
   );
 
   const largerImageLink = document.createElement("a");
@@ -184,7 +185,8 @@ function insertVideo(containerId, videoLink, title, description) {
     "card",
     "rounded-lg",
     "overflow-hidden",
-    "shadow-md"
+    "shadow-md",
+    "mx-4"
   );
 
   const videoEmbed = document.createElement("iframe");

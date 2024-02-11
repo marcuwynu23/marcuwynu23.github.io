@@ -4,9 +4,9 @@
 
 :root {
 	--primary-color: #010101;
-	--secondary-color: #141414;
-	--tertiary-color: #0e0e0e;
-	--quaternary-color: #5c5c5c;
+	--secondary-color: #222222;
+	--tertiary-color: #1d1d1d;
+	--quaternary-color: #048381;
 	/* --font: 'Roboto', sans-serif; */
 	--font: "Roboto Slab", serif;
 	--font-special: "Roboto Slab", serif
@@ -17,10 +17,6 @@
 	font-weight: 300;
 	font-family: var(--font);
 	letter-spacing: 1px;
-}
-
-footer {
-	border-top: 1pt solid #212121;
 }
 
 
@@ -47,12 +43,18 @@ footer {
 	filter: grayscale(100%);
 }
 
+#app-title,
+#app-title-mobile {
+	filter: box-shadow(2px 2px 2px #000000);
+}
+
 #app-title-mobile {
 	font-weight: 900;
 	font-size: 1.5em;
 	font-family: 'Rutina Grace', sans-serif;
 	/* color: var(--quaternary-color) !important; */
 }
+
 
 #app-title {
 	font-size: 1.6em;
@@ -74,7 +76,7 @@ footer {
 
 .card {
 	border-radius: 12px;
-	border: 1pt solid #1e1e1e;
+	border: 1px solid var(--secondary-color);
 	background-color: var(--secondary-color);
 	padding: 15px;
 }
@@ -165,14 +167,32 @@ a {
 
 
 #home {
-	background-image: url("https://wallpapercave.com/wp/wp5308033.png");
+	/* background-image: url("https://wallpapercave.com/wp/wp5308033.png"); */
 	background-size: cover;
 	background-position: center;
 }
 
+#header,
+#header-mobile,
+footer {
+	background-color: var(--quaternary-color);
+}
+
+footer {
+	border-top: none;
+}
+
+
+
 #quote-welcome-message {
 	font-weight: 900;
 	font-family: 'Rutina Grace', sans-serif;
+	color: var(--quaternary-color) !important;
+}
+
+#quote-welcome-message,
+#quote-welcome-description {
+	filter: drop-shadow(2px 2px 2px #1c1c1c);
 }
 
 @media (max-width: 767px) {
