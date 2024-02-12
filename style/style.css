@@ -4,9 +4,9 @@
 
 :root {
 	--primary-color: #010101;
-	--secondary-color: #272727;
-	--tertiary-color: #1e1e1e;
-	--quaternary-color: #2e2e2e;
+	--secondary-color: #1a1a1a;
+	--tertiary-color: #1d1d1d;
+	--quaternary-color: #1f1f1f;
 	/* --font: 'Roboto', sans-serif; */
 	--font: "Roboto", serif;
 	--font-special: "Roboto", serif
@@ -35,7 +35,7 @@
 }
 
 #go-to-project-button:hover {
-	background-color: var(--quaternary-color) !important;
+	background-color: var(--secondary-color) !important;
 }
 
 
@@ -76,9 +76,14 @@
 
 .card {
 	border-radius: 12px;
-	border: 1px solid var(--secondary-color);
+	border: none;
 	background-color: var(--secondary-color);
 	padding: 12px;
+}
+
+
+.card:hover {
+	background-color: #1b1b1b;
 }
 
 
@@ -132,9 +137,12 @@
 	padding: 6px;
 }
 
-a:hover,
-.link-item:hover {
-	text-decoration: underline;
+a:hover:not(#go-to-project-button),
+.link-item:hover:not(#go-to-project-button) {
+	background: #6a1379;
+	background: linear-gradient(to right, #6a1379 0%, #cf1241 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 h2,
@@ -175,17 +183,21 @@ a {
 #header,
 #header-mobile,
 footer {
-	background-color: var(--quaternary-color);
+	background-color: var(--secondary-color);
 }
 
 footer {
 	border-top: none;
 }
 
+.bg-gradient {
+	background: #6a1379;
+	background: linear-gradient(to right, #6a1379 0%, #cf1241 100%);
+}
 
 .text-gradient {
-	background: #121FCF;
-	background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+	background: #6a1379;
+	background: linear-gradient(to right, #6a1379 0%, #cf1241 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -193,15 +205,15 @@ footer {
 #quote-welcome-message {
 	font-weight: 900;
 	font-family: 'Rutina Grace', sans-serif;
-	background: #121FCF;
-	background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+	background: #6a1379;
+	background: linear-gradient(to right, #6a1379 0%, #cf1241 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 #quote-welcome-message,
 #quote-welcome-description {
-	filter: drop-shadow(2px 2px 2px #1c1c1c);
+	filter: drop-shadow(2px 2px 2px #161616);
 
 }
 
