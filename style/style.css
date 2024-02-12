@@ -4,12 +4,12 @@
 
 :root {
 	--primary-color: #010101;
-	--secondary-color: #222222;
-	--tertiary-color: #1d1d1d;
-	--quaternary-color: #048381;
+	--secondary-color: #272727;
+	--tertiary-color: #1e1e1e;
+	--quaternary-color: #2e2e2e;
 	/* --font: 'Roboto', sans-serif; */
-	--font: "Roboto Slab", serif;
-	--font-special: "Roboto Slab", serif
+	--font: "Roboto", serif;
+	--font-special: "Roboto", serif
 }
 
 *:not(i) {
@@ -78,7 +78,7 @@
 	border-radius: 12px;
 	border: 1px solid var(--secondary-color);
 	background-color: var(--secondary-color);
-	padding: 15px;
+	padding: 12px;
 }
 
 
@@ -183,16 +183,26 @@ footer {
 }
 
 
+.text-gradient {
+	background: #121FCF;
+	background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 
 #quote-welcome-message {
 	font-weight: 900;
 	font-family: 'Rutina Grace', sans-serif;
-	color: var(--quaternary-color) !important;
+	background: #121FCF;
+	background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 #quote-welcome-message,
 #quote-welcome-description {
 	filter: drop-shadow(2px 2px 2px #1c1c1c);
+
 }
 
 @media (max-width: 767px) {
