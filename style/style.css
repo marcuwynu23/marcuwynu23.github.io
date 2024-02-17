@@ -4,9 +4,9 @@
 
 :root {
 	--primary-color: #010101;
-	--secondary-color: #1a1a1a;
+	--secondary-color: #191919;
 	--tertiary-color: #1d1d1d;
-	--quaternary-color: #1f1f1f;
+	--quaternary-color: #1a1a1a;
 	/* --font: 'Roboto', sans-serif; */
 	--font: "Roboto", serif;
 	--font-special: "Roboto", serif
@@ -83,7 +83,7 @@
 
 
 .card:hover {
-	background-color: #1b1b1b;
+	background-color: var(--quaternary-color);
 }
 
 
