@@ -129,10 +129,31 @@ const toolProjects = [
     language: "javascript,node.js",
     topics: ["editor", "tool", "text-editor", "swing", "java"],
     screenshots: [
-      "assets/placeholder.jpg",
-      "assets/placeholder.jpg",
-      "assets/placeholder.jpg",
-      "assets/placeholder.jpg",
+      "assets/screenshots/tools/yano/1.jpg",
+      "assets/screenshots/tools/yano/1.jpg",
+      "assets/screenshots/tools/yano/1.jpg",
+    ],
+  },
+  {
+    title: "DroidDroid Helper",
+    description:
+      "commandline tool for android development in android with help of adb and other tools",
+    link: "https://github.com/marcuwynu23/droidroid.git",
+    language: "c++",
+    topics: [
+      "android",
+      "tool",
+      "droid",
+      "android-development",
+      "windows",
+      "helper",
+      "adb",
+      "android-debug-bridge",
+    ],
+    screenshots: [
+      "assets/screenshots/tools/droid/1.jpg",
+      "assets/screenshots/tools/droid/1.jpg",
+      "assets/screenshots/tools/droid/1.jpg",
     ],
   },
 ];

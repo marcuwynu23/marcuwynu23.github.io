@@ -58,19 +58,19 @@ const simpleProjects = [
       "assets/screenshots/simples/qr-generator/0.jpg",
     ],
   },
-  {
-    title: "Quiz App",
-    description: "A Sample Quiz App",
-    link: "https://github.com/marcuwynu23/quiz-app.git",
-    language: "Javascript, HTML, CSS,Angular and Bootstrap",
-    topics: ["quiz", "quiz-app", "quiz-app-web", "angular", "angular-quiz-app"],
-    screenshots: [
-      "assets/placeholder.jpg",
-      "assets/placeholder.jpg",
-      "assets/placeholder.jpg",
-      "assets/placeholder.jpg",
-    ],
-  },
+  // {
+  //   title: "Quiz App",
+  //   description: "A Sample Quiz App",
+  //   link: "https://github.com/marcuwynu23/quiz-app.git",
+  //   language: "Javascript, HTML, CSS,Angular and Bootstrap",
+  //   topics: ["quiz", "quiz-app", "quiz-app-web", "angular", "angular-quiz-app"],
+  //   screenshots: [
+  //     "assets/placeholder.jpg",
+  //     "assets/placeholder.jpg",
+  //     "assets/placeholder.jpg",
+  //     "assets/placeholder.jpg",
+  //   ],
+  // },
   {
     title: "Subject Management Tool",
     description: "A Simple Subject Management Tool for Teachers",
