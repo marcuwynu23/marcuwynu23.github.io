@@ -178,7 +178,6 @@ function insertDesign(
     console.error(`Container with ID "${containerId}" not found.`);
   }
 }
-
 function insertVideo(containerId, videoLink, title, description) {
   const cardContainer = document.createElement("div");
   cardContainer.classList.add(
@@ -188,17 +187,17 @@ function insertVideo(containerId, videoLink, title, description) {
     "shadow-sm",
     "mx-4"
   );
+  // Extract video ID from the YouTube link
+  const videoId = getYouTubeVideoId(videoLink);
+  const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
 
-  const videoEmbed = document.createElement("iframe");
-  videoEmbed.src = videoLink;
-  videoEmbed.width = "100%";
-  videoEmbed.height = "315";
-  videoEmbed.frameBorder = "0";
-  videoEmbed.allowFullscreen = true;
-  videoEmbed.setAttribute(
-    "allow",
-    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  );
+  const thumbnailImage = document.createElement("img");
+  thumbnailImage.src = thumbnailUrl;
+  thumbnailImage.alt = title;
+  thumbnailImage.style.cursor = "pointer";
+  thumbnailImage.addEventListener("click", function () {
+    window.open(videoLink, "_blank");
+  });
 
   const cardContent = document.createElement("div");
   cardContent.classList.add("p-4", "my-bg-secondary-color");
@@ -215,7 +214,7 @@ function insertVideo(containerId, videoLink, title, description) {
   cardContent.appendChild(videoTitle);
   cardContent.appendChild(videoDescription);
 
-  cardContainer.appendChild(videoEmbed);
+  cardContainer.appendChild(thumbnailImage);
   cardContainer.appendChild(cardContent);
 
   // Append the card to the specified container by ID
@@ -224,5 +223,21 @@ function insertVideo(containerId, videoLink, title, description) {
     targetContainer.appendChild(cardContainer);
   } else {
     console.error(`Container with ID "${containerId}" not found.`);
+  }
+}
+
+// Function to extract YouTube video ID from the video link
+function getYouTubeVideoId(url) {
+  // Example YouTube URL formats:
+  // https://www.youtube.com/watch?v=VIDEO_ID
+  // https://youtu.be/VIDEO_ID
+  const regExp =
+    /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+  const match = url.match(regExp);
+  if (match && match[2].length === 11) {
+    return match[2];
+  } else {
+    console.error("Invalid YouTube URL");
+    return null;
   }
 }
