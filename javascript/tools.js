@@ -107,7 +107,11 @@ const toolProjects = [
     link: "https://github.com/marcuwynu23/object-file-encrypter.git",
     language: "javascript,node.js",
     topics: ["encrypt", "console", "library"],
-    screenshots: ["assets/placeholder.jpg", "assets/placeholder.jpg"],
+    screenshots: [
+      "assets/screenshots/tools/object-file-encrypter/0.jpg",
+      "assets/screenshots/tools/object-file-encrypter/1.jpg",
+      "assets/screenshots/tools/object-file-encrypter/2.jpg",
+    ],
   },
   {
     title: "Website Phisher",
