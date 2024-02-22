@@ -4,9 +4,9 @@
 
 :root {
 	--primary-color: #010101;
-	--secondary-color: #1b1b1b;
-	--tertiary-color: #1d1d1d;
-	--quaternary-color: #1a1a1a;
+	--secondary-color: #2b2b2b;
+	--tertiary-color: #232323;
+	--quaternary-color: #353535;
 	/* --font: 'Roboto', sans-serif; */
 	--font: "Roboto", serif;
 	--font-special: "Roboto", serif
@@ -24,8 +24,8 @@
 	background-color: var(--tertiary-color);
 }
 
-#go-to-project-button {
-	background-color: var(--quaternary-color) !important;
+#open-cv-button {
+	background-color: var(--secondary-color) !important;
 	color: #fff;
 	border-radius: 12px;
 }
@@ -34,7 +34,7 @@
 	border-radius: 12px;
 }
 
-#go-to-project-button:hover {
+#open-cv-button:hover {
 	background-color: var(--secondary-color) !important;
 }
 
