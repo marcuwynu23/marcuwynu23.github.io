@@ -650,6 +650,10 @@ video {
   grid-column-end: 7;
 }
 
+.float-right {
+  float: right;
+}
+
 .m-0 {
   margin: 0px;
 }

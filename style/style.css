@@ -4,12 +4,12 @@
 
 :root {
 	--primary-color: #010101;
-	--secondary-color: #2b2b2b;
-	--tertiary-color: #232323;
-	--quaternary-color: #353535;
+	--secondary-color: #181818;
+	--tertiary-color: #121212;
+	--quaternary-color: #252525;
 	/* --font: 'Roboto', sans-serif; */
 	--font: "Roboto", serif;
-	--font-special: "Roboto", serif
+	--font-special: "Roboto Black", serif
 }
 
 *:not(i) {
@@ -27,11 +27,11 @@
 #open-cv-button {
 	background-color: var(--secondary-color) !important;
 	color: #fff;
-	border-radius: 12px;
+	/* border-radius: 12px; */
 }
 
 .topic-item {
-	border-radius: 12px;
+	/* border-radius: 12px; */
 }
 
 #open-cv-button:hover {
@@ -45,7 +45,7 @@
 
 #app-title,
 #app-title-mobile {
-	filter: box-shadow(2px 2px 2px #000000);
+	/* filter: box-shadow(2px 2px 2px #000000); */
 }
 
 #app-title-mobile {
@@ -75,10 +75,9 @@
 
 
 .card {
-	border-radius: 12px;
 	border: none;
 	background-color: var(--secondary-color);
-	padding: 12px;
+	padding: 20px;
 }
 
 
@@ -126,21 +125,21 @@
 
 
 .my-bg-special-color {
-	background-color: #5a0483;
+	background-color: #13794d;
 }
 
 
 .link-item {
 	/* background-color: var(--quaternary-color); */
 	margin: 12px;
-	border-radius: 12px;
+	/* border-radius: 12px; */
 	padding: 6px;
 }
 
 a:hover:not(#go-to-project-button),
 .link-item:hover:not(#go-to-project-button) {
-	background: #6a1379;
-	background: linear-gradient(to right, #6a1379 0%, #cf1241 100%);
+	background: #13794d;
+	background: linear-gradient(to right, #13794d 0%, #12cfcf 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -191,13 +190,13 @@ footer {
 }
 
 .bg-gradient {
-	background: #6a1379;
-	background: linear-gradient(to right, #6a1379 0%, #cf1241 100%);
+	background: #13794d;
+	background: linear-gradient(to right, #13794d 0%, #12cfcf 100%);
 }
 
 .text-gradient {
-	background: #6a1379;
-	background: linear-gradient(to right, #6a1379 0%, #cf1241 100%);
+	background: #13794d;
+	background: linear-gradient(to right, #13794d 0%, #12cfcf 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -205,8 +204,8 @@ footer {
 #quote-welcome-message {
 	font-weight: 900;
 	font-family: 'Rutina Grace', sans-serif;
-	background: #6a1379;
-	background: linear-gradient(to right, #6a1379 0%, #cf1241 100%);
+	background: #13794d;
+	background: linear-gradient(to right, #13794d 0%, #12cfcf 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
