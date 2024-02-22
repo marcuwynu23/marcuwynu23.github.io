@@ -1,20 +1,21 @@
 @import url('https://fonts.cdnfonts.com/css/rutina-grace');
 @import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
 	--primary-color: #010101;
-	--secondary-color: #181818;
-	--tertiary-color: #121212;
+	--secondary-color: #1f1f1f;
+	--tertiary-color: #1a1a1a;
 	--quaternary-color: #252525;
 	/* --font: 'Roboto', sans-serif; */
-	--font: "Roboto", serif;
-	--font-special: "Roboto Black", serif
+	--font: "Barlow", serif;
+	--font-special: "Roboto", serif
 }
 
 *:not(i) {
-	color: rgb(255, 255, 255) !important;
-	font-weight: 300;
+	color: rgb(225, 225, 225) !important;
+	font-weight: 100 !important;
 	font-family: var(--font);
 	letter-spacing: 1px;
 }
@@ -148,6 +149,8 @@ h2,
 h3,
 h4,
 h5,
+h2,
+h6,
 strong {
 	font-family: var(--font-special) !important;
 	margin: 0 auto;
