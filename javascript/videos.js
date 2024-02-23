@@ -1,20 +1,6 @@
 const videoList = [
   {
     containerId: "videos-container",
-    videoLink: "https://www.youtube.com/watch?v=2uUZ1A0_rgQ",
-    videoTitle: "Auto - (Automate Your Terminal Operations) Video Showcase",
-    videoDescription:
-      "This video showcase of the Auto CLI tool and how it works",
-  },
-  {
-    containerId: "videos-container",
-    videoLink: "https://www.youtube.com/watch?v=TwkoNd-9qb4&t=21s",
-    videoTitle: "Sdir - commandline tool Video Showcase",
-    videoDescription:
-      "This video showcase of the Sdir CLI tool and its features",
-  },
-  {
-    containerId: "videos-container",
     videoLink: "https://www.youtube.com/watch?v=9zILhYACQHw&t=54s",
     videoTitle:
       "Video Tutorial - Paano magadd ng sublime Text or kahit anong window application sa right click menu or context menu?",

@@ -33,18 +33,21 @@ function insertProject(containerId, project) {
   const repoElement = $("<a>", {
     class: " mx-3 inline   text-xs md:text-sm  ",
     href: project.link,
+    target: "_blank",
     text: "Repository",
   }).prepend($("<i>", { class: "fas fa-link mr-2" }));
 
   const docElement = $("<a>", {
     class: "mx-3 inline  text-xs md:text-sm  ",
     href: project.link,
+    target: "_blank",
     text: "Documentation",
   }).prepend($("<i>", { class: "fas fa-book-open mr-2" }));
 
   const demoElement = $("<a>", {
     class: "mx-3 inline  text-xs md:text-sm  ",
-    href: project.link,
+    href: project.demo,
+    target: "_blank",
     text: "Demo",
   }).prepend($("<i>", { class: "fas fa-video mr-2" }));
 
