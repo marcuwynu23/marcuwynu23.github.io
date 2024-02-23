@@ -5,9 +5,9 @@
 
 :root {
 	--primary-color: #010101;
-	--secondary-color: #1f1f1f;
-	--tertiary-color: #1a1a1a;
-	--quaternary-color: #252525;
+	--secondary-color: #2e2e2e;
+	--tertiary-color: #272727;
+	--quaternary-color: #3d3d3d;
 	--font: "Barlow", serif;
 	--font-special: "Roboto", serif
 }
@@ -16,28 +16,12 @@
 	color: rgb(225, 225, 225) !important;
 	font-weight: 100;
 	font-family: var(--font);
-	letter-spacing: 1px;
 }
 
 
 .landing-bg {
 	background-color: var(--tertiary-color);
 }
-
-#open-cv-button {
-	background-color: var(--secondary-color) !important;
-	color: #fff;
-	border-radius: 12px;
-}
-
-.topic-item {
-	/* border-radius: 12px; */
-}
-
-#open-cv-button:hover {
-	background-color: var(--secondary-color) !important;
-}
-
 
 .filter-bland-and-white {
 	filter: grayscale(100%);
@@ -151,8 +135,6 @@ h5,
 h2,
 h6,
 strong {
-	font-weight: 100 !important;
-	font-family: var(--font-special) !important;
 	margin: 0 auto;
 }
 
@@ -216,7 +198,6 @@ footer {
 #quote-welcome-message,
 #quote-welcome-description {
 	filter: drop-shadow(2px 2px 2px #161616);
-
 }
 
 @media (max-width: 767px) {
@@ -230,6 +211,7 @@ footer {
 	h4,
 	h5,
 	strong {
+
 		font-weight: bold !important;
 		margin: 0 auto !important;
 	}
