@@ -14,7 +14,7 @@
 
 *:not(i) {
 	color: rgb(225, 225, 225) !important;
-	font-weight: 100;
+	font-weight: 300;
 	font-family: var(--font);
 }
 
