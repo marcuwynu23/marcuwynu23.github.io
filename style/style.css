@@ -5,8 +5,8 @@
 
 :root {
 	--primary-color: #010101;
-	--secondary-color: #1b1b1b;
-	--tertiary-color: #171616;
+	--secondary-color: #121212;
+	--tertiary-color: #0c0c0c;
 	--quaternary-color: #191919;
 	--font: "Barlow", serif;
 	--font-special: "Barlow", serif
@@ -20,7 +20,11 @@
 
 
 .landing-bg {
-	background-color: var(--tertiary-color);
+	/* background-image: url("https://wallpapercave.com/wp/wp5308033.png");
+	background-size: cover;
+	background-position: center; */
+
+	background-color: var(--secondary-color);
 }
 
 .filter-bland-and-white {
@@ -29,19 +33,22 @@
 
 #app-title,
 #app-title-mobile {
-	/* filter: box-shadow(2px 2px 2px #000000); */
+	/* background: #bcc9c4;
+	background: linear-gradient(to right, #bcc9c4 0%, #636666 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; */
 }
 
 #app-title-mobile {
 	font-weight: 900;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	font-family: 'Rutina Grace', sans-serif;
 	/* color: var(--quaternary-color) !important; */
 }
 
 
 #app-title {
-	font-size: 1.6em;
+	font-size: 1.2em;
 	font-family: 'Rutina Grace', sans-serif;
 	/* color: var(--quaternary-color) !important; */
 }
@@ -67,7 +74,8 @@
 
 
 .card:hover {
-	background-color: var(--quaternary-color);
+	background: #353535;
+	background: linear-gradient(to right, #353535 0%, #222222 100%);
 }
 
 
@@ -116,15 +124,16 @@
 
 .link-item {
 	/* background-color: var(--quaternary-color); */
-	margin: 12px;
+	margin: 5px;
 	/* border-radius: 12px; */
-	padding: 6px;
+	padding: 5px;
+
 }
 
 a:hover:not(#go-to-project-button),
 .link-item:hover:not(#go-to-project-button) {
-	background: #13794d;
-	background: linear-gradient(to right, #13794d 0%, #12cfcf 100%);
+	background: #bcc9c4;
+	background: linear-gradient(to right, #bcc9c4 0%, #636666 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -175,13 +184,13 @@ footer {
 }
 
 .bg-gradient {
-	background: #13794d;
-	background: linear-gradient(to right, #13794d 0%, #12cfcf 100%);
+	background: #bcc9c4;
+	background: linear-gradient(to right, #bcc9c4 0%, #636666 100%);
 }
 
 .text-gradient {
-	background: #13794d;
-	background: linear-gradient(to right, #13794d 0%, #12cfcf 100%);
+	background: #bcc9c4;
+	background: linear-gradient(to right, #bcc9c4 0%, #636666 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -189,8 +198,8 @@ footer {
 #quote-welcome-message {
 	font-weight: 900;
 	font-family: 'Rutina Grace', sans-serif;
-	background: #13794d;
-	background: linear-gradient(to right, #13794d 0%, #12cfcf 100%);
+	background: #bcc9c4;
+	background: linear-gradient(to right, #bcc9c4 0%, #636666 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }

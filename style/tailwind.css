@@ -682,6 +682,10 @@ video {
   margin: 2.25rem;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .-mx-4 {
   margin-left: -1rem;
   margin-right: -1rem;
@@ -870,6 +874,10 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mr-auto {
+  margin-right: auto;
 }
 
 .block {
@@ -1979,6 +1987,10 @@ video {
 
 .duration-200 {
   transition-duration: 200ms;
+}
+
+.first-letter\:w-full::first-letter {
+  width: 100%;
 }
 
 @media (min-width: 640px) {
