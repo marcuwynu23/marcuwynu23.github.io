@@ -31,7 +31,7 @@ function insertProject(containerId, project) {
   });
 
   const repoElement = $("<a>", {
-    class: " mx-3 inline   text-xs md:text-sm  ",
+    class: " mx-3 inline   text-xs md:text-sm ",
     href: project.link,
     target: "_blank",
     text: "Repository",
@@ -77,7 +77,7 @@ function insertProject(containerId, project) {
   project.topics.forEach((topic) => {
     const topicElement = $("<span>", {
       class:
-        "topic-item  text-xs md:text-sm mr-2 px-2 py-1 m-2 my-bg-quaternary-color ",
+        "topic-item  text-xs md:text-sm mr-2 px-2 py-1 m-2 my-bg-quaternary-color rounded",
       text: topic,
     });
 

@@ -833,6 +833,10 @@ video {
   margin-right: 0.5rem;
 }
 
+.mr-auto {
+  margin-right: auto;
+}
+
 .ms-2 {
   -webkit-margin-start: 0.5rem;
           margin-inline-start: 0.5rem;
@@ -874,10 +878,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mr-auto {
-  margin-right: auto;
 }
 
 .block {
@@ -1987,10 +1987,6 @@ video {
 
 .duration-200 {
   transition-duration: 200ms;
-}
-
-.first-letter\:w-full::first-letter {
-  width: 100%;
 }
 
 @media (min-width: 640px) {
