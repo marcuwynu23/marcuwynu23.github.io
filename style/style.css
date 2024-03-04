@@ -1,20 +1,22 @@
-@import url('https://fonts.cdnfonts.com/css/rutina-grace');
-/* @import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 
 :root {
 	--primary-color: #010101;
-	--secondary-color: #121212;
-	--tertiary-color: #0c0c0c;
-	--quaternary-color: #191919;
+	--secondary-color: #0d0d0d;
+	--tertiary-color: #0d0d0d;
+	--quaternary-color: #121212;
 	--font: "Barlow", serif;
 	--font-special: "Barlow", serif
 }
 
 *:not(i) {
 	color: rgb(225, 225, 225) !important;
-	font-weight: 300;
+	font-weight: 100;
 	font-family: var(--font);
 }
 
@@ -37,19 +39,20 @@
 	background: linear-gradient(to right, #bcc9c4 0%, #636666 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent; */
+
 }
 
 #app-title-mobile {
 	font-weight: 900;
-	font-size: 1.4em;
-	font-family: 'Rutina Grace', sans-serif;
+	font-size: 1.9em;
+	font-family: 'Open Sans', sans-serif;
 	/* color: var(--quaternary-color) !important; */
 }
 
 
 #app-title {
-	font-size: 1.2em;
-	font-family: 'Rutina Grace', sans-serif;
+	font-size: 1.6em;
+	font-family: 'Open Sans', sans-serif;
 	/* color: var(--quaternary-color) !important; */
 }
 
@@ -74,8 +77,7 @@
 
 
 .card:hover {
-	background: #353535;
-	background: linear-gradient(to right, #353535 0%, #222222 100%);
+	background: #0a0a0a;
 }
 
 
@@ -132,10 +134,7 @@
 
 a:hover:not(#go-to-project-button),
 .link-item:hover:not(#go-to-project-button) {
-	background: #bcc9c4;
-	background: linear-gradient(to right, #bcc9c4 0%, #636666 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: #636666 !important;
 }
 
 h3,
@@ -196,12 +195,9 @@ footer {
 }
 
 #quote-welcome-message {
-	font-weight: 900;
-	font-family: 'Rutina Grace', sans-serif;
-	background: #bcc9c4;
-	background: linear-gradient(to right, #bcc9c4 0%, #636666 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+	color: #888;
 }
 
 #quote-welcome-message,
@@ -220,9 +216,10 @@ footer {
 	h4,
 	h5,
 	strong {
-
+		font-family: "Open Sans", sans-serif;
 		font-weight: bold !important;
 		margin: 0 auto !important;
+		color: var(--quaternary-color) !important;
 	}
 
 	/* Hide the desktop header */
