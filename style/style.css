@@ -6,8 +6,8 @@
 
 :root {
 	--primary-color: #010101;
-	--secondary-color: #101010;
-	--tertiary-color: #101010;
+	--secondary-color: #1a1a1a;
+	--tertiary-color: #151515;
 	--quaternary-color: #121212;
 	--font: "Barlow", serif;
 	--font-special: "Barlow", serif
@@ -70,13 +70,13 @@
 .card {
 	border-radius: 12px;
 	border: none;
-	background-color: var(--secondary-color);
+	background: var(--tertiary-color);
 	padding: 20px;
 }
 
 
 .card:hover {
-	background: #0a0a0a;
+	background-color: var(--secondary-color);
 }
 
 

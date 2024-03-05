@@ -169,6 +169,24 @@ const toolProjects = [
       "assets/screenshots/tools/droid/1.jpg",
     ],
   },
+  {
+    title: "Narciso",
+    description: `Narciso is a lightweight web library built on top of native PHP, designed to simplify and enhance web development tasks. It provides developers with a set of tools and functionalities to streamline common web development processes such as handling HTTP requests, managing sessions, accessing databases, and generating dynamic content.`,
+    link: "https://github.com/marcuwynu23/narciso.git",
+    demo: "#",
+    language: "PHP",
+    topics: [
+      "php",
+      "web",
+      "library",
+      "web-development",
+      "http",
+      "sessions",
+      "database",
+      "dynamic-content",
+    ],
+    screenshots: ["assets/screenshots/tools/narciso/0.jpg"],
+  },
 ];
 let toolProjectContainerId = "#console-tools-container";
 toolProjects.forEach((project) =>
