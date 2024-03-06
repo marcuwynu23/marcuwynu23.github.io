@@ -218,7 +218,6 @@ footer {
 		font-family: "Open Sans", sans-serif;
 		font-weight: bold !important;
 		margin: 0 auto !important;
-		color: var(--quaternary-color) !important;
 	}
 
 	/* Hide the desktop header */
