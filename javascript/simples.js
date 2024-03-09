@@ -151,6 +151,15 @@ const simpleProjects = [
     topics: ["chat-app", "ai-assistant", "ai-assistant-chat-app"],
     screenshots: ["assets/screenshots/simples/ai-assistant-chat-app/image.jpg"],
   },
+  {
+    title: "Task Manager",
+    description:
+      "Task Manager is a simple web application for managing tasks. It allows users to create, view, edit, and delete tasks.",
+    link: "https://github.com/marcuwynu23/TaskManager",
+    language: "C#, ASP.NET Core, Razor, Entity Framework Core, MySQL",
+    topics: ["task", "task-manager", "task-manager-web"],
+    screenshots: ["assets/screenshots/simples/task-manager/0.jpg"],
+  },
 ];
 let simpleProjectContainerId = "#simple-programs-container";
 simpleProjects.forEach((project) =>
