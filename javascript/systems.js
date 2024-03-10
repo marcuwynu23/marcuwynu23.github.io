@@ -24,6 +24,23 @@ const systemProjects = [
     topics: ["book", "collection", "management", "system"],
     screenshots: ["assets/screenshots/systems/bcms/0.jpg"],
   },
+  {
+    title: "TicketSquad: Ticket Management System",
+    description:
+      "TicketSquad is a web-based ticketing management system that helps organizations manage their ticketing processes efficiently.",
+    link: "https://github.com/marcuwynu23/ticketsquad.git",
+    language:
+      "asp.net, C#, Postgresql, Razor, Bootstrap,MDBootstrap,CSS,HTML,Material Icons",
+    topics: [
+      "ticket",
+      "management",
+      "system",
+      "ticketing",
+      "ticketing-management",
+      "web-based",
+    ],
+    screenshots: ["assets/screenshots/systems/tms/0.jpg"],
+  },
   // {
   // 	title: "Mini Store Management System",
   // 	description:

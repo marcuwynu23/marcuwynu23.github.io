@@ -156,7 +156,8 @@ const simpleProjects = [
     description:
       "Task Manager is a simple web application for managing tasks. It allows users to create, view, edit, and delete tasks.",
     link: "https://github.com/marcuwynu23/TaskManager",
-    language: "C#, ASP.NET Core, Razor, Entity Framework Core, MySQL",
+    language:
+      "C#, ASP.NET Core, Razor, Entity Framework Core, MySQL, MDBootstrap, Material Icons,CSS, HTML, Javascript",
     topics: ["task", "task-manager", "task-manager-web"],
     screenshots: ["assets/screenshots/simples/task-manager/0.jpg"],
   },
