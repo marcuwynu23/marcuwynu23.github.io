@@ -30,7 +30,7 @@ const systemProjects = [
       "TicketSquad is a web-based ticketing management system that helps organizations manage their ticketing processes efficiently.",
     link: "https://github.com/marcuwynu23/ticketsquad.git",
     language:
-      "asp.net, C#, Postgresql, Razor, Bootstrap,MDBootstrap,CSS,HTML,Material Icons",
+      "ASP.NET, C#, Postgresql, Razor, Bootstrap,MDBootstrap,CSS,HTML,Material Icons",
     topics: [
       "ticket",
       "management",
