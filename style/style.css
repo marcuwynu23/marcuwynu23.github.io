@@ -195,6 +195,7 @@ footer {
 
 #quote-welcome-message {
 	font-weight: 700;
+	letter-spacing: 5px;
 	font-family: 'Open Sans', sans-serif;
 	color: #888;
 }
