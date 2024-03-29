@@ -159,7 +159,7 @@ function insertDesign(
   cardContainer.appendChild(smallerImagesContainer);
 
   const descriptionSection = document.createElement("div");
-  descriptionSection.classList.add("p-4", "my-bg-secondary-color");
+  descriptionSection.classList.add("p-4");
 
   const titleElement = document.createElement("h3");
   titleElement.classList.add("text-lg", "font-bold", "mb-2");
@@ -203,7 +203,7 @@ function insertVideo(containerId, videoLink, title, description) {
   });
 
   const cardContent = document.createElement("div");
-  cardContent.classList.add("p-4", "my-bg-secondary-color");
+  cardContent.classList.add("p-4");
 
   const videoTitle = document.createElement("h3");
   videoTitle.classList.add("text-lg", "font-bold", "mb-2");

@@ -41,6 +41,15 @@ const systemProjects = [
     ],
     screenshots: ["assets/screenshots/systems/tms/0.jpg"],
   },
+  {
+    title: "RecipeSage",
+    description:
+      "A simple single-user recipe management system for organizing and accessing your favorite recipes.",
+    link: "https://github.com/marcuwynu23/recipesage.git",
+    language: "php, laravel, sqlite,css,html,bootstrap,material icons,blade",
+    topics: ["recipe", "management", "system", "recipe-management"],
+    screenshots: ["assets/screenshots/systems/recipesage/0.jpg"],
+  },
   // {
   // 	title: "Mini Store Management System",
   // 	description:
