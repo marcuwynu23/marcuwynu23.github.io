@@ -1,16 +1,16 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
 
 :root {
-	--primary-color: #010101;
-	--secondary-color: #131313;
-	--tertiary-color: #111111;
+	--primary-color: #121212;
+	--secondary-color: #1c1c1c;
+	--tertiary-color: #191919;
 	--quaternary-color: #121212;
-	--font: "Barlow", serif;
-	--font-special: "Barlow", serif
+	--font: "Roboto Slab", serif;
+	--font-special: "Roboto Slab", serif
 }
 
 *:not(i) {
@@ -21,11 +21,11 @@
 
 
 .landing-bg {
-	/* background-image: url("https://wallpapercave.com/wp/wp5308033.png");
+	background-image: url("https://wallpapercave.com/wp/wp5308033.png");
 	background-size: cover;
-	background-position: center; */
+	background-position: center;
 
-	background-color: var(--secondary-color);
+	/* background-color: var(--secondary-color); */
 }
 
 .filter-bland-and-white {
@@ -202,7 +202,7 @@ footer {
 
 #quote-welcome-message,
 #quote-welcome-description {
-	filter: drop-shadow(2px 2px 2px #161616);
+	filter: drop-shadow(5px 5px 5px #161616);
 }
 
 @media (max-width: 767px) {

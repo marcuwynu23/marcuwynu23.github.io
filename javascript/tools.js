@@ -171,7 +171,8 @@ const toolProjects = [
   },
   {
     title: "Narciso",
-    description: `Narciso is a lightweight web library built on top of native PHP, designed to simplify and enhance web development tasks. It provides developers with a set of tools and functionalities to streamline common web development processes such as handling HTTP requests, managing sessions, accessing databases, and generating dynamic content.`,
+    description: `Narciso is a lightweight web library built on top of native PHP, designed to simplify and enhance web development tasks. It provides developers with a set of tools and functionalities to streamline common web development processes such as handling HTTP requests, managing sessions, accessing databases, and generating dynamic content. It is also a artistic movement and inspired by the contemporary cultural phenomenon of narcissism and its implications on society. By addressing themes related to self-absorption and self-obsession, Narciso seeks to raise awareness about mental health issues and promote a more balanced approach to technology and self-expression.s
+    `,
     link: "https://github.com/marcuwynu23/narciso.git",
     demo: "#",
     language: "PHP",
