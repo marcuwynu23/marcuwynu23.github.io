@@ -188,6 +188,22 @@ const toolProjects = [
     ],
     screenshots: ["assets/screenshots/tools/narciso/0.jpg"],
   },
+  {
+    title: "FeyFetch",
+    description: `FeyFetch is an automated testing tool crafted for efficient testing of REST API routes. It simplifies the process of testing API endpoints, ensuring reliability and performance with ease.`,
+    link: "https://github.com/marcuwynu23/feyfetch.git",
+    demo: "#",
+    language: "Python",
+    topics: [
+      "python",
+      "testing",
+      "api",
+      "rest-api",
+      "automation",
+      "api-testing",
+    ],
+    screenshots: ["assets/screenshots/tools/feyfetch/0.jpg"],
+  },
 ];
 let toolProjectContainerId = "#console-tools-container";
 toolProjects.forEach((project) =>

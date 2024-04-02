@@ -2004,10 +2004,6 @@ video {
     display: none;
   }
 
-  .md\:h-80 {
-    height: 20rem;
-  }
-
   .md\:h-auto {
     height: auto;
   }
