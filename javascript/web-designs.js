@@ -13,7 +13,7 @@ const webs = [
   //   cardDescription:
   //     "A web application for the management of a document assistance center.",
   // },
-];
+]
 
 webs.forEach((web) => {
   insertDesign(
@@ -22,5 +22,5 @@ webs.forEach((web) => {
     web.smallerImagesSrc,
     web.cardTitle,
     web.cardDescription
-  );
-});
+  )
+})

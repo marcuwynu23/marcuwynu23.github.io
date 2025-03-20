@@ -1,247 +1,210 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-
-
+@import 'tailwindcss';
 :root {
-	--primary-color: #9e7c7c;
-	--secondary-color: #161616;
-	--tertiary-color: #1b1b1b;
-	--quaternary-color: #121212;
-	--font: "Roboto", serif;
-	--font-special: "Roboto", serif
+  --primary-color: #9e7c7c;
+  --secondary-color: #0f0f0f;
+  --tertiary-color: #0c0c0c;
+  --quaternary-color: #2e312e;
+  --font: 'Roboto', serif;
+  --font-special: 'Roboto', serif;
 }
 
 *:not(i) {
-	color: rgb(225, 225, 225) !important;
-	font-weight: 100;
-	font-family: var(--font);
+  color: rgb(225, 225, 225) !important;
+  font-weight: 200;
+  font-family: var(--font);
 }
 
-
 .landing-bg {
-	background-image: url("https://wallpapercave.com/wp/wp5308033.png");
-	background-size: cover;
-	background-position: center;
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+  background-position: center;
 
-	/* background-color: var(--secondary-color); */
+  /* background-color: var(--secondary-color); */
 }
 
 .filter-bland-and-white {
-	filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
-#app-title,
-#app-title-mobile {
-	/* background: #bcc9c4;
-	background: linear-gradient(to right, #bcc9c4 0%, #636666 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent; */
 
-}
 
 #app-title-mobile {
-	font-weight: 900;
-	font-size: 1.9em;
-	font-family: 'Open Sans', sans-serif;
-	/* color: var(--quaternary-color) !important; */
+  font-weight: 900;
+  font-size: 1.9em;
+  font-family: 'Open Sans', sans-serif;
+  /* color: var(--quaternary-color) !important; */
 }
-
 
 #app-title {
-	font-size: 1.6em;
-	font-family: 'Open Sans', sans-serif;
-	/* color: var(--quaternary-color) !important; */
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  /* color: var(--quaternary-color) !important; */
 }
 
 #greeting-text {
-	font-style: italic !important;
-	font-weight: 900;
+  font-style: italic !important;
+  font-weight: 900;
 }
-
 
 .border {
-	border: 1px solid var(--quaternary-color);
+  border: 1px solid var(--quaternary-color);
 }
-
-
 
 .card {
-	border-radius: 12px;
-	border: none;
-	background: var(--tertiary-color);
-	padding: 20px;
+  border: none;
+  background: var(--tertiary-color);
+  padding: 20px;
 }
-
 
 .card:hover {
-	background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
-
-
-
 
 .about-dist {
-	font-size: 1.1rem;
-	font-weight: 300;
+  font-size: 1.1rem;
+  font-weight: 300;
 }
 
-
 .my-text-primary-color {
-	color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .my-text-quaternary-color {
-	color: var(--quaternary-color) !important;
+  color: var(--quaternary-color) !important;
 }
 
 .my-text-secondary-color {
-	color: var(--secondary-color) !important;
+  color: var(--secondary-color) !important;
 }
 
 .my-text-tertiary-color {
-	color: var(--tertiary-color);
+  color: var(--tertiary-color);
 }
 
 .my-bg-quaternary-color {
-	background-color: var(--quaternary-color);
+  background-color: var(--quaternary-color);
 }
 
 .my-bg-secondary-color {
-	background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
-
 
 .my-bg-tertiary-color {
-	background-color: var(--tertiary-color);
+  background-color: var(--tertiary-color);
 }
-
 
 .my-bg-special-color {
-	background-color: #13794d;
+  background-color: #13794d;
 }
 
-
 .link-item {
-	/* background-color: var(--quaternary-color); */
-	margin: 5px;
-	/* border-radius: 12px; */
-	padding: 5px;
-
+  /* background-color: var(--quaternary-color); */
+  margin: 5px;
+  /* border-radius: 12px; */
+  padding: 5px;
 }
 
 a:hover:not(#go-to-project-button),
 .link-item:hover:not(#go-to-project-button) {
-	color: #636666 !important;
+  color: #636666 !important;
 }
-
-h3,
-h4,
-h5,
-h2,
-h6,
-strong {
-	margin: 0 auto;
-}
-
 
 
 a {
-	padding: 0.2rem 0.3rem;
-
+  padding: 0.2rem 0.3rem;
 }
 
 .highlight {
-	max-width: 100%;
-	max-height: 100%;
-	/* Add any other styling properties for the highlighted image */
+  max-width: 100%;
+  max-height: 100%;
+  /* Add any other styling properties for the highlighted image */
 }
-
 
 .btn-view {
-	font-size: 1.0rem;
-	border: 1px solid var(--quaternary-color);
+  font-size: 1rem;
+  border: 1px solid var(--quaternary-color);
 }
 
-
 #home {
-	/* background-image: url("https://wallpapercave.com/wp/wp5308033.png"); */
-	background-size: cover;
-	background-position: center;
+  /* background-image: url("https://wallpapercave.com/wp/wp5308033.png"); */
+  background-size: cover;
+  background-position: center;
 }
 
 #header,
 #header-mobile,
 footer {
-	background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 footer {
-	border-top: none;
+  border-top: none;
 }
 
 .bg-gradient {
-	background: #bcc9c4;
-	background: linear-gradient(to right, #bcc9c4 0%, #636666 100%);
+  background: #bcc9c4;
+  background: linear-gradient(to right, #bcc9c4 0%, #636666 100%);
 }
 
 .text-gradient {
-	background: #bcc9c4;
-	background: linear-gradient(to right, #bcc9c4 0%, #636666 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background: #bcc9c4;
+  background: linear-gradient(to right, #bcc9c4 0%, #636666 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #quote-welcome-message {
-	font-weight: 700;
-	letter-spacing: 5px;
-	font-family: 'Open Sans', sans-serif;
-	color: #888;
+  font-weight: 700;
+  letter-spacing: 5px;
+  font-family: 'Open Sans', sans-serif;
+  color: #888;
 }
 
 #quote-welcome-message,
 #quote-welcome-description {
-	filter: drop-shadow(5px 5px 5px #161616);
+  filter: drop-shadow(5px 5px 5px #161616);
 }
 
 @media (max-width: 767px) {
-	* {
-		font-size: 10pt;
-	}
+  * {
+    font-size: 10pt;
+  }
 
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	strong {
-		font-family: "Open Sans", sans-serif;
-		font-weight: bold !important;
-		margin: 0 auto !important;
-	}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  strong {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold !important;
+    margin: 0 auto !important;
+  }
 
-	/* Hide the desktop header */
-	#header {
-		display: none;
-	}
+  /* Hide the desktop header */
+  #header {
+    display: none;
+  }
 
-	/* Show the mobile menu when the button is clicked */
-	#menu.show {
-		display: block;
-	}
+  /* Show the mobile menu when the button is clicked */
+  #menu.show {
+    display: block;
+  }
 }
 
-
 .scroll-container::-webkit-scrollbar {
-	width: 10px;
+  width: 10px;
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
-	background-color: #888;
-	border-radius: 5px;
+  background-color: #888;
+  border-radius: 5px;
 }
 
 .scroll-container::-webkit-scrollbar-track {
-	background-color: #1b1b1b;
+  background-color: #1b1b1b;
 }

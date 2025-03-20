@@ -1,28 +1,28 @@
 .image-gallery {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 .gallery-image {
-	max-width: 100%;
-	max-height: 100%;
-	transition: transform 0.2s;
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.2s;
 }
 
 .gallery-image:hover {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .highlight {
-	max-width: 500px;
-	max-height: 500px;
-	/* Add any other styling properties for the highlighted image */
+  max-width: 500px;
+  max-height: 500px;
+  /* Add any other styling properties for the highlighted image */
 }
 
 .regular {
-	max-width: 250px;
-	max-height: 250px;
-	/* Add any other styling properties for the regular images */
+  max-width: 250px;
+  max-height: 250px;
+  /* Add any other styling properties for the regular images */
 }

@@ -1,54 +1,46 @@
 // //temporary data insertion in system Project
 const systemProjects = [
   {
-    title: "Kalapatid: Pigeon Raising and Sport Management System",
+    title: 'Kalapatid: Pigeon Raising and Sport Management System',
     description:
-      "The Kalapatid Pigeon Raising and Sport Management System is a web-based application built using JavaScript that manages the pigeon raising and sport activities of the Kalapatid Pigeon Club. It enables members to manage their pigeon inventory, track breeding activities, register for racing events, and communicate with other members.",
-    link: "https://github.com/marcuwynu23/kalapatid-pigeon-raising-and-sport-management-system.git",
-    language: "ExpressJS, Mongodb,NodeJS and Nunjucks Template Engine",
-    topics: ["pigeon-raising", "sport", "agriculture", "nodejs"],
+      'The Kalapatid Pigeon Raising and Sport Management System is a web-based application built using JavaScript that manages the pigeon raising and sport activities of the Kalapatid Pigeon Club. It enables members to manage their pigeon inventory, track breeding activities, register for racing events, and communicate with other members.',
+    link: 'https://github.com/marcuwynu23/kalapatid-pigeon-raising-and-sport-management-system.git',
+    language: 'ExpressJS, Mongodb,NodeJS and Nunjucks Template Engine',
+    topics: ['pigeon-raising', 'sport', 'agriculture', 'nodejs'],
     screenshots: [
-      "assets/screenshots/systems/kpsms/0.jpg",
-      "assets/screenshots/systems/kpsms/1.jpg",
-      "assets/screenshots/systems/kpsms/2.jpg",
-      "assets/screenshots/systems/kpsms/3.jpg",
-      "assets/screenshots/systems/kpsms/4.jpg",
+      'assets/screenshots/systems/kpsms/0.jpg',
+      'assets/screenshots/systems/kpsms/1.jpg',
+      'assets/screenshots/systems/kpsms/2.jpg',
+      'assets/screenshots/systems/kpsms/3.jpg',
+      'assets/screenshots/systems/kpsms/4.jpg',
     ],
   },
   {
-    title: "Book Collection Management System",
+    title: 'Book Collection Management System',
     description:
-      "The Book Collection Management System is a web application that allows users to manage their book collection. It provides features such as adding, editing, and deleting books, as well as searching for books by title, author, or genre. The system is built using codeigniter. The interface is intuitive and user-friendly, allowing users to navigate through different features easily. With this system, book collectors can organize their collection effectively and keep track of their reading habits.",
-    link: "https://github.com/marcuwynu23/bcms.git",
-    language: "Codeigniter, Mysql, PHP",
-    topics: ["book", "collection", "management", "system"],
-    screenshots: ["assets/screenshots/systems/bcms/0.jpg"],
+      'The Book Collection Management System is a web application that allows users to manage their book collection. It provides features such as adding, editing, and deleting books, as well as searching for books by title, author, or genre. The system is built using codeigniter. The interface is intuitive and user-friendly, allowing users to navigate through different features easily. With this system, book collectors can organize their collection effectively and keep track of their reading habits.',
+    link: 'https://github.com/marcuwynu23/bcms.git',
+    language: 'Codeigniter, Mysql, PHP',
+    topics: ['book', 'collection', 'management', 'system'],
+    screenshots: ['assets/screenshots/systems/bcms/0.jpg'],
   },
   {
-    title: "TicketSquad: Ticket Management System",
+    title: 'TicketSquad: Ticket Management System',
     description:
-      "TicketSquad is a web-based ticketing management system that helps organizations manage their ticketing processes efficiently.",
-    link: "https://github.com/marcuwynu23/ticketsquad.git",
-    language:
-      "ASP.NET, C#, Postgresql, Razor, Bootstrap,MDBootstrap,CSS,HTML,Material Icons",
-    topics: [
-      "ticket",
-      "management",
-      "system",
-      "ticketing",
-      "ticketing-management",
-      "web-based",
-    ],
-    screenshots: ["assets/screenshots/systems/tms/0.jpg"],
+      'TicketSquad is a web-based ticketing management system that helps organizations manage their ticketing processes efficiently.',
+    link: 'https://github.com/marcuwynu23/ticketsquad.git',
+    language: 'ASP.NET, C#, Postgresql, Razor, Bootstrap,MDBootstrap,CSS,HTML,Material Icons',
+    topics: ['ticket', 'management', 'system', 'ticketing', 'ticketing-management', 'web-based'],
+    screenshots: ['assets/screenshots/systems/tms/0.jpg'],
   },
   {
-    title: "RecipeSage",
+    title: 'RecipeSage',
     description:
-      "A simple single-user recipe management system for organizing and accessing your favorite recipes.",
-    link: "https://github.com/marcuwynu23/recipesage.git",
-    language: "php, laravel, sqlite,css,html,bootstrap,material icons,blade",
-    topics: ["recipe", "management", "system", "recipe-management"],
-    screenshots: ["assets/screenshots/systems/recipesage/0.jpg"],
+      'A simple single-user recipe management system for organizing and accessing your favorite recipes.',
+    link: 'https://github.com/marcuwynu23/recipesage.git',
+    language: 'php, laravel, sqlite,css,html,bootstrap,material icons,blade',
+    topics: ['recipe', 'management', 'system', 'recipe-management'],
+    screenshots: ['assets/screenshots/systems/recipesage/0.jpg'],
   },
   // {
   // 	title: "Mini Store Management System",
@@ -93,8 +85,6 @@ const systemProjects = [
   // 		// "assets/screenshots/systems/bcms/4.jpg",
   // 	]
   // }
-];
-let systemProjectContainerId = "#system-projects-container";
-systemProjects.forEach((project) =>
-  insertProject(systemProjectContainerId, project)
-);
+]
+let systemProjectContainerId = '#system-projects-container'
+systemProjects.forEach((project) => insertProject(systemProjectContainerId, project))
