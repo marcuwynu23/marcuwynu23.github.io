@@ -4,9 +4,9 @@
 @import 'tailwindcss';
 :root {
   --primary-color: #9e7c7c;
-  --secondary-color: #0f0f0f;
-  --tertiary-color: #0c0c0c;
-  --quaternary-color: #2e312e;
+  --secondary-color: #030200;
+  --tertiary-color: #0a0908;
+  --quaternary-color: #380703;
   --font: 'Roboto', serif;
   --font-special: 'Roboto', serif;
 }
@@ -18,10 +18,10 @@
 }
 
 .landing-bg {
-  background-image: url('../assets/background.jpg');
+  background-image: url('../assets/background-image.jpg');
   background-size: cover;
   background-position: center;
-
+filter:opacity(0.9);
   /* background-color: var(--secondary-color); */
 }
 
@@ -146,13 +146,13 @@ footer {
 }
 
 .bg-gradient {
-  background: #bcc9c4;
-  background: linear-gradient(to right, #bcc9c4 0%, #636666 100%);
+  background: #380703;
+  background: linear-gradient(to right, #380703 0%, #5e2c27 100%);
 }
 
 .text-gradient {
-  background: #bcc9c4;
-  background: linear-gradient(to right, #bcc9c4 0%, #636666 100%);
+  background: #380703;
+  background: linear-gradient(to right, #380703 0%, #5e2c27 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -166,7 +166,7 @@ footer {
 
 #quote-welcome-message,
 #quote-welcome-description {
-  filter: drop-shadow(5px 5px 5px #161616);
+  filter: drop-shadow(5px 5px 5px #0c0b0b);
 }
 
 @media (max-width: 767px) {
