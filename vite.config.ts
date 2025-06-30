@@ -2,8 +2,10 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { defineConfig } from "vite";
-// https://vite.dev/config/
+
+// https://vitejs.dev/config/
 export default defineConfig({
+  base: "/marcuwynu23.github.io/", // 👈 Set base path to your GitHub repo
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
@@ -11,6 +13,6 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: "docs",
+    outDir: "docs", // 👈 GitHub Pages expects static files in /docs
   },
 });
