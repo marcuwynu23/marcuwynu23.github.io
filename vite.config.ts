@@ -5,7 +5,7 @@ import { defineConfig } from "vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/marcuwynu23.github.io/", // 👈 Set base path to your GitHub repo
+  base: "/", // 👈 Set base path to your GitHub repo
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
