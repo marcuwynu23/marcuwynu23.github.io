@@ -1,10 +1,23 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Search } from "lucide-react";
-import { useState } from "react";
+import {Button} from "@/components/ui/button";
+import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import {Input} from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import {ScrollArea} from "@/components/ui/scroll-area";
+import {Search} from "lucide-react";
+import {useState} from "react";
 
 const dummyProjects = [
   {
@@ -31,7 +44,12 @@ const dummyProjects = [
     content: "const useStore = create((set) => ({ count: 0 }))",
     category: "React",
   },
-  { title: "MongoDB Connection", description: "Mongoose connect example.", content: "mongoose.connect(uri, options);", category: "Backend" },
+  {
+    title: "MongoDB Connection",
+    description: "Mongoose connect example.",
+    content: "mongoose.connect(uri, options);",
+    category: "Backend",
+  },
 ];
 
 export default function ProjectPage() {
@@ -42,7 +60,8 @@ export default function ProjectPage() {
 
   const filteredProjects = dummyProjects.filter((project) => {
     const matchesSearch =
-      project.title.toLowerCase().includes(query.toLowerCase()) || project.description.toLowerCase().includes(query.toLowerCase());
+      project.title.toLowerCase().includes(query.toLowerCase()) ||
+      project.description.toLowerCase().includes(query.toLowerCase());
     const matchesCategory = category === "all" || project.category === category;
     return matchesSearch && matchesCategory;
   });
@@ -54,66 +73,87 @@ export default function ProjectPage() {
 
   return (
     <>
-      <Card className="bg-transparent border-none shadow-none">
-        <CardHeader>
-          <CardTitle className="text-xl font-semibold">Projects</CardTitle>
-        </CardHeader>
-        <CardContent>
-          {/* Filters */}
-          <div className="flex flex-wrap gap-2 justify-end mb-6">
-            <Input
-              placeholder="Search projects..."
-              type="search"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              className="focus:outline-none focus:ring-0 focus:ring-offset-0 focus:shadow-none focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:shadow-none"
-            />
-            <Button type="button">
-              <Search size={18} />
-              Search
-            </Button>
-            <Select value={category} onValueChange={setCategory}>
-              <SelectTrigger className="w-[150px]">
-                <SelectValue placeholder="Category" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All</SelectItem>
-                <SelectItem value="React">React</SelectItem>
-                <SelectItem value="Backend">Backend</SelectItem>
-                <SelectItem value="CSS">CSS</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
+      <div className=" mx-auto px-4 py-6">
+        <h1 className="text-2xl font-semibold text-foreground mb-4 tracking-tight">
+          Projects
+        </h1>
 
-          {/* Projects */}
-          <div className="grid gap-4">
+        {/* Filters */}
+        <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-6">
+          <Input
+            type="search"
+            placeholder="Search projects..."
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            className="flex-1 rounded-md text-sm bg-muted border border-border focus:ring-2 focus:ring-primary text-foreground"
+          />
+          <Select value={category} onValueChange={setCategory}>
+            <SelectTrigger className="w-40 bg-muted border-border text-foreground">
+              <SelectValue placeholder="Category" />
+            </SelectTrigger>
+            <SelectContent className="bg-background text-foreground border border-border">
+              <SelectItem value="all">All</SelectItem>
+              <SelectItem value="React">React</SelectItem>
+              <SelectItem value="Backend">Backend</SelectItem>
+              <SelectItem value="CSS">CSS</SelectItem>
+            </SelectContent>
+          </Select>
+          <Button type="button" className="gap-2 bg-blue-500 text-white">
+            <Search size={18} />
+            Search
+          </Button>
+        </div>
+
+        {/* Project List */}
+        <ScrollArea className="h-[60vh] w-full pr-2">
+          <div className="space-y-4">
             {filteredProjects.length === 0 ? (
-              <p className="text-sm text-muted-foreground text-center">No projects found.</p>
+              <p className="text-sm text-muted-foreground text-center">
+                No projects found.
+              </p>
             ) : (
               filteredProjects.map((project, index) => (
-                <Card key={index} onClick={() => openDialog(project)} className="bg-muted dark:bg-[#202020] shadow-sm">
-                  <CardHeader>
-                    <CardTitle className="text-md">{project.title}</CardTitle>
+                <Card
+                  key={index}
+                  onClick={() => openDialog(project)}
+                  className="bg-muted hover:bg-muted/80 border border-border p-4 rounded-xl shadow-md cursor-pointer transition duration-150"
+                >
+                  <CardHeader className="p-0 mb-2">
+                    <CardTitle className="text-lg font-semibold text-foreground">
+                      {project.title}
+                    </CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground">{project.description}</p>
+                  <CardContent className="p-0">
+                    <p className="text-sm text-muted-foreground">
+                      {project.description}
+                    </p>
                   </CardContent>
                 </Card>
               ))
             )}
           </div>
-        </CardContent>
-      </Card>
+        </ScrollArea>
+      </div>
 
-      {/* Dialog to show full project */}
+      {/* Dialog Modal */}
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent className="dark:bg-[#232323]">
+        <DialogContent
+          className="bg-background dark:bg-[#181818] max-w-lg w-full rounded-xl border border-border shadow-lg 
+            sm:top-1/2 sm:translate-y-[-50%] sm:left-1/2 sm:translate-x-[-50%] sm:fixed 
+            sm:max-h-[90vh] overflow-y-auto"
+        >
           <DialogHeader>
-            <DialogTitle>{selectedProject?.title}</DialogTitle>
-            <DialogDescription>{selectedProject?.description}</DialogDescription>
+            <DialogTitle className="text-xl font-semibold text-foreground">
+              {selectedProject?.title}
+            </DialogTitle>
+            <DialogDescription className="text-muted-foreground">
+              {selectedProject?.description}
+            </DialogDescription>
           </DialogHeader>
           <div className="mt-4">
-            <pre className="bg-muted p-4 rounded text-sm overflow-x-auto whitespace-pre-wrap">{selectedProject?.content}</pre>
+            <pre className="bg-muted text-foreground p-4 rounded-md text-sm overflow-x-auto whitespace-pre-wrap">
+              {selectedProject?.content}
+            </pre>
           </div>
         </DialogContent>
       </Dialog>
