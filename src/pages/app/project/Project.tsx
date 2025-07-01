@@ -1,23 +1,11 @@
-import {Button} from "@/components/ui/button";
-import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
-import {Input} from "@/components/ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import {ScrollArea} from "@/components/ui/scroll-area";
-import {Search} from "lucide-react";
-import {useState} from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Search } from "lucide-react";
+import { useState } from "react";
 
 const dummyProjects = [
   {
@@ -60,8 +48,7 @@ export default function ProjectPage() {
 
   const filteredProjects = dummyProjects.filter((project) => {
     const matchesSearch =
-      project.title.toLowerCase().includes(query.toLowerCase()) ||
-      project.description.toLowerCase().includes(query.toLowerCase());
+      project.title.toLowerCase().includes(query.toLowerCase()) || project.description.toLowerCase().includes(query.toLowerCase());
     const matchesCategory = category === "all" || project.category === category;
     return matchesSearch && matchesCategory;
   });
@@ -74,9 +61,7 @@ export default function ProjectPage() {
   return (
     <>
       <div className=" mx-auto px-4 py-6">
-        <h1 className="text-2xl font-semibold text-foreground mb-4 tracking-tight">
-          Projects
-        </h1>
+        <h1 className="text-2xl font-semibold text-foreground mb-4 tracking-tight">Projects</h1>
 
         {/* Filters */}
         <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-6">
@@ -85,10 +70,10 @@ export default function ProjectPage() {
             placeholder="Search projects..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="flex-1 rounded-md text-sm bg-muted border border-border focus:ring-2 focus:ring-primary text-foreground"
+            className="flex-1 rounded-md text-sm bg-gray-100 dark:bg-[#1e1e1e] border border-border focus:ring-2 focus:ring-primary text-foreground"
           />
           <Select value={category} onValueChange={setCategory}>
-            <SelectTrigger className="w-40 bg-muted border-border text-foreground">
+            <SelectTrigger className="w-40  bg-gray-100 dark:bg-[#1e1e1e] border-border text-foreground">
               <SelectValue placeholder="Category" />
             </SelectTrigger>
             <SelectContent className="bg-background text-foreground border border-border">
@@ -98,7 +83,7 @@ export default function ProjectPage() {
               <SelectItem value="CSS">CSS</SelectItem>
             </SelectContent>
           </Select>
-          <Button type="button" className="gap-2 bg-blue-500 text-white">
+          <Button type="button" className="gap-2 bg-green-800 text-white">
             <Search size={18} />
             Search
           </Button>
@@ -108,25 +93,19 @@ export default function ProjectPage() {
         <ScrollArea className="h-[60vh] w-full pr-2">
           <div className="space-y-4">
             {filteredProjects.length === 0 ? (
-              <p className="text-sm text-muted-foreground text-center">
-                No projects found.
-              </p>
+              <p className="text-sm text-muted-foreground text-center">No projects found.</p>
             ) : (
               filteredProjects.map((project, index) => (
                 <Card
                   key={index}
                   onClick={() => openDialog(project)}
-                  className="bg-muted hover:bg-muted/80 border border-border p-4 rounded-xl shadow-md cursor-pointer transition duration-150"
+                  className="bg-gray-100 dark:bg-[#1e1e1e] border border-border p-4 rounded-xl shadow-none cursor-pointer transition duration-150"
                 >
                   <CardHeader className="p-0 mb-2">
-                    <CardTitle className="text-lg font-semibold text-foreground">
-                      {project.title}
-                    </CardTitle>
+                    <CardTitle className="text-lg font-semibold text-foreground">{project.title}</CardTitle>
                   </CardHeader>
                   <CardContent className="p-0">
-                    <p className="text-sm text-muted-foreground">
-                      {project.description}
-                    </p>
+                    <p className="text-sm text-muted-foreground">{project.description}</p>
                   </CardContent>
                 </Card>
               ))
@@ -143,15 +122,11 @@ export default function ProjectPage() {
             sm:max-h-[90vh] overflow-y-auto"
         >
           <DialogHeader>
-            <DialogTitle className="text-xl font-semibold text-foreground">
-              {selectedProject?.title}
-            </DialogTitle>
-            <DialogDescription className="text-muted-foreground">
-              {selectedProject?.description}
-            </DialogDescription>
+            <DialogTitle className="text-xl font-semibold text-foreground">{selectedProject?.title}</DialogTitle>
+            <DialogDescription className="text-muted-foreground">{selectedProject?.description}</DialogDescription>
           </DialogHeader>
           <div className="mt-4">
-            <pre className="bg-muted text-foreground p-4 rounded-md text-sm overflow-x-auto whitespace-pre-wrap">
+            <pre className=" bg-gray-100 dark:bg-[#1e1e1e] text-foreground p-4 rounded-md text-sm overflow-x-auto whitespace-pre-wrap">
               {selectedProject?.content}
             </pre>
           </div>

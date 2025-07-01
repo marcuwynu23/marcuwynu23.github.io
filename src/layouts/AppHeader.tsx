@@ -1,11 +1,7 @@
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuList,
-} from "@radix-ui/react-navigation-menu";
-import {Code2, Folder, LayoutDashboard, Moon, Sun, User} from "lucide-react";
-import {useEffect, useState} from "react";
-import {Link} from "react-router-dom";
+import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@radix-ui/react-navigation-menu";
+import { Code2, Folder, LayoutDashboard, Moon, Sun, User } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function AppHeader() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -25,52 +21,36 @@ export default function AppHeader() {
 
   return (
     <div className="hidden lg:block w-full">
-      <header className="w-full px-6 py-4 dark:bg-[#191919] border-b border-border flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 shadow-sm">
+      <header className="w-full px-6 py-4 dark:bg-[#191919] border-b border-green-400 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 shadow-none ">
         {/* Title & Navigation */}
         <div>
           <div className="mb-3">
-            <h1 className="text-2xl font-bold tracking-tight text-primary">
-              @marcuwynu23.github.io
-            </h1>
-            <p className="text-sm text-muted-foreground italic">
-              "Building with purpose, deploying with precision."
-            </p>
+            <h1 className="text-3xl font-bold tracking-tight text-foreground">marcuwynu23</h1>
+            <p className="text-sm text-muted-foreground italic">"Building with purpose, deploying with precision."</p>
           </div>
 
           <NavigationMenu>
             <NavigationMenuList className="flex flex-wrap gap-6 text-sm font-medium text-muted-foreground">
-              <NavigationMenuItem>
-                <Link
-                  to="/"
-                  className="flex items-center gap-2 hover:text-primary transition"
-                >
+              <NavigationMenuItem className="p-2 rounded border border-transparent hover:bg-gray-100 dark:hover:bg-[#232323] hover:border-border transition">
+                <Link to="/" className="flex items-center gap-2">
                   <LayoutDashboard size={18} />
                   Dashboard
                 </Link>
               </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link
-                  to="/profile"
-                  className="flex items-center gap-2 hover:text-primary transition"
-                >
+              <NavigationMenuItem className="p-2 rounded border border-transparent hover:bg-gray-100 dark:hover:bg-[#232323] hover:border-border transition">
+                <Link to="/profile" className="flex items-center gap-2">
                   <User size={18} />
                   Profile
                 </Link>
               </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link
-                  to="/projects"
-                  className="flex items-center gap-2 hover:text-primary transition"
-                >
+              <NavigationMenuItem className="p-2 rounded border border-transparent hover:bg-gray-100 dark:hover:bg-[#232323] hover:border-border transition">
+                <Link to="/projects" className="flex items-center gap-2">
                   <Folder size={18} />
                   Projects
                 </Link>
               </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link
-                  to="/snippets"
-                  className="flex items-center gap-2 hover:text-primary transition"
-                >
+              <NavigationMenuItem className="p-2 rounded border border-transparent hover:bg-gray-100 dark:hover:bg-[#232323] hover:border-border transition">
+                <Link to="/snippets" className="flex items-center gap-2">
                   <Code2 size={18} />
                   Snippets
                 </Link>
