@@ -15,6 +15,7 @@
   color: rgb(225, 225, 225) !important;
   font-weight: 200;
   font-family: var(--font);
+  font-weight: 300;
 }
 
 .landing-bg {
